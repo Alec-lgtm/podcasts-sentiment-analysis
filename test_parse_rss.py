@@ -2,7 +2,13 @@
 import feedparser
 
 # RSS feed URL of the podcast
-rss_url = 'https://feeds.megaphone.fm/GLT1412515089'
+rss_url = 'https://feeds.simplecast.com/54nAGcIl'
+
+# https://feeds.megaphone.fm/GLT1412515089'
+
+# Joe Rogan: https://feeds.megaphone.fm/GLT1412515089
+
+# https://feeds.simplecast.com/54nAGcIl
 
 # Parse the RSS feed
 feed = feedparser.parse(rss_url)
