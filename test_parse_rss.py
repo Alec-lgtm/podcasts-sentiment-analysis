@@ -12,7 +12,7 @@ rss_url = 'https://feeds.simplecast.com/54nAGcIl'
 
 # Parse the RSS feed
 feed = feedparser.parse(rss_url)
-
+publish
 # Extract and print podcast information
 print(f"Podcast Title: {feed['feed']['title']}")
 print(f"Podcast Description: {feed['feed']['description']}")
