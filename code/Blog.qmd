@@ -23,4 +23,4 @@ Looking at the first graph, it represents the frequency of words being used. Thi
 
 Of course we have to add the word cloud, as it is just kind of a fun visualization to use(even if it can be a little bit useless when it comes to data), but we can see a lot of the common words are similar to those studies which analyze common words in books.
 
-As we are struggling with some tech difficulties(I need to get a new computer ASAP), these vizualizations will be available to see in the figure file
+As we are struggling with some tech difficulties(I need to get a new computer ASAP), these vizualizations will be available to see in this code folder at the moment but will change to be in a figure folder.
