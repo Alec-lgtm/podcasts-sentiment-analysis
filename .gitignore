@@ -5,3 +5,5 @@
 .Rproj_user
 *.Rproj
 .quarto/
+
+debug*
