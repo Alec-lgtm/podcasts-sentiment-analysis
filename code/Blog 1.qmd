@@ -19,9 +19,16 @@ library(readtext)
 
 ```{r}
 
-files <- list.files(path = "/data/vox_podcasts", full.names = T, recursive = T)
+# path <- "collection-main/objects"
+# files <- dir(path, pattern = "*.json",recursive = TRUE)
+# file_paths <- file.path(path,files)[1:5000]
+
+# files <- list.files(path = "/data/vox_podcasts", full.names = T, recursive = T)
 # Load the transcript file (replace with your actual file path)
-transcript <- readtext("/dummytest.docx")#***
+# transcript <- readtext(files)
+
+# files <- dir("/data/vox_podcasts", pattern = "*.docx",recursive = TRUE)
+# files_path <- file.path("/data/vox_podcasts",files)[1:100]
 
 # Combine into a single string
 text <- paste(transcript, collapse = " ")# do I need this
