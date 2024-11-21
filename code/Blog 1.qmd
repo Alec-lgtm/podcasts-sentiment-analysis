@@ -4,23 +4,37 @@ format: html
 editor: visual
 ---
 
-## Quarto
+In the modern era it seems that people are moving farther and farther away from print media. With the advent of the 24 hour news cycle started at the turn of the century and the ever present diminishing attention span, People are now consuming their news in different media than their parents generation. Even as newspapers evolve more to be online in forms of online posts and websites, more people are more engaged in media that can be listened to. So as news changes the way it is dispersed how does that change the way news is received?
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section. This made it easy to standardize the data, consistently if they write about a topic they will create a podcast episode for that topic. Then using the podcast transcript and the print news, we used Baer's Niave base to gain the overall sentiment of the pieces.
 
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
-1 + 1
+library(tidyverse)
+library(syuzhet)
+library(tm)
+library(ggplot2)
+library(readtext)
 ```
-
-You can add options to executable code like this
 
 ```{r}
-#| echo: false
-2 * 2
+
+files <- list.files(path = "/data/vox_podcasts", full.names = T, recursive = T)
+# Load the transcript file (replace with your actual file path)
+transcript <- readtext("/dummytest.docx")#***
+
+# Combine into a single string
+text <- paste(transcript, collapse = " ")# do I need this
+
+# Preprocess the text: remove punctuation, numbers, and convert to lower case
+text_clean <- tolower(text) %>%
+  removePunctuation() %>%
+  removeNumbers()
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+
+
+
+
+
+
