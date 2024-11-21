@@ -3,6 +3,9 @@ from typing import Sequence, Mapping, Iterable
 from data import *
 
 class NBBaseline:
+    # Input is iterable of tuple. where the tuple is (sequence of words) and (classification of that word)
+    # Right now. data is not in the form... its just in a list of sequence of words.
+
     def __init__(self, train_data : Iterable[tuple[Sequence[str], int]]):
         self.classes = set([c for _, c in train_data])
         self.smoothed_totals = {}
