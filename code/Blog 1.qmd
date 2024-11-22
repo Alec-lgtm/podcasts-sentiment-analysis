@@ -23,15 +23,20 @@ library(readtext)
 # files <- dir(path, pattern = "*.json",recursive = TRUE)
 # file_paths <- file.path(path,files)[1:5000]
 
+transcript <- readtext("C:\\Users\\ak_wa\\OneDrive\\Documents\\Data Sci\\course_projects\\podcasts-sentiment-analysis\\data\\vox_podcasts\\2021\\6_29_21_ Canada_s residential schools.docx")
+
+files <- list.files(path = "C:\\Users\\ak_wa\\OneDrive\\Documents\\Data Sci\\course_projects\\podcasts-sentiment-analysis\\data\\vox_podcasts", full.names = T, recursive = T)
+transcript <- readtext(files)
+
 # files <- list.files(path = "/data/vox_podcasts", full.names = T, recursive = T)
-# Load the transcript file (replace with your actual file path)
-# transcript <- readtext(files)
+# # Load the transcript file
+# transcript <- readtext(files, docvarsfrom = "filepaths", dvsep = "/", verbosity = 3, ignore_missing_files = TRUE)
 
 # files <- dir("/data/vox_podcasts", pattern = "*.docx",recursive = TRUE)
 # files_path <- file.path("/data/vox_podcasts",files)[1:100]
 
 # Combine into a single string
-text <- paste(transcript, collapse = " ")# do I need this
+text <- paste(transcript, collapse = " ")
 
 # Preprocess the text: remove punctuation, numbers, and convert to lower case
 text_clean <- tolower(text) %>%
