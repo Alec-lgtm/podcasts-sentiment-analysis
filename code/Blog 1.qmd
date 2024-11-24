@@ -8,7 +8,6 @@ In the modern era it seems that people are moving farther and farther away from 
 
 In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section. This made it easy to standardize the data, consistently if they write about a topic they will create a podcast episode for that topic. Then using the podcast transcript and the print news, we used Baer's Niave base to gain the overall sentiment of the pieces.
 
-
 ```{r}
 library(tidyverse)
 library(syuzhet)
@@ -18,35 +17,25 @@ library(readtext)
 ```
 
 ```{r}
-
-# path <- "collection-main/objects"
-# files <- dir(path, pattern = "*.json",recursive = TRUE)
-# file_paths <- file.path(path,files)[1:5000]
-
-transcript <- readtext("C:\\Users\\ak_wa\\OneDrive\\Documents\\Data Sci\\course_projects\\podcasts-sentiment-analysis\\data\\vox_podcasts\\2021\\6_29_21_ Canada_s residential schools.docx")
-
-files <- list.files(path = "C:\\Users\\ak_wa\\OneDrive\\Documents\\Data Sci\\course_projects\\podcasts-sentiment-analysis\\data\\vox_podcasts", full.names = T, recursive = T)
+files <- list.files(path = "..\\data\\vox_podcasts", full.names = T, recursive = T)
 transcript <- readtext(files)
-
-# files <- list.files(path = "/data/vox_podcasts", full.names = T, recursive = T)
-# # Load the transcript file
-# transcript <- readtext(files, docvarsfrom = "filepaths", dvsep = "/", verbosity = 3, ignore_missing_files = TRUE)
-
-# files <- dir("/data/vox_podcasts", pattern = "*.docx",recursive = TRUE)
-# files_path <- file.path("/data/vox_podcasts",files)[1:100]
 
 # Combine into a single string
 text <- paste(transcript, collapse = " ")
 
-# Preprocess the text: remove punctuation, numbers, and convert to lower case
 text_clean <- tolower(text) %>%
   removePunctuation() %>%
   removeNumbers()
+
+text_split <- strsplit(text_clean, " ")
+
+df <- data.frame(text_split = text_split)
+
+
+
+write.csv2(df, file = "..\\data\\text_extracts.csv", fileEncoding = "UTF-8")
 ```
 
+```{r}
 
-
-
-
-
-
+```
