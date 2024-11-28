@@ -14,6 +14,7 @@ library(syuzhet)
 library(tm)
 library(ggplot2)
 library(readtext)
+library(tidytext)
 ```
 
 ```{r}
@@ -22,11 +23,15 @@ transcript <- readtext(files)
 
 text <- paste(transcript, collapse = " ")
 
-text_clean <- tolower(text) %>%
-  removePunctuation() %>%
-  removeNumbers()
+text_clean <- text %>%
+  str_to_lower() %>%
+  str_remove_all("[,.'\":;?!//d]") #%>%
+  # str_remove_all("[//d]")
 
-text_split <- strsplit(text_clean, " ")
+text_split <- text_clean %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word") #%>%
+  # strsplit(" ")
 
 df <- data.frame(text_split = text_split)
 
