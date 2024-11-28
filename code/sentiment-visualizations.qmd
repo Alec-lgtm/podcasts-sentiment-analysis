@@ -17,6 +17,7 @@ library(readtext)
 ```
 
 ```{r}
+# Save it as an R Object
 files <- list.files(path = "..\\data\\vox_podcasts", full.names = T, recursive = T)
 transcript <- readtext(files)
 
