@@ -22,31 +22,39 @@ library(tidytext)
 files <- list.files(path = "..\\data\\vox_podcasts", full.names = T, recursive = T)
 transcript <- readtext(files)
 
+transcript_cleaned <- transcript %>%
+  mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), date = str_extract(doc_id, "[0-9]*_[0-9]*_[0-9]*"))
+
+transcript_cleaned$date <- as.Date(transcript_cleaned$date, "%m_$d_%Y")
+
+transcript_split <- transcript_cleaned %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word")
+
+# text <- transcript$text
 text <- paste(transcript, collapse = " ")
 
 text_clean <- text %>%
   str_to_lower() %>%
-  str_remove_all("[,.'\":;?!//d]") #%>%
-  # str_remove_all("[//d]")
+  str_remove_all("[^[:alpha:][:space:]]") %>%
+  data.frame(text = .)
 
 text_split <- text_clean %>%
   unnest_tokens(word, text) %>%
-  anti_join(stop_words, by = "word") #%>%
-  # strsplit(" ")
+  anti_join(stop_words, by = "word") 
 
-df <- data.frame(text_split = text_split)
+# df <- data.frame(text_split = text_split)
 
-sefihjfedshbi
-
-write.csv2(df, file = "..\\data\\text_extracts.csv", fileEncoding = "UTF-8")
+# sefihjfedshbi
+# 
+# write.csv2(df, file = "..\\data\\text_extracts.csv", fileEncoding = "UTF-8")
 ```
 
 ```{r}
-sentiment <- get_sentiment(df, method="syuzhet") #sentiment as a whole
+sentiment <- get_sentiment(text_split, method="syuzhet") #sentiment as a whole
 
 sentiment_transcript <- get_sentiment(transcript, method="syuzhet") # sentiment per document
 ```
-
 
 ```{r}
 # sentimentdf <- as.data.frame(sentiment_transcript)
@@ -61,7 +69,7 @@ test <- sentimentdf %>%
 #   geom_point()
 
 plot(
-  sentimentdf, 
+  sentiment_transcript, 
   type="l", 
   main="Plot Trajectory", 
   xlab = "Narrative Time", 
