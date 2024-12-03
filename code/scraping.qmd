@@ -1,0 +1,117 @@
+---
+title: "vox_scraping"
+format: html
+editor: visual
+---
+
+It seems that rvest only works for statically rendered websites. 
+
+```{r}
+# Load required libraries
+library(rvest)
+library(dplyr)
+
+# Define the URL for Vox
+url <- "https://www.vox.com"
+
+# Read the HTML content from the webpage
+webpage <- read_html(url)
+
+# Extract valid article links
+article_links <- webpage %>%
+  html_nodes("a") %>%
+  html_attr("href") %>%
+  na.omit() %>%
+  # Filter for Vox articles using a regex for date-based URLs
+  grep("^/\\d{4}/\\d{2}/\\d{2}/", ., value = TRUE) %>%
+  unique() %>%
+  paste0("https://www.vox.com", .)
+
+# Extract article titles for those links
+article_titles <- webpage %>%
+  html_nodes("a") %>%
+  html_text(trim = TRUE)
+
+# Filter titles to match the valid links
+filtered_titles <- article_titles[seq_along(article_links)]
+
+# Create a data frame with titles and URLs
+articles_df <- data.frame(
+  Title = filtered_titles,
+  URL = article_links,
+  stringsAsFactors = FALSE
+)
+
+# Check if we have sufficient articles; sample randomly
+if (nrow(articles_df) > 0) {
+  set.seed(42) # For reproducibility
+  sampled_articles <- articles_df %>%
+    sample_n(min(431, nrow(articles_df)))
+  
+  # Print the sampled articles
+  print(sampled_articles)
+} else {
+  message("No articles found. Check the website structure or adjust the scraping logic.")
+}
+
+```
+
+So we gotta go with RSelenium
+
+```{r}
+# Load required libraries
+library(RSelenium)
+library(rvest)
+library(dplyr)
+
+# Start RSelenium
+rD <- rsDriver(browser = "firefox", port = 4445L, verbose = FALSE)
+remDr <- rD$client
+
+# Navigate to the Vox homepage
+remDr$navigate("https://www.vox.com")
+
+# Let the page load
+Sys.sleep(5)
+
+# Get the page source after JavaScript has rendered it
+page_source <- remDr$getPageSource()[[1]]
+
+# Parse the page source with rvest
+webpage <- read_html(page_source)
+
+# Extract article links
+article_links <- webpage %>%
+  html_nodes("a") %>%
+  html_attr("href") %>%
+  na.omit() %>%
+  grep("^/\\d{4}/\\d{2}/\\d{2}/", ., value = TRUE) %>%
+  unique() %>%
+  paste0("https://www.vox.com", .)
+
+# Extract article titles
+article_titles <- webpage %>%
+  html_nodes("a") %>%
+  html_text(trim = TRUE)
+
+# Create data frame
+articles_df <- data.frame(
+  Title = article_titles[seq_along(article_links)],
+  URL = article_links,
+  stringsAsFactors = FALSE
+)
+
+# Take a random sample of 431 articles
+set.seed(42)
+sampled_articles <- articles_df %>%
+  sample_n(min(431, nrow(articles_df)))
+
+# Print sampled articles
+print(sampled_articles)
+
+# Close RSelenium
+remDr$close()
+rD$server$stop()
+
+```
+

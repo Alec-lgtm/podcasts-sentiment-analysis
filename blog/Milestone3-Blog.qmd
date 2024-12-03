@@ -12,10 +12,10 @@ In a world that is increasingly mediated by digital communication, understanding
 
 Given the breadth and depth of Vox's catalog of articles and podcasts, we decided to focus on three critical questions in the comparison between Vox podcasts and articles.
 
-- What is the overall sentiment across Vox's podcasts, and how does it vary by topic?
-- Does sentiment shift during specific episodes, perhaps reflecting the emotional arc of the conversation?
+-   What is the overall sentiment across Vox's podcasts, and how does it vary by topic?
+-   Does sentiment shift during specific episodes, perhaps reflecting the emotional arc of the conversation?
 
-For comparison with traditional articles, we are hand-picking an article from Vox's website that corresponds to the topic area and relative date when the podcast was posted. 
+For comparison with traditional articles, we are hand-picking an article from Vox's website that corresponds to the topic area and relative date when the podcast was posted.
 
 ### Word Frequency Analysis
 
@@ -27,7 +27,6 @@ We first found the twenty most frequent words in our dataset.
 
 Many of these words are commonplace and don't provide any affective meaning to our analysis so we decided to remove them from the dataset. This process is known as "removing stop words".
 
-
 ![](top_words.png)
 
 Words like "like," "know," "think," and "really" suggest that the conversational and relatable tone of Vox podcasts remains a strong characteristic. Recurring words like "Trump" and "Noel" indicate important and recurring characters on the show. In this case, "Noel" is one of the authors of the podcast so her name is a frequent word where the word "Trump" indicates that the Vox podcast talks about Trump a lot.
@@ -36,13 +35,13 @@ Words like "like," "know," "think," and "really" suggest that the conversational
 
 We can visualize these word frequencies in a word cloud. The large purple "people" and smaller in size word "right" indicate that Vox podcast is a human-centric podcast focused on correct decisions in terms of societal good.
 
-We also created a histogram of the frequency of words. The highly skewed distribution of words indicate that  a small number of words (the most frequent words) occur very often, while the majority of words appear rarely.
+We also created a histogram of the frequency of words. The highly skewed distribution of words indicate that a small number of words (the most frequent words) occur very often, while the majority of words appear rarely.
 
 ![](word_freq_distribution.png)
 
 ### Takeaways
 
-The frequent use of conversational words like "like," "know," "really," and "think" from word distribution analysis indicate that the Vox podcast has a casual and relatable tone suggesting a slightly positive to neutral tone. However the frequency distribution and word cloud do not directly measure sentiment. 
+The frequent use of conversational words like "like," "know," "really," and "think" from word distribution analysis indicate that the Vox podcast has a casual and relatable tone suggesting a slightly positive to neutral tone. However the frequency distribution and word cloud do not directly measure sentiment.
 
 The histogram of word frequencies shows a large vocabulary, indicating varied discussions. This diversity of language could reflect shifts in tone or sentiment throughout episodes as topics and conversational dynamics evolve. One key limitation here is that these plots don't show any actual emotive change over time, so we cannot know for certain how if the sentiment is changing throughout a podcast episode.
 

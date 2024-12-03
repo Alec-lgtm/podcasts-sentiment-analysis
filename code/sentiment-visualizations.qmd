@@ -9,6 +9,7 @@ In the modern era it seems that people are moving farther and farther away from 
 In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section. This made it easy to standardize the data, consistently if they write about a topic they will create a podcast episode for that topic. Then using the podcast transcript and the print news, we used Baer's Niave base to gain the overall sentiment of the pieces.
 
 ```{r}
+# install.packages('tidytext')
 library(tidyverse)
 library(syuzhet)
 library(tm)
@@ -19,10 +20,11 @@ library(tidytext)
 
 ```{r}
 # Save it as an R Object
-files <- list.files(path = "..\\data\\vox_podcasts", full.names = T, recursive = T)
+files <- list.files(path = "../data/vox_podcasts", full.names = T, recursive = T)
 transcript <- readtext(files)
 
-text <- paste(transcript, collapse = " ")
+text = transcript$text
+# text <- paste(transcript, collapse = " ")
 
 text_clean <- text %>%
   str_to_lower() %>%
@@ -35,8 +37,6 @@ text_split <- text_clean %>%
   # strsplit(" ")
 
 df <- data.frame(text_split = text_split)
-
-sefihjfedshbi
 
 write.csv2(df, file = "..\\data\\text_extracts.csv", fileEncoding = "UTF-8")
 ```
