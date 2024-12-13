@@ -25,92 +25,146 @@ First we looked at the podcast data. Lucky for us we didn't have to scrape the w
 ```{r}
 #transcript side is so that we split it per podcast episode
 # grabs the file from podcasts to our computer
-files <- list.files(path = "..\\data\\vox_podcasts", full.names = T, recursive = T)
-transcript <- readtext(files)
+Pfiles <- list.files(path = "..\\data\\vox_podcasts", full.names = T, recursive = T)
+Ptranscript <- readtext(files)
 
 #cleans the transcript so that it only contains alphanumerics and creates a date column
-transcript_cleaned <- transcript %>%
+Ptranscript_cleaned <- ptranscript %>%
   mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), date = str_extract(doc_id, "[0-9]*_[0-9]*_[0-9]*"))
 
 #makes the date column a date variable
-transcript_cleaned$date <- as.Date(transcript_cleaned$date,format = "%m_%d_%y")
+Ptranscript_cleaned$date <- as.Date(Ptranscript_cleaned$date,format = "%Y_%m_%d")
 
 #splits the cleaned transcript to individual words so that we can run an sentiment analysis on it
-transcript_split <- transcript_cleaned %>%
+Ptranscript_split <- Ptranscript_cleaned %>%
   unnest_tokens(word, text) %>%
   anti_join(stop_words, by = "word")
 
+##1562.74 words per podcast average
 
-VoxA <- readRDS("..\\data\\test_scraped_pages.rds")
-VoxA_transcript <- as.data.frame(VoxA[[2]])
+#Articles cleaning
+VoxA <- readRDS("..\\data\\scraped_pages_with_date_title_duplicates.rds")
+VoxA_transcript <- VoxA %>%
+  map_dfr(~ map_dfr(.x, as.data.frame)) %>%
+  unique()
+  
 
-qVoxA_cleaned <- VoxA %>%
-  mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), date = str_extract(doc_id, "[0-9]*_[0-9]*_[0-9]*"))
+VoxA_cleaned <- VoxA_transcript %>%
+  mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), doc_id = title) %>%
+  filter(text != "")
+VoxA_cleaned$date <- mdy_hms(VoxA_cleaned$date, tz = "UTC")
+VoxA_cleaned$date <- format(VoxA_cleaned$date, "%Y-%m-%d")
+
+VoxA_split <- VoxA_cleaned %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word")
+
+##680.40 words per article average
 ```
 
 With this we split each podcast transcript and prepare them to be put through an sentiment processor. And just in case, I did some extra code to get a more whole version of the text, by combining all the transcripts together into one big texts.
 
-```{r}
-#text side so that we get a wholistic view
-#turns the transcript into a character vector so easier to deal with
-text <- transcript$text
-
-#cleans the text so that it is only words then makes it a dataframe
-text_clean <- text %>%
-  str_to_lower() %>%
-  str_remove_all("[^[:alpha:][:space:]]") %>%
-  data.frame(text = .)
-
-#splits the individual words for sentiment usage
-text_split <- text_clean %>%
-  unnest_tokens(word, text) %>%
-  anti_join(stop_words, by = "word") 
-
-```
+# ```{r}
+# #text side so that we get a wholistic view
+# #turns the transcript into a character vector so easier to deal with
+# Ptext <- Ptranscript$text
+# 
+# #cleans the text so that it is only words then makes it a dataframe
+# Ptext_clean <- Ptext %>%
+#   str_to_lower() %>%
+#   str_remove_all("[^[:alpha:][:space:]]") %>%
+#   data.frame(text = .)
+# 
+# #splits the individual words for sentiment usage
+# Ptext_split <- Ptext_clean %>%
+#   unnest_tokens(word, text) %>%
+#   anti_join(stop_words, by = "word")
+# 
+# 
+# ##Articles
+# Atext <- VoxA_transcript$text
+# 
+# Atext_clean <- Atext %>%
+#   str_to_lower() %>%
+#   str_remove_all("[^[:alpha:][:space:]]") %>%
+#   data.frame(text = .)
+# 
+# Atext_split <- Atext_clean %>%
+#   unnest_tokens(word, text) %>%
+#   anti_join(stop_words, by = "word")
+# 
+# ```
 
 And with that we get the sentiment of all of the transcripts. We get some interesting data from this. Firstly, we learn how absolutely negative the the text is, we get an overall transcript score of -694.3. For context, the sentiment for the word "murder" is -0.75 and  the sentiment for love is 0.75.Too most people, this seems reasonable. How much of our news that we receive nowadays is so negative, everything seems to be so centered around fear. But this is not getting the whole story.
 
 ```{r}
-sentiment_transcript <- get_sentiment(transcript_cleaned, method="syuzhet") # sentiment per document
-sentiment_whole <- get_sentiment(text_clean, method="syuzhet")
+Psentiment_transcript <- get_sentiment(Ptranscript_cleaned$text, method="syuzhet") # sentiment per document
+Psentiment_whole <- mean(Psentiment_transcript)
 
-nrc_data <- get_nrc_sentiment(text) #nrc for text as a whole
+Pnrc_data <- get_nrc_sentiment(Ptext) #nrc for text as a whole
 
-TranscriptDatebySentiment <- transcript_cleaned %>%
-  mutate(sentiment = sentiment_transcript)
+PTranscriptDatebySentiment <- Ptranscript_cleaned %>%
+  mutate(sentiment = Psentiment_transcript)
 
-TranscriptDatebySentimentfilter <- transcript_cleaned %>%
-  mutate(sentiment = sentiment_transcript) %>%
+PTranscriptDatebySentimentfilter <- Ptranscript_cleaned %>%
+  mutate(sentiment = Psentiment_transcript) %>%
   filter(date >= ymd("24-01-01"))
+
+
+## Articles
+Asentiment_transcript <- get_sentiment(VoxA_cleaned$text, method="syuzhet") # sentiment per document
+
+Asentiment_whole <- mean(Asentiment_transcript)
+
+Pnrc_data <- get_nrc_sentiment(Atext) #nrc for text as a whole
+
+ATranscriptDatebySentiment <- VoxA_cleaned %>%
+  mutate(sentiment = Asentiment_transcript)
 ```
 The
 
 ```{r}
-worstsentiment <- TranscriptDatebySentiment %>%
+#Podcast
+Pworstsentiment <- PTranscriptDatebySentiment %>%
   filter(sentiment == min(sentiment)) %>%
   unnest_tokens(word, text) %>%
   anti_join(stop_words, by = "word")
 
-bestsentiment <- TranscriptDatebySentiment %>%
+Pbestsentiment <- PTranscriptDatebySentiment %>%
   filter(sentiment == max(sentiment)) %>%
   unnest_tokens(word, text) %>%
   anti_join(stop_words, by = "word")
 
-  bestsentiment_sen <- get_sentiment(bestsentiment$word, method="syuzhet")
+  Pbestsentiment_sen <- get_sentiment(Pbestsentiment$word, method="syuzhet")
 
-  worstsentiment_sen <- get_sentiment(worstsentiment$word, method="syuzhet")
+  Pworstsentiment_sen <- get_sentiment(Pworstsentiment$word, method="syuzhet")
+  
+  
+  #Articles
+Aworstsentiment <- ATranscriptDatebySentiment %>%
+  filter(sentiment == min(sentiment)) %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word")
+
+Abestsentiment <- ATranscriptDatebySentiment %>%
+  filter(sentiment == max(sentiment)) %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word")
+
+  Abestsentiment_sen <- get_sentiment(Abestsentiment$word, method="syuzhet")
+
+  Aworstsentiment_sen <- get_sentiment(Aworstsentiment$word, method="syuzhet")
 ```
 
 ```{r}
-
-
-ggplot(TranscriptDatebySentiment, aes(x = date, y = sentiment)) +
+##Podcast
+ggplot(PTranscriptDatebySentiment, aes(x = date, y = sentiment)) +
   geom_line() + 
   geom_point() +
   labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
   geom_smooth()
 
-ggplot(TranscriptDatebySentimentfilter, aes(x = date, y = sentiment)) +
+ggplot(PTranscriptDatebySentimentfilter, aes(x = date, y = sentiment)) +
   geom_line() + 
   geom_point() +
   labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
@@ -118,7 +172,7 @@ ggplot(TranscriptDatebySentimentfilter, aes(x = date, y = sentiment)) +
 
 
 plot(
-  worstsentiment_sen,
+  Pworstsentiment_sen,
   type="l",
   main="worst",
   xlab = "Narrative Time",
@@ -126,7 +180,34 @@ plot(
   )
 
 plot(
-  bestsentiment_sen,
+  Pbestsentiment_sen,
+  type="l",
+  main="best",
+  xlab = "Narrative Time",
+  ylab= "Emotional Valence"
+  )
+
+
+```
+```{r}
+##Articles
+ggplot(ATranscriptDatebySentiment, aes(x = date, y = sentiment)) +
+  geom_line() + 
+  geom_point() +
+  labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
+  geom_smooth()
+
+
+plot(
+  Aworstsentiment_sen,
+  type="l",
+  main="worst",
+  xlab = "Narrative Time",
+  ylab= "Emotional Valence"
+  )
+
+plot(
+  Abestsentiment_sen,
   type="l",
   main="best",
   xlab = "Narrative Time",
@@ -138,7 +219,7 @@ plot(
 
 ```{r}
 
-sentTest <- unlist(strsplit(transcript$text, "(?<=\\.)", perl = TRUE))
+sentTest <- unlist(strsplit(Ptranscript$text, "(?<=\\.)", perl = TRUE))
 test <- map(sentTest, mixed_messages)
 entropes <- do.call(rbind, test)
 
@@ -162,7 +243,7 @@ ggplot(out, aes(x = 1:nrow(out), y = entropy)) +
 ```
 ```{r}
 
-emotions_long <- prop.table(nrc_data[, 1:8]) %>%
+emotions_long <- prop.table(Pnrc_data[, 1:8]) %>%
   colSums() %>%
   sort() %>%
   data.frame(Emotion = names(.), Percentage = .)
