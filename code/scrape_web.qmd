@@ -1,0 +1,478 @@
+---
+title: "scrape_test"
+format: html
+editor: visual
+---
+
+```{r}
+# Add Homebrew's bin to the PATH
+new_path <- paste0("/opt/homebrew/bin:", Sys.getenv("PATH"))
+Sys.setenv(PATH = new_path)
+
+# Verify the new PATH
+Sys.getenv("PATH")
+
+# Now check if geckodriver is found
+system("which geckodriver")
+```
+
+```{r}
+library(RSelenium)
+library(wdman)
+
+binman::rm_platform("phantomjs")
+wdman::selenium(retcommand = TRUE)
+
+# Kill any existing processes first
+system("pkill -f 'java -jar selenium'", ignore.stderr = TRUE)
+system("pkill -f geckodriver", ignore.stderr = TRUE)
+system("pkill -f firefox", ignore.stderr = TRUE)
+Sys.sleep(2)
+
+# Start Selenium server
+selenium_server <- selenium(
+  port = 4445L,
+  verbose = TRUE,
+  chromever = NULL
+)
+Sys.sleep(5)  # Give server time to start
+
+# Create remote driver
+remDr <- remoteDriver(
+  browserName = "firefox",
+  port = 4445L
+)
+
+# Try connection
+tryCatch({
+  remDr$open()
+  message("Successfully connected to Firefox")
+  
+  # Test navigation
+  remDr$navigate("https://www.google.com")
+  message("Successfully navigated to Google")
+  
+}, error = function(e) {
+  message("Error details:")
+  message(e$message)
+}, finally = {
+  # Cleanup
+  try(selenium_server$stop(), silent = TRUE)
+  system("pkill -f 'java -jar selenium'", ignore.stderr = TRUE)
+  system("pkill -f geckodriver", ignore.stderr = TRUE)
+  system("pkill -f firefox", ignore.stderr = TRUE)
+})
+```
+
+```{r}
+# Install and load required packages
+if (!requireNamespace("wdman", quietly = TRUE)) install.packages("wdman")
+library(RSelenium)
+library(wdman)
+
+# Kill any existing processes
+system("pkill -f geckodriver", ignore.stderr = TRUE)
+system("pkill -f firefox", ignore.stderr = TRUE)
+Sys.sleep(2)
+
+# Start Selenium server with specific versions
+selenium_server <- selenium(
+  port = 4445L,
+  version = "4.0.0-alpha-2",  # Using Selenium 4
+  chromever = NULL,
+  phantomver = NULL,
+  geckover = "0.35.0"  # Matching your installed version
+)
+Sys.sleep(5)  # Give more time for server to start
+
+# Create remote driver
+remDr <- remoteDriver(
+  browserName = "firefox",
+  port = 4445L,
+  version = "4.0.0",
+  path = "/wd/hub",  # Adding explicit path
+  extraCapabilities = list(
+    "moz:firefoxOptions" = list(
+      binary = "/opt/homebrew/bin/firefox",
+      log = list(level = "trace")
+    )
+  )
+)
+
+# Try connection with more robust error handling
+tryCatch({
+  # Attempt connection
+  remDr$open()
+  message("Successfully connected to Firefox")
+  
+  # Test navigation
+  remDr$navigate("https://www.google.com")
+  message("Successfully navigated to Google")
+  
+  # Get page source to verify
+  page_source <- remDr$getPageSource()
+  if (length(page_source) > 0) {
+    message("Successfully retrieved page source")
+  }
+  
+}, error = function(e) {
+  message("Error details:")
+  message(sprintf("Class: %s", paste(class(e), collapse = ", ")))
+  message(sprintf("Message: %s", e$message))
+  message("\nServer status:")
+  
+  # Try to get server status
+  tryCatch({
+    con <- curl::curl_fetch_memory("http://localhost:4445/status")
+    message("Status code: ", con$status_code)
+    message("Response: ", rawToChar(con$content))
+  }, error = function(e) {
+    message("Could not check server status: ", e$message)
+  })
+  
+}, finally = {
+  message("\nCleaning up...")
+  try(selenium_server$stop(), silent = TRUE)
+  system("pkill -f geckodriver", ignore.stderr = TRUE)
+  system("pkill -f firefox", ignore.stderr = TRUE)
+})
+```
+
+```{r}
+library(RSelenium)
+
+# Kill any existing processes
+system("pkill -f geckodriver", ignore.stderr = TRUE)
+system("pkill -f firefox", ignore.stderr = TRUE)
+Sys.sleep(2)
+
+# Start geckodriver with W3C protocol
+system("geckodriver --host 127.0.0.1 --port 4445 --binary /opt/homebrew/bin/firefox &")
+Sys.sleep(2)
+
+# Create remote driver with W3C capabilities
+remDr <- remoteDriver(
+  remoteServerAddr = "localhost",
+  port = 4445L,
+  browserName = "firefox",
+  extraCapabilities = list(
+    "moz:firefoxOptions" = list(
+      binary = "/opt/homebrew/bin/firefox",
+      args = list(),
+      w3c = TRUE
+    ),
+    "acceptInsecureCerts" = TRUE
+  )
+)
+
+# Try to establish connection with detailed error reporting
+tryCatch({
+  # Enable verbose debugging
+  options(RCurlOptions = list(verbose = TRUE))
+  
+  # Attempt connection
+  remDr$open(silent = FALSE)
+  message("Successfully connected to Firefox")
+  
+  # Test basic commands
+  remDr$navigate("https://www.google.com")
+  message("Successfully navigated to Google")
+  
+}, error = function(e) {
+  message("Detailed error information:")
+  message(sprintf("Error class: %s", class(e)))
+  message(sprintf("Error message: %s", e$message))
+  if (!is.null(e$call)) message(sprintf("Error call: %s", deparse(e$call)))
+})
+
+# Function to check server status
+check_server <- function() {
+  tryCatch({
+    con <- curl::curl_fetch_memory("http://127.0.0.1:4445/status")
+    message("Server status code: ", con$status_code)
+    message("Server response: ", rawToChar(con$content))
+  }, error = function(e) {
+    message("Server check failed: ", e$message)
+  })
+}
+
+# Run server check
+check_server()
+
+# Cleanup function
+cleanup <- function() {
+  try(remDr$close(), silent = TRUE)
+  system("pkill -f geckodriver", ignore.stderr = TRUE)
+  system("pkill -f firefox", ignore.stderr = TRUE)
+}
+```
+
+```{r}
+library(RSelenium)
+
+# Kill any existing processes
+system("pkill -f geckodriver", ignore.stderr = TRUE)
+system("pkill -f firefox", ignore.stderr = TRUE)
+Sys.sleep(2)
+
+# Start geckodriver with explicit host and port
+system("geckodriver --host 127.0.0.1 --port 4445 &")
+Sys.sleep(2)
+
+# Create remote driver with explicit server address
+remDr <- remoteDriver(
+  remoteServerAddr = "127.0.0.1",
+  port = 4445L,
+  browserName = "firefox"
+)
+
+# Try to establish connection
+tryCatch({
+  remDr$open(silent = TRUE)
+  message("Successfully connected to Firefox")
+  
+  # Test navigation
+  remDr$navigate("https://www.google.com")
+  message("Successfully navigated to Google")
+  
+  # Get the current URL to verify connection
+  current_url <- remDr$getCurrentUrl()
+  message("Current URL: ", current_url[[1]])
+}, error = function(e) {
+  message("Error: ", e$message)
+})
+
+# Cleanup function for when you're done
+cleanup <- function() {
+  try(remDr$close(), silent = TRUE)
+  system("pkill -f geckodriver", ignore.stderr = TRUE)
+  system("pkill -f firefox", ignore.stderr = TRUE)
+}
+
+# Run cleanup when needed:
+# cleanup()
+```
+
+```{r}
+library(RSelenium)
+
+# Kill any existing selenium/geckodriver processes
+system("pkill -f geckodriver", ignore.stderr = TRUE)
+Sys.sleep(2)  # Give it time to clean up
+
+# Start a new geckodriver process
+system("geckodriver --port 4445 &")
+Sys.sleep(2)  # Wait for geckodriver to start
+
+# Connect to geckodriver with correct parameters
+remDr <- remoteDriver(
+  browserName = "firefox",
+  port = 4445L,
+  extraCapabilities = list(
+    "moz:firefoxOptions" = list(
+      args = list('--headless')  # Remove this line if you want to see the browser
+    )
+  )
+)
+
+# Try to establish connection
+tryCatch({
+  remDr$open()
+  message("Successfully connected to Firefox")
+  
+  # Test navigation
+  remDr$navigate("https://www.google.com")
+  message("Successfully navigated to Google")
+}, error = function(e) {
+  message("Error: ", e$message)
+})
+
+# When done:
+# remDr$close()
+# system("pkill -f geckodriver")
+```
+
+```{r}
+library(RSelenium)
+
+# Kill any existing selenium/geckodriver processes
+system("pkill -f geckodriver", ignore.stderr = TRUE)
+Sys.sleep(2)  # Give it time to clean up
+
+# Start a new geckodriver process
+system("geckodriver --port 4445 &")
+Sys.sleep(2)  # Wait for geckodriver to start
+
+# Connect directly to geckodriver
+remDr <- remoteDriver(
+  browserName = "firefox",
+  port = 4445L,
+  host = "localhost"
+)
+
+# Try to establish connection
+tryCatch({
+  remDr$open()
+  message("Successfully connected to Firefox")
+  
+  # Test navigation
+  remDr$navigate("https://www.google.com")
+  message("Successfully navigated to Google")
+}, error = function(e) {
+  message("Error: ", e$message)
+})
+
+# When done:
+# remDr$close()
+# system("pkill -f geckodriver")
+```
+
+```{r}
+# Install required packages if not already installed
+if (!requireNamespace("RSelenium", quietly = TRUE)) {
+  install.packages("RSelenium")
+}
+if (!requireNamespace("wdman", quietly = TRUE)) {
+  install.packages("wdman")
+}
+
+# Function to set up RSelenium with Firefox
+setup_rselenium <- function(port = 4445L) {
+  # Check if Firefox is installed
+  firefox <- wdman::selenium(retcommand = TRUE)
+  
+  # Start the Selenium server
+  rD <- RSelenium::rsDriver(
+    browser = "firefox",
+    port = port,
+    verbose = FALSE,
+    chromever = NULL
+  )
+  
+  return(rD)
+}
+
+# Usage example:
+tryCatch({
+  driver <- setup_rselenium()
+  # Use the driver
+  # driver$server$stop() # When done
+}, error = function(e) {
+  message("Error setting up RSelenium: ", e$message)
+  message("Please ensure Firefox is installed and try again.")
+})
+```
+
+```{r}
+# Install and load required packages
+if (!requireNamespace("RSelenium", quietly = TRUE)) install.packages("RSelenium")
+if (!requireNamespace("wdman", quietly = TRUE)) install.packages("wdman")
+library(RSelenium)
+library(wdman)
+
+# Function to set up RSelenium with Firefox on MacOS
+setup_rselenium_macos <- function(port = 4445L) {
+  # Start selenium server with specific geckodriver version
+  selenium_object <- selenium(
+    retcommand = TRUE,
+    port = port,
+    version = "4.0.0-alpha-2",
+    chromever = NULL,
+    geckover = "0.33.0"  # Specify latest stable geckodriver version
+  )
+  
+  # Give the server a moment to start
+  Sys.sleep(5)
+  
+  # Initialize the driver
+  remDr <- remoteDriver(
+    browserName = "firefox",
+    port = port
+  )
+  
+  # Create the driver object
+  rD <- list(
+    client = remDr,
+    server = selenium_object
+  )
+  
+  # Try to open the browser
+  tryCatch({
+    remDr$open()
+    message("Successfully connected to Firefox")
+  }, error = function(e) {
+    message("Error connecting to Firefox: ", e$message)
+  })
+  
+  return(rD)
+}
+
+# Usage
+driver <- setup_rselenium_macos()
+
+# When you're done, you can close the connection with:
+# driver$client$close()
+# driver$server$stop()
+```
+
+```{r}
+# Install and load required packages
+if (!requireNamespace("RSelenium", quietly = TRUE)) install.packages("RSelenium")
+if (!requireNamespace("wdman", quietly = TRUE)) install.packages("wdman")
+library(RSelenium)
+library(wdman)
+
+# Function to set up RSelenium with Firefox on MacOS
+setup_rselenium_macos <- function(port = 4445L) {
+  # Start Firefox driver directly without selenium server
+  gecko_driver <- wdman::selenium(
+    port = port,
+    browser = "firefox",
+    version = "4.0.0-alpha-2",
+    geckover = "0.33.0",
+    phantomver = NULL  # Explicitly set phantom to NULL
+  )
+  
+  # Give the system time to start the driver
+  Sys.sleep(5)
+  
+  # Create remote driver
+  remDr <- remoteDriver(
+    browserName = "firefox",
+    port = port,
+    extraCapabilities = list(
+      "moz:firefoxOptions" = list(
+        args = list('--headless')  # Add this if you want to run in headless mode
+      )
+    )
+  )
+  
+  # Try to connect
+  tryCatch({
+    remDr$open(silent = TRUE)
+    message("Successfully connected to Firefox")
+  }, error = function(e) {
+    message("Error connecting to Firefox: ", e$message)
+    return(NULL)
+  })
+  
+  return(list(client = remDr, server = gecko_driver))
+}
+
+# Clear any existing selenium processes first
+system("pkill -f selenium-server", ignore.stderr = TRUE)
+system("pkill -f geckodriver", ignore.stderr = TRUE)
+
+# Try to set up the driver
+driver <- setup_rselenium_macos()
+
+# Test the connection if successful
+if (!is.null(driver)) {
+  tryCatch({
+    driver$client$navigate("https://www.google.com")
+    message("Successfully navigated to Google")
+  }, error = function(e) {
+    message("Navigation error: ", e$message)
+  })
+}
+```

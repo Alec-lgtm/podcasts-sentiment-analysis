@@ -6,7 +6,7 @@ editor: visual
 
 In the modern era it seems that people are moving farther and farther away from print media. With the advent of the 24 hour news cycle started at the turn of the century and the ever present diminishing attention span, People are now consuming their news in different media than their parents generation. Even as newspapers evolve more to be online in forms of online posts and websites, more people are more engaged in media that can be listened to. So as news changes the way it is dispersed how does that change the way news is received?
 
-In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section. This made it easy to standardize the data, consistently if they write about a topic they will create a podcast episode for that topic. Then using the podcast transcript and the print news, we used Baer's Niave base to gain the overall sentiment of the pieces.
+In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section. First, of course got to get all the packages
 
 ```{r}
 # install.packages('tidytext')
@@ -18,45 +18,173 @@ library(readtext)
 library(tidytext)
 ```
 
+<<<<<<< HEAD
 ```{r}
 # Save it as an R Object
 files <- list.files(path = "../data/vox_podcasts", full.names = T, recursive = T)
 transcript <- readtext(files)
+=======
+One package that we used that is not in common use is syuzhet. This package is used for sentiment analysis. You might be asking what is sentiment analysis? how does it work? Well sentiment analysis is when you assign words emotional valence. Standard sentiment analysis will simply find if a word evokes a positve emotion or a negative emotion. If we were to go deeper into a subject, we can find an nrc sentiment, which splits the sentiment into different categories such as trust, disgust, joy, or anger. We were originally going to use our own sentiment analysis code for this project, but alas our machine had a very low accuracy rate so we scrapped it.
+>>>>>>> 469b6c161f3f0245cf1d0a426d616d1beda1a196
 
-transcript_cleaned <- transcript %>%
+
+First we looked at the podcast data. Lucky for us we didn't have to scrape the web for "Voxxed: Explained" as they had their transcripts readily available (even if they were a little bit messy). with a little bit of cleaning we were able to have some usable data
+
+```{r}
+#transcript side is so that we split it per podcast episode
+# grabs the file from podcasts to our computer
+Pfiles <- list.files(path = "..\\data\\vox_podcasts", full.names = T, recursive = T)
+Ptranscript <- readtext(files)
+
+#cleans the transcript so that it only contains alphanumerics and creates a date column
+Ptranscript_cleaned <- ptranscript %>%
   mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), date = str_extract(doc_id, "[0-9]*_[0-9]*_[0-9]*"))
 
-transcript_cleaned$date <- as.Date(transcript_cleaned$date, "%m_$d_%Y")
+#makes the date column a date variable
+Ptranscript_cleaned$date <- as.Date(Ptranscript_cleaned$date,format = "%Y_%m_%d")
 
-transcript_split <- transcript_cleaned %>%
+#splits the cleaned transcript to individual words so that we can run an sentiment analysis on it
+Ptranscript_split <- Ptranscript_cleaned %>%
   unnest_tokens(word, text) %>%
   anti_join(stop_words, by = "word")
 
-# text <- transcript$text
-text <- paste(transcript, collapse = " ")
+##1562.74 words per podcast average
 
-text_clean <- text %>%
-  str_to_lower() %>%
-  str_remove_all("[^[:alpha:][:space:]]") %>%
-  data.frame(text = .)
+#Articles cleaning
+VoxA <- readRDS("..\\data\\scraped_pages_with_date_title_duplicates.rds")
+VoxA_transcript <- VoxA %>%
+  map_dfr(~ map_dfr(.x, as.data.frame)) %>%
+  unique()
+  
 
-text_split <- text_clean %>%
+VoxA_cleaned <- VoxA_transcript %>%
+  mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), doc_id = title) %>%
+  filter(text != "")
+VoxA_cleaned$date <- mdy_hms(VoxA_cleaned$date, tz = "UTC")
+VoxA_cleaned$date <- format(VoxA_cleaned$date, "%Y-%m-%d")
+
+VoxA_split <- VoxA_cleaned %>%
   unnest_tokens(word, text) %>%
   anti_join(stop_words, by = "word")
 
-# df <- data.frame(text_split = text_split)
+##680.40 words per article average
+```
 
+<<<<<<< HEAD
 # sefihjfedshbi
 #
 # write.csv2(df, file = "..\\data\\text_extracts.csv", fileEncoding = "UTF-8")
+=======
+With this we split each podcast transcript and prepare them to be put through an sentiment processor. And just in case, I did some extra code to get a more whole version of the text, by combining all the transcripts together into one big texts.
+
+# ```{r}
+# #text side so that we get a wholistic view
+# #turns the transcript into a character vector so easier to deal with
+# Ptext <- Ptranscript$text
+# 
+# #cleans the text so that it is only words then makes it a dataframe
+# Ptext_clean <- Ptext %>%
+#   str_to_lower() %>%
+#   str_remove_all("[^[:alpha:][:space:]]") %>%
+#   data.frame(text = .)
+# 
+# #splits the individual words for sentiment usage
+# Ptext_split <- Ptext_clean %>%
+#   unnest_tokens(word, text) %>%
+#   anti_join(stop_words, by = "word")
+# 
+# 
+# ##Articles
+# Atext <- VoxA_transcript$text
+# 
+# Atext_clean <- Atext %>%
+#   str_to_lower() %>%
+#   str_remove_all("[^[:alpha:][:space:]]") %>%
+#   data.frame(text = .)
+# 
+# Atext_split <- Atext_clean %>%
+#   unnest_tokens(word, text) %>%
+#   anti_join(stop_words, by = "word")
+# 
+# ```
+
+And with that we get the sentiment of all of the transcripts. We get some interesting data from this. Firstly, we learn how absolutely negative the the text is, we get an overall transcript score of -694.3. For context, the sentiment for the word "murder" is -0.75 and  the sentiment for love is 0.75.Too most people, this seems reasonable. How much of our news that we receive nowadays is so negative, everything seems to be so centered around fear. But this is not getting the whole story.
+
+```{r}
+Psentiment_transcript <- get_sentiment(Ptranscript_cleaned$text, method="syuzhet") # sentiment per document
+Psentiment_whole <- mean(Psentiment_transcript)
+
+Pnrc_data <- get_nrc_sentiment(Ptext) #nrc for text as a whole
+
+PTranscriptDatebySentiment <- Ptranscript_cleaned %>%
+  mutate(sentiment = Psentiment_transcript)
+
+PTranscriptDatebySentimentfilter <- Ptranscript_cleaned %>%
+  mutate(sentiment = Psentiment_transcript) %>%
+  filter(date >= ymd("24-01-01"))
+
+
+## Articles
+Asentiment_transcript <- get_sentiment(VoxA_cleaned$text, method="syuzhet") # sentiment per document
+
+Asentiment_whole <- mean(Asentiment_transcript)
+
+Pnrc_data <- get_nrc_sentiment(Atext) #nrc for text as a whole
+
+ATranscriptDatebySentiment <- VoxA_cleaned %>%
+  mutate(sentiment = Asentiment_transcript)
+```
+The
+
+```{r}
+#Podcast
+Pworstsentiment <- PTranscriptDatebySentiment %>%
+  filter(sentiment == min(sentiment)) %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word")
+
+Pbestsentiment <- PTranscriptDatebySentiment %>%
+  filter(sentiment == max(sentiment)) %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word")
+
+  Pbestsentiment_sen <- get_sentiment(Pbestsentiment$word, method="syuzhet")
+
+  Pworstsentiment_sen <- get_sentiment(Pworstsentiment$word, method="syuzhet")
+  
+  
+  #Articles
+Aworstsentiment <- ATranscriptDatebySentiment %>%
+  filter(sentiment == min(sentiment)) %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word")
+
+Abestsentiment <- ATranscriptDatebySentiment %>%
+  filter(sentiment == max(sentiment)) %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word")
+
+  Abestsentiment_sen <- get_sentiment(Abestsentiment$word, method="syuzhet")
+
+  Aworstsentiment_sen <- get_sentiment(Aworstsentiment$word, method="syuzhet")
+>>>>>>> 469b6c161f3f0245cf1d0a426d616d1beda1a196
 ```
 
 ```{r}
-sentiment <- get_sentiment(text_split, method="syuzhet") #sentiment as a whole
+##Podcast
+ggplot(PTranscriptDatebySentiment, aes(x = date, y = sentiment)) +
+  geom_line() + 
+  geom_point() +
+  labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
+  geom_smooth()
 
-sentiment_transcript <- get_sentiment(transcript, method="syuzhet") # sentiment per document
-```
+ggplot(PTranscriptDatebySentimentfilter, aes(x = date, y = sentiment)) +
+  geom_line() + 
+  geom_point() +
+  labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
+  geom_smooth()
 
+<<<<<<< HEAD
 ```{r}
 # sentimentdf <- as.data.frame(sentiment_transcript)
 #
@@ -73,7 +201,99 @@ plot(
   sentiment_transcript,
   type="l",
   main="Plot Trajectory",
+=======
+
+plot(
+  Pworstsentiment_sen,
+  type="l",
+  main="worst",
+>>>>>>> 469b6c161f3f0245cf1d0a426d616d1beda1a196
   xlab = "Narrative Time",
   ylab= "Emotional Valence"
   )
+
+plot(
+  Pbestsentiment_sen,
+  type="l",
+  main="best",
+  xlab = "Narrative Time",
+  ylab= "Emotional Valence"
+  )
+
+
 ```
+```{r}
+##Articles
+ggplot(ATranscriptDatebySentiment, aes(x = date, y = sentiment)) +
+  geom_line() + 
+  geom_point() +
+  labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
+  geom_smooth()
+
+
+plot(
+  Aworstsentiment_sen,
+  type="l",
+  main="worst",
+  xlab = "Narrative Time",
+  ylab= "Emotional Valence"
+  )
+
+plot(
+  Abestsentiment_sen,
+  type="l",
+  main="best",
+  xlab = "Narrative Time",
+  ylab= "Emotional Valence"
+  )
+
+
+```
+
+```{r}
+
+sentTest <- unlist(strsplit(Ptranscript$text, "(?<=\\.)", perl = TRUE))
+test <- map(sentTest, mixed_messages)
+entropes <- do.call(rbind, test)
+
+# Combine entropy values with the corresponding sentences
+out <- data.frame(entropy = entropes, sentence = sentTest, stringsAsFactors = FALSE)
+
+# Plotting the emotional entropy with ggplot2
+ggplot(out, aes(x = 1:nrow(out), y = entropy)) +
+  geom_line(color = "blue", size = 1) +
+  geom_point(color = "red") +
+  labs(
+    title = "Emotional Entropy in Vox Explained",
+    x = "Sentence Index",
+    y = "Entropy"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position = "top", # Customize legend position
+    axis.text.x = element_text(angle = 45, hjust = 1) # Rotate x-axis labels if needed
+  )
+```
+```{r}
+
+emotions_long <- prop.table(Pnrc_data[, 1:8]) %>%
+  colSums() %>%
+  sort() %>%
+  data.frame(Emotion = names(.), Percentage = .)
+
+ggplot(emotions_long, aes(x = reorder(Emotion, Percentage), y = Percentage)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  labs(
+    title = "Emotions in Vox explained vs vox articles", 
+    x = "Emotion", 
+    y = "Percentage"
+  ) +
+  theme_minimal()
+```
+
+
+
+Work Cited
+https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html
+
+https://stackoverflow.com/

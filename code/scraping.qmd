@@ -4,7 +4,227 @@ format: html
 editor: visual
 ---
 
-It seems that rvest only works for statically rendered websites. 
+```{r}
+library(tidyverse)
+library(rvest)
+library(stringr)
+
+page1 <- read_html("https://www.vox.com/explainers")
+
+articles_titles <- page1 %>%
+  html_elements(".qcd9z1") %>%
+  html_text()
+
+urls <- page1 %>%
+  html_elements(".qcd9z1") %>%
+  html_attr("href")
+
+base_url <- "https://www.vox.com/"
+
+full_url <- str_c(base_url, urls)
+
+read_html(full_url[[1]]) %>%
+html_elements("#zephr-anchor .xkp0cg0") %>%
+html_text()
+
+
+
+# scrapes all the article text in a vox article
+scrape_articles <- function(article_url) {
+  Sys.sleep(0.5)
+  # print(read_html(article_url))
+  
+  # better to remove this from the list, it's more computationally efficient... ie full_url
+  if(article_url == "https://www.vox.com/politics/389364/americas-ideological-fight-republican-democrat-explained" |
+     article_url == "https://www.vox.com/future-perfect/386449/2024-future-perfect-50-progress-ai-climate-animal-welfare-innovation")
+    return()
+  
+  article_html <- read_html(article_url)
+  
+  article_text_vector <- article_html %>%
+    html_elements("#zephr-anchor .xkp0cg1") %>%
+    html_text()
+  
+  # browser()
+  
+  article_full_text <- paste(article_text_vector, collapse = " ")
+  # print(article_full_text)
+  
+  article_titles <- article_html %>%
+    html_elements(".xkp0cg9") %>%
+    html_text()
+  
+  # return(article_titles)
+  
+  # print(article_titles)
+  
+  article_title <- article_titles[[1]]
+  
+  print(article_title)
+  
+  article_date <- article_html %>%
+    html_elements("time") %>%
+    html_text()
+  
+  # print(article_title)
+  final_article_date <- article_date[[1]]
+  # final_article_date <- article_date[[1]]
+  
+  return(tibble(
+    url = article_url,
+    title = article_title,
+    date = final_article_date,
+    text = article_full_text
+  ))
+}
+
+test <- scrape_articles("https://www.vox.com/policy/390309/maha-rfk-make-america-healthy-again-slippery")
+
+scrape_articles("https://www.vox.com/politics/390953/the-onion-infowars-alex-jones")
+test <- scrape_articles("https://www.vox.com/politics/390108/working-class-definition-voters-2024")
+
+# Goes through vox/archives/# to and scrapes all the page
+scrape_page <- function(page_number) {
+  Sys.sleep(0.3)
+  page_url <- paste0(base_url, "archives/", page_number)
+  # print(page_url)
+  page <- read_html(page_url)
+  
+  articles_titles <- page %>%
+    html_elements(".qcd9z1") %>%
+    html_text()
+  
+  urls <- page %>%
+    html_elements(".qcd9z1") %>%
+    html_attr("href")
+  
+  urls <- str_sub(urls, 2)
+  # browser()
+  print(length(urls))
+  
+  full_url <- str_c(base_url, urls)
+  
+  scraped_articles <- list()
+  # scraped_article <- vector("list", 15)
+  
+  for (i in 1:length(urls)) {
+    scraped_articles[[i]] <- scrape_articles(full_url[[i]])
+    # print(full_url[[i]])
+  }
+  
+  return(scraped_articles)
+}
+# onepage <- scrape_page(1)
+# secondpage <- scrape_page(6)
+
+# Run through 15 pages of the archive
+scraped_pages <- list()
+for (i in 1:5) {
+  # print(scrape_page(i))
+  scraped_pages[[i]] <- scrape_page(i)
+}
+
+
+# Fix page 6
+
+saveRDS(scraped_pages, file = "scraped_pages_with_date_title_duplicates.rds")
+```
+
+
+```{r}
+library(RSelenium)
+library(rvest)
+
+system("pkill -f 'java -jar selenium'", ignore.stderr = TRUE)
+system("pkill -f geckodriver", ignore.stderr = TRUE)
+system("pkill -f firefox", ignore.stderr = TRUE)
+
+# Start RSelenium
+rD <- rsDriver(browser = "firefox", port = 4545L, verbose = FALSE)
+remDr <- rD$client
+
+# Navigate to the Vox website
+remDr$navigate("https://www.vox.com/explainers")
+
+page_source <- remDr$getPageSource()[[1]]
+
+page <- read_html(page_source)
+
+page1 <- read_html("https://www.vox.com/explainers")
+
+articles_titles <- page1 %>%
+  html_elements(".qcd9z1") %>%
+  html_text()
+
+urls <- page1 %>%
+  html_elements(".qcd9z1") %>%
+  html_attr("href")
+
+base_url <- "https://www.vox.com/"
+
+full_url <- str_c(base_url, urls)
+
+articles <- page %>%
+  html_elements("h2.c-entry-box--compact__title a") %>%
+  html_attr("href") %>%
+  tibble(link = .) %>%
+  mutate(title = page %>%
+           html_elements("h2.c-entry-box--compact__title a") %>%
+           html_text())
+
+  read_html(full_url[[1]]) %>%
+html_elements("#zephr-anchor .xkp0cg0") %>%
+ html_text()
+# str_collapse()
+# column bind
+
+#zephr-anchor .xkp0cg0
+
+#zephr-anchor .xkp0cg0
+
+
+# remDr$navigate("https://www.facebook.com/")
+# 
+# remDr$navigate("https://www.nytimes.com/spotlight/podcasts")
+
+# Wait for the page to load
+Sys.sleep(5)
+
+# Locate the article element by XPath
+article_xpath <- "//div[contains(@class, 'duet--content-cards--content-card')]//a[contains(@href, '/israel/387191/icc-arrest-warrants-netanyahu')]"
+
+# Find the article link and click on it
+article_element <- remDr$findElement(using = "xpath", value = article_xpath)
+article_element$clickElement()
+
+# Wait for the article page to load
+Sys.sleep(5)
+
+# Scrape the article title
+title_xpath <- "//h1[contains(@class, 'c-page-title')]"
+title <- remDr$findElement(using = "xpath", value = title_xpath)$getElementText()
+
+# Scrape the article content
+content_xpath <- "//div[contains(@class, 'c-entry-content')]//p"
+content_elements <- remDr$findElements(using = "xpath", value = content_xpath)
+
+# Extract and combine text from all paragraphs
+content <- sapply(content_elements, function(element) {
+  element$getElementText()
+})
+content <- paste(unlist(content), collapse = "\n")
+
+# Print the scraped data
+cat("Title:", title, "\n\n")
+cat("Content:", content, "\n")
+
+# Close RSelenium
+remDr$close()
+rD$server$stop()
+
+```
+
+It seems that rvest only works for statically rendered websites.
 
 ```{r}
 # Load required libraries
@@ -59,13 +279,146 @@ if (nrow(articles_df) > 0) {
 So we gotta go with RSelenium
 
 ```{r}
+# Install required packages if not already installed
+if (!requireNamespace("RSelenium", quietly = TRUE)) {
+  install.packages("RSelenium")
+}
+if (!requireNamespace("wdman", quietly = TRUE)) {
+  install.packages("wdman")
+}
+
+# Function to set up RSelenium with Firefox
+setup_rselenium <- function(port = 4445L) {
+  # Check if Firefox is installed
+  firefox <- wdman::selenium(retcommand = TRUE)
+  
+  # Start the Selenium server
+  rD <- RSelenium::rsDriver(
+    browser = "firefox",
+    port = port,
+    verbose = FALSE,
+    chromever = NULL
+  )
+  
+  return(rD)
+}
+
+# Usage example:
+tryCatch({
+  driver <- setup_rselenium()
+  # Use the driver
+  # driver$server$stop() # When done
+}, error = function(e) {
+  message("Error setting up RSelenium: ", e$message)
+  message("Please ensure Firefox is installed and try again.")
+})
+```
+
+```{r}
+# Install and load required packages
+if (!requireNamespace("RSelenium", quietly = TRUE)) install.packages("RSelenium")
+if (!requireNamespace("wdman", quietly = TRUE)) install.packages("wdman")
+library(RSelenium)
+library(wdman)
+
+# First, explicitly download and start the selenium server
+selenium_object <- selenium(
+  retcommand = FALSE,
+  port = 4445L,
+  version = "4.0.0",
+  chromever = NULL,
+  geckodriver = TRUE
+)
+
+# Then try to connect RSelenium
+driver <- rsDriver(
+  browser = "firefox",
+  port = 4445L,
+  verbose = TRUE,
+  check = FALSE,
+  selenium.dep = FALSE
+)
+
+# When done:
+# driver$server$stop()
+# selenium_object$stop()
+```
+
+```{r}
+# Install and load required packages
+library(RSelenium)
+library(wdman)
+
+# Start selenium with a specific version we know is available
+selenium_server <- selenium(
+  retcommand = FALSE,
+  port = 4445L,
+  version = "3.141.59",  # Using the latest stable version
+  chromever = NULL,
+  geckodriver = TRUE
+)
+
+# Then connect RSelenium
+driver <- rsDriver(
+  browser = "firefox",
+  port = 4445L,
+  verbose = TRUE,
+  check = FALSE,
+  selenium.dep = FALSE
+)
+
+# When done:
+# driver$server$stop()
+# selenium_server$stop()
+```
+
+```{r}
+# Load required packages
+library(RSelenium)
+
+# First, check and kill any existing Selenium processes
+system("pkill -f selenium", ignore.stderr = TRUE)
+Sys.sleep(2)  # Give it time to clean up
+
+# Create a Firefox driver instance directly
+driver <- rsDriver(
+  browser = "firefox",
+  port = 4445L,
+  version = "latest",
+  geckover = "latest",  # Use latest geckodriver
+  check = FALSE,
+  verbose = TRUE
+)
+
+# Test the connection
+remote_driver <- driver[["client"]]
+
+# When done:
+# driver$server$stop()
+```
+
+```{r}
+rD <- rsDriver(browser = "firefox", port = 4445L, verbose = FALSE, 
+               extraCapabilities = list(phantompath = "/Users/alec_chen/Sandbox/Tools"))
+
+rD <- rsDriver(browser = "firefox", port = 4445L, verbose = FALSE)
+
+Sys.getenv("PATH")
+
+Sys.setenv(PATH = paste(Sys.getenv("PATH"), "/Users/alec_chen/Sandbox/Tools", sep = ":"))
+
+
+```
+
+```{r}
 # Load required libraries
 library(RSelenium)
 library(rvest)
 library(dplyr)
 
 # Start RSelenium
-rD <- rsDriver(browser = "firefox", port = 4445L, verbose = FALSE)
+rD <- rsDriver(browser = "firefox", port = 4445L, verbose = FALSE,
+               )
 remDr <- rD$client
 
 # Navigate to the Vox homepage
@@ -114,4 +467,3 @@ remDr$close()
 rD$server$stop()
 
 ```
-
