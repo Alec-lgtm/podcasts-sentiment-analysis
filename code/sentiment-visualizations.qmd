@@ -18,15 +18,7 @@ library(readtext)
 library(tidytext)
 ```
 
-<<<<<<< HEAD
-```{r}
-# Save it as an R Object
-files <- list.files(path = "../data/vox_podcasts", full.names = T, recursive = T)
-transcript <- readtext(files)
-=======
 One package that we used that is not in common use is syuzhet. This package is used for sentiment analysis. You might be asking what is sentiment analysis? how does it work? Well sentiment analysis is when you assign words emotional valence. Standard sentiment analysis will simply find if a word evokes a positve emotion or a negative emotion. If we were to go deeper into a subject, we can find an nrc sentiment, which splits the sentiment into different categories such as trust, disgust, joy, or anger. We were originally going to use our own sentiment analysis code for this project, but alas our machine had a very low accuracy rate so we scrapped it.
->>>>>>> 469b6c161f3f0245cf1d0a426d616d1beda1a196
-
 
 First we looked at the podcast data. Lucky for us we didn't have to scrape the web for "Voxxed: Explained" as they had their transcripts readily available (even if they were a little bit messy). with a little bit of cleaning we were able to have some usable data
 
@@ -34,10 +26,10 @@ First we looked at the podcast data. Lucky for us we didn't have to scrape the w
 #transcript side is so that we split it per podcast episode
 # grabs the file from podcasts to our computer
 Pfiles <- list.files(path = "..\\data\\vox_podcasts", full.names = T, recursive = T)
-Ptranscript <- readtext(files)
+Ptranscript <- readtext(Pfiles)
 
 #cleans the transcript so that it only contains alphanumerics and creates a date column
-Ptranscript_cleaned <- ptranscript %>%
+Ptranscript_cleaned <- Ptranscript %>%
   mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), date = str_extract(doc_id, "[0-9]*_[0-9]*_[0-9]*"))
 
 #makes the date column a date variable
@@ -62,6 +54,7 @@ VoxA_cleaned <- VoxA_transcript %>%
   filter(text != "")
 VoxA_cleaned$date <- mdy_hms(VoxA_cleaned$date, tz = "UTC")
 VoxA_cleaned$date <- format(VoxA_cleaned$date, "%Y-%m-%d")
+VoxA_cleaned$date <- as.Date(VoxA_cleaned$date, format = "%Y-%m-%d")
 
 VoxA_split <- VoxA_cleaned %>%
   unnest_tokens(word, text) %>%
@@ -70,11 +63,6 @@ VoxA_split <- VoxA_cleaned %>%
 ##680.40 words per article average
 ```
 
-<<<<<<< HEAD
-# sefihjfedshbi
-#
-# write.csv2(df, file = "..\\data\\text_extracts.csv", fileEncoding = "UTF-8")
-=======
 With this we split each podcast transcript and prepare them to be put through an sentiment processor. And just in case, I did some extra code to get a more whole version of the text, by combining all the transcripts together into one big texts.
 
 # ```{r}
@@ -114,7 +102,7 @@ And with that we get the sentiment of all of the transcripts. We get some intere
 Psentiment_transcript <- get_sentiment(Ptranscript_cleaned$text, method="syuzhet") # sentiment per document
 Psentiment_whole <- mean(Psentiment_transcript)
 
-Pnrc_data <- get_nrc_sentiment(Ptext) #nrc for text as a whole
+Pnrc_data <- get_nrc_sentiment(Ptranscript$text) #nrc for text as a whole
 
 PTranscriptDatebySentiment <- Ptranscript_cleaned %>%
   mutate(sentiment = Psentiment_transcript)
@@ -129,7 +117,7 @@ Asentiment_transcript <- get_sentiment(VoxA_cleaned$text, method="syuzhet") # se
 
 Asentiment_whole <- mean(Asentiment_transcript)
 
-Pnrc_data <- get_nrc_sentiment(Atext) #nrc for text as a whole
+Anrc_data <- get_nrc_sentiment(VoxA_transcript$text) #nrc for text as a whole
 
 ATranscriptDatebySentiment <- VoxA_cleaned %>%
   mutate(sentiment = Asentiment_transcript)
@@ -167,7 +155,6 @@ Abestsentiment <- ATranscriptDatebySentiment %>%
   Abestsentiment_sen <- get_sentiment(Abestsentiment$word, method="syuzhet")
 
   Aworstsentiment_sen <- get_sentiment(Aworstsentiment$word, method="syuzhet")
->>>>>>> 469b6c161f3f0245cf1d0a426d616d1beda1a196
 ```
 
 ```{r}
@@ -184,30 +171,11 @@ ggplot(PTranscriptDatebySentimentfilter, aes(x = date, y = sentiment)) +
   labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
   geom_smooth()
 
-<<<<<<< HEAD
-```{r}
-# sentimentdf <- as.data.frame(sentiment_transcript)
-#
-# ggplot(as.data.frame(sentiment_transcript),aes(x= sentiment_transcript)) +
-#   geom_histogram()
-
-test <- sentimentdf %>%
-  mutate(order = row_number())
-
-# ggplot(test,aes(x= sentiment_transcript, y = order)) +
-#   geom_point()
-
-plot(
-  sentiment_transcript,
-  type="l",
-  main="Plot Trajectory",
-=======
 
 plot(
   Pworstsentiment_sen,
   type="l",
   main="worst",
->>>>>>> 469b6c161f3f0245cf1d0a426d616d1beda1a196
   xlab = "Narrative Time",
   ylab= "Emotional Valence"
   )
@@ -220,8 +188,8 @@ plot(
   ylab= "Emotional Valence"
   )
 
-
 ```
+
 ```{r}
 ##Articles
 ggplot(ATranscriptDatebySentiment, aes(x = date, y = sentiment)) +
@@ -252,12 +220,13 @@ plot(
 
 ```{r}
 
-sentTest <- unlist(strsplit(Ptranscript$text, "(?<=\\.)", perl = TRUE))
-test <- map(sentTest, mixed_messages)
+sentTest <- unlist(strsplit(Ptranscript$text, "(?<=\\.)", perl = TRUE)) %>%
+  discard(function(x) x == "." || x == " " || x == " .")
+test <- map(sentTest, syuzhet::mixed_messages)
 entropes <- do.call(rbind, test)
 
 # Combine entropy values with the corresponding sentences
-out <- data.frame(entropy = entropes, sentence = sentTest, stringsAsFactors = FALSE)
+out <- data.frame(entropes, sentence = sentTest, stringsAsFactors = FALSE)
 
 # Plotting the emotional entropy with ggplot2
 ggplot(out, aes(x = 1:nrow(out), y = entropy)) +
@@ -273,22 +242,39 @@ ggplot(out, aes(x = 1:nrow(out), y = entropy)) +
     legend.position = "top", # Customize legend position
     axis.text.x = element_text(angle = 45, hjust = 1) # Rotate x-axis labels if needed
   )
-```
-```{r}
 
-emotions_long <- prop.table(Pnrc_data[, 1:8]) %>%
+
+simple_plot(out$entropy,title = "Emotional Entropy in Madame Bovary",legend_pos = "top")
+
+sentTest
+```
+
+
+```{r}
+##podcast
+pemotions <- prop.table(Pnrc_data[, 1:8]) %>%
   colSums() %>%
-  sort() %>%
   data.frame(Emotion = names(.), Percentage = .)
 
-ggplot(emotions_long, aes(x = reorder(Emotion, Percentage), y = Percentage)) +
-  geom_bar(stat = "identity", fill = "blue") +
-  labs(
-    title = "Emotions in Vox explained vs vox articles", 
-    x = "Emotion", 
-    y = "Percentage"
-  ) +
-  theme_minimal()
+Aemotions <- prop.table(Anrc_data[, 1:8]) %>%
+  colSums() %>%
+  data.frame(Emotion = names(.), Percentage = .)
+
+emotions <- pemotions %>%
+  inner_join(Aemotions, by = "Emotion" ) %>%
+  mutate("Podcast Percentage" = Percentage.x, "Article Percentage" = Percentage.y) %>%
+  select(Emotion,"Podcast Percentage", "Article Percentage") %>%
+  pivot_longer(cols = c("Article Percentage", "Podcast Percentage"),
+               names_to = "Media", 
+               values_to = "Percentage")
+
+# Plot the side-by-side barplot
+ggplot(emotions, aes(x = Emotion, y = Percentage, fill = Media)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Article NRC vs Podcast NRC",
+       x = "Emotion", y = "Percentage of Sentiment", fill = "Media") +
+  theme_minimal() +
+  scale_fill_manual(values = c("Article Percentage" = "steelblue", "Podcast Percentage" = "darkorange"))
 ```
 
 
