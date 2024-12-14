@@ -31,12 +31,19 @@ html_text()
 
 # scrapes all the article text in a vox article
 scrape_articles <- function(article_url) {
-  Sys.sleep(0.5)
+  Sys.sleep(0.2)
   # print(read_html(article_url))
   
   # better to remove this from the list, it's more computationally efficient... ie full_url
   if(article_url == "https://www.vox.com/politics/389364/americas-ideological-fight-republican-democrat-explained" |
-     article_url == "https://www.vox.com/future-perfect/386449/2024-future-perfect-50-progress-ai-climate-animal-welfare-innovation")
+     article_url == "https://www.vox.com/future-perfect/386449/2024-future-perfect-50-progress-ai-climate-animal-welfare-innovation" |
+     article_url == "https://www.vox.com/24066297/oscars-2024-guide-96th-academy-awards-what-to-watch-poor-things-oppenheimer-american-fiction" |
+     article_url == "https://www.vox.com/politics/367990/kamala-harris-policy-positions-issues-guide" |
+     article_url == "https://www.vox.com/policy/373288/the-right-explained" |
+     article_url == "https://www.vox.com/politics/377783/democratic-party-kamala-harris-present-future" |
+     article_url == "https://www.vox.com/politics/377783/democratic-party-kamala-harris-present-future" |
+     article_url == "https://www.vox.com/even-better/385260/holiday-season-spending-money-pressure-hosting-guide" |
+     article_url == "https://www.vox.com/politics/385161/the-rebuild-newsletter-sign-up-democratic-party-liberals-progressives")
     return()
   
   article_html <- read_html(article_url)
@@ -54,13 +61,9 @@ scrape_articles <- function(article_url) {
     html_elements(".xkp0cg9") %>%
     html_text()
   
-  # return(article_titles)
-  
-  # print(article_titles)
-  
   article_title <- article_titles[[1]]
   
-  print(article_title)
+  print(article_title) # debugging
   
   article_date <- article_html %>%
     html_elements("time") %>%
@@ -68,27 +71,30 @@ scrape_articles <- function(article_url) {
   
   # print(article_title)
   final_article_date <- article_date[[1]]
-  # final_article_date <- article_date[[1]]
+  cleaned_date_string <- str_replace(final_article_date, " UTC", "")
+  article_date <- parse_date_time(cleaned_date_string, orders = "b d, Y, I:M p")
   
   return(tibble(
     url = article_url,
     title = article_title,
-    date = final_article_date,
+    datetime = article_date,
     text = article_full_text
   ))
 }
 
 test <- scrape_articles("https://www.vox.com/policy/390309/maha-rfk-make-america-healthy-again-slippery")
 
+test1 <- scrape_articles("https://www.vox.com/politics/373376/trump-loss-2024-election-republican-party")
+
 scrape_articles("https://www.vox.com/politics/390953/the-onion-infowars-alex-jones")
 test <- scrape_articles("https://www.vox.com/politics/390108/working-class-definition-voters-2024")
 
 # Goes through vox/archives/# to and scrapes all the page
-scrape_page <- function(page_number) {
-  Sys.sleep(0.3)
-  page_url <- paste0(base_url, "archives/", page_number)
-  # print(page_url)
+scrape_page <- function(page_url) {
+  Sys.sleep(0.2)
   page <- read_html(page_url)
+  
+  print(page_url)
   
   articles_titles <- page %>%
     html_elements(".qcd9z1") %>%
@@ -104,22 +110,86 @@ scrape_page <- function(page_number) {
   
   full_url <- str_c(base_url, urls)
   
+  scraped_urls <- character()
+  
   scraped_articles <- list()
   # scraped_article <- vector("list", 15)
   
-  for (i in 1:length(urls)) {
-    scraped_articles[[i]] <- scrape_articles(full_url[[i]])
-    # print(full_url[[i]])
+  # for (i in 1:length(urls)) {
+  #   scraped_articles[[i]] <- scrape_articles(full_url[[i]])
+  #   # print(full_url[[i]])
+  # }
+  
+  # Loop through the URLs
+  for (i in seq_along(urls)) {
+    current_url <- full_url[[i]]
+    
+    # print(current_url)
+    
+    # Check if the URL has already been scraped
+    if (!(current_url %in% scraped_urls)) {
+      # Scrape the article and store it
+      scraped_articles[[length(scraped_articles) + 1]] <- scrape_articles(current_url)
+      
+      # Add the URL to the list of scraped URLs
+      scraped_urls <- c(scraped_urls, current_url)
+    } else {
+      message("Already scraped: ", current_url)
+    }
   }
   
   return(scraped_articles)
 }
+
+scrape_month <-function(month_number) {
+  #Sys.sleep(0.3)
+  print(paste0("month number: ", month_number))
+  page_url <- paste0(base_url, "archives/2024/", month_number, "/")
+  page <- read_html(page_url)
+
+  pagination_text <- page %>%
+    html_element(".so8yiu0") %>%
+    html_text()
+  
+  page_last_number <- str_extract(pagination_text, "\\d+(?=Next)")
+  
+  scraped_pages <- list()
+  
+  # for (i in 1:page_last_number) {
+  #   scraped_pages[[i]] <- scrape_page(page_url)
+  # }
+  
+  # scraped_pages <- map(1:page_last_number, ~ scrape_page(page_url)) %>%
+  #   list_rbind()
+  
+  scraped_pages <- map(1:page_last_number, ~ scrape_page(paste0(page_url, .x))) %>%
+    flatten() %>%
+    list_rbind()
+  
+  return(scraped_pages)
+}
+# hello<- scrape_month(12)
+
+# test_m <- scrape_month(2)
+
 # onepage <- scrape_page(1)
+# testpage <- scrape_page(1)
 # secondpage <- scrape_page(6)
 
+# check <- scrape_month(11)
+
 # Run through 15 pages of the archive
-scraped_pages <- list()
-for (i in 1:5) {
+
+the_big_one <- map(1:12,scrape_month) %>% 
+  list_rbind()
+
+saveRDS(the_big_one, file = "2024-2025_All_Vox_Articles.rds")
+
+check_the_big_one <- the_big_one %>%
+  list_rbind()
+
+scraped_months <- list()
+for (i in 1:12) {
   # print(scrape_page(i))
   scraped_pages[[i]] <- scrape_page(i)
 }
