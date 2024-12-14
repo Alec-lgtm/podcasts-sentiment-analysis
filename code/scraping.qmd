@@ -202,6 +202,37 @@ saveRDS(scraped_pages, file = "scraped_pages_with_date_title_duplicates.rds")
 
 
 ```{r}
+
+# Filtered podcast
+filtered_data <- the_big_one %>%
+  filter(!str_detect(text, "Today, Explained"))
+
+# Define a function to extract 'like' with surrounding context
+extract_context <- function(text) {
+  matches <- str_extract_all(text, ".{0,30}\\blike\\b.{0,30}", simplify = TRUE)
+  matches[matches != ""]
+}
+
+extract_context <- function(text) {
+  matches <- str_extract_all(text, ".{0,30}\\bToday, Explained\\b.{0,30}", simplify = TRUE)
+  matches[matches != ""]
+}
+
+# Apply the function to the 'text' column and create a new column for context
+data_with_context <- the_big_one %>%
+  mutate(context = sapply(text, extract_context))
+
+# Unnest the context column if multiple matches exist per row
+context_df <- data_with_context %>%
+  select(url, title, datetime, context) %>%
+  unnest(context)
+
+context_df %>%
+  select(context)
+```
+
+
+```{r}
 library(RSelenium)
 library(rvest)
 

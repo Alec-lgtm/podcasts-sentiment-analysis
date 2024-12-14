@@ -1,0 +1,48 @@
+---
+title: "Sentiment Analysis"
+format: html
+editor: visual
+---
+
+## Sentiment Analysis on Vox Podcasts: Insights into the Voice of News
+
+In a world that is increasingly mediated by digital communication, understanding the tone and sentiment behind content is more important than ever. Sentiment plays an important role in shaping how our messages are received and fostering emotional connections. While traditional media often communicates in a structured and edited tone, podcasts stand out for their conversational authenticity, offering a more unscripted and personal engagement with the audience. By analyzing the sentiment of Vox podcasts, we intend to uncover patterns in storytelling are told and explore how these stories differ from narratives found in traditional article media.
+
+### Three Big Questions
+
+Given the breadth and depth of Vox's catalog of articles and podcasts, we decided to focus on three critical questions in the comparison between Vox podcasts and articles.
+
+-   What is the overall sentiment across Vox's podcasts, and how does it compare to Vox articles?
+-   Does sentiment shift during specific episodes, perhaps reflecting the emotional arc of the conversation?
+
+For comparison with traditional articles, we are hand-picking an article from Vox's website that corresponds to the topic area and relative date when the podcast was posted.
+
+### Word Frequency Analysis
+
+Unfortunately we were unable to complete the sentiment analysis portion of analysis before completion of this blog. Sentiment analysis is a complicated process that we are currently working through. We can however provide metrics on distribution of words used in the Vox podcasts.
+
+We first found the twenty most frequent words in our dataset.
+
+![](most_common_words.png)
+
+Many of these words are commonplace and don't provide any affective meaning to our analysis so we decided to remove them from the dataset. This process is known as "removing stop words".
+
+![](top_words.png)
+
+Words like "like," "know," "think," and "really" suggest that the conversational and relatable tone of Vox podcasts remains a strong characteristic. Recurring words like "Trump" and "Noel" indicate important and recurring characters on the show. In this case, "Noel" is one of the authors of the podcast so her name is a frequent word where the word "Trump" indicates that the Vox podcast talks about Trump a lot.
+
+![](wordcloud.png)
+
+We can visualize these word frequencies in a word cloud. The large purple "people" and smaller in size word "right" indicate that Vox podcast is a human-centric podcast focused on correct decisions in terms of societal good.
+
+We also created a histogram of the frequency of words. The highly skewed distribution of words indicate that a small number of words (the most frequent words) occur very often, while the majority of words appear rarely.
+
+![](word_freq_distribution.png)
+
+### Takeaways
+
+The frequent use of conversational words like "like," "know," "really," and "think" from word distribution analysis indicate that the Vox podcast has a casual and relatable tone suggesting a slightly positive to neutral tone. However the frequency distribution and word cloud do not directly measure sentiment.
+
+The histogram of word frequencies shows a large vocabulary, indicating varied discussions. This diversity of language could reflect shifts in tone or sentiment throughout episodes as topics and conversational dynamics evolve. One key limitation here is that these plots don't show any actual emotive change over time, so we cannot know for certain how if the sentiment is changing throughout a podcast episode.
+
+The major limitations in our analysis are the lack of temporal granularity and contextual ambiguity in our podcasts. These metrics are aggregated over all podcasts so we cannot know exactly when podcasts shift tone. Also, while we know which words were frequently used, we do not know the context in which words were used. The word "like" could be used conversational or formally and without context, we cannot determine if it has a positive or negative connotation. Further, aggregated analysis may obscure the unique voices and tones of individual speakers, particularly marginalized voices or dissenting opinions. As such, more analysis is needed to complete our report
