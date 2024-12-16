@@ -60,7 +60,7 @@ non_article_urls <- c(
 
 # 'Gets every article on each page of archived vox articles
 # 'Calls scrape_articles() on each article
-scrape_page <- function(page_url, debug = FALSE) {
+scrape_vox_archive_page <- function(page_url, debug = FALSE) {
   Sys.sleep(0.2)
   page_html <- read_html(page_url)
   
@@ -98,7 +98,7 @@ test_df_3 <- scrape_page("https://www.vox.com")
 
 
 # Retrieves all articles published in a given month
-scrape_month <-function(month_number, debug = FALSE) {
+scrape_vox_month <-function(month_number, debug = FALSE) {
   Sys.sleep(0.3)
   print(paste0("month number: ", month_number))
   page_url <- paste0(base_url, "archives/2024/", month_number, "/")
