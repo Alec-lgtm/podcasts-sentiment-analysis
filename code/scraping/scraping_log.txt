@@ -1,0 +1,51 @@
+2024-12-16 13:27:59.577702 INFO::Starting script
+2024-12-16 13:33:01.49504 INFO::month number: 1
+2024-12-16 13:33:01.499388 INFO::number of pages: 10
+2024-12-16 13:33:01.851423 INFO::page url: https://www.vox.com/archives/2024/1/1
+2024-12-16 13:33:01.853664 INFO::articles per page: 15
+2024-12-16 13:33:01.854963 INFO::scraped titles:
+2024-12-16 13:33:02.160529 INFO::Why conservatives are melting down over Taylor Swift
+2024-12-16 13:33:02.430625 INFO::Why men are secretive about prostate cancer
+2024-12-16 13:33:02.703841 INFO::The allegations against the UN’s Palestinian refugee relief agency, explained
+2024-12-16 13:33:02.98563 INFO::How Boeing put profits over planes
+2024-12-16 13:33:03.253384 INFO::We can still make a good economy much better
+2024-12-16 13:33:03.560248 INFO::The sun’s poles are about to flip. It’s awesome — and slightly terrifying.
+2024-12-16 13:33:03.933783 INFO::The US uses endangered monkeys to test drugs. This law could free them.
+2024-12-16 13:33:04.20972 INFO::Is this a newborn great white shark? Big if true.
+2024-12-16 13:33:04.48613 INFO::The great American natural gas reckoning is upon us
+2024-12-16 13:33:04.763778 INFO::You’re probably eating way too much protein
+2024-12-16 13:33:05.043924 INFO::The bland allure of Hailey Bieber
+2024-12-16 13:33:05.321367 INFO::How the nation’s capital became an outlier on violent crime
+2024-12-16 13:33:05.592392 INFO::Zyn, the nicotine pouch at the center of a brewing culture war, explained
+2024-12-16 13:33:05.876125 INFO::Kiley Reid’s Come and Get It is a witty, overstuffed campus satire
+2024-12-16 13:33:06.156115 INFO::Bats have a unique superpower. Climate change is turning it into a liability.
+2024-12-16 13:33:06.421798 INFO::page url: https://www.vox.com/archives/2024/1/2
+2024-12-16 13:33:06.424181 INFO::articles per page: 15
+2024-12-16 13:33:06.425461 INFO::scraped titles:
+2024-12-16 13:33:06.70003 INFO::Would the US intervene to defend Taiwan? Ask Japan.
+2024-12-16 13:33:06.977352 INFO::America no longer has a monopoly on deadly drones
+2024-12-16 13:33:07.25238 INFO::The nurse practitioner will see you now
+2024-12-16 13:33:07.612696 INFO::Psychedelics are outperforming trauma researchers’ expectations. But why?
+2024-12-16 13:33:08.288078 INFO::We don’t have much money, but want to improve our lives. Where do we start?
+2024-12-16 13:33:08.654634 INFO::The legal fight over whether Texas can seize control of the border, explained
+2024-12-16 13:33:08.931848 INFO::Narendra Modi is celebrating his scary vision for India’s future
+2024-12-16 13:33:09.208901 INFO::The ICJ orders in South Africa’s genocide case against Israel, explained
+2024-12-16 13:33:09.477559 INFO::Does Barbie need all the Oscars for feminism?
+2024-12-16 13:33:09.750762 INFO::A controversial execution in Alabama renews the fight over capital punishment
+2024-12-16 13:33:10.031473 INFO::How the internet built a conspiracy theory around a new spy flick, a debut novel, and Taylor Swift
+2024-12-16 13:33:10.308908 INFO::Why I’m glad my newborn received a false positive test for a rare genetic disorder
+2024-12-16 13:33:10.594178 INFO::Why Trump fears a Biden-GOP immigration deal
+2024-12-16 13:33:10.869504 INFO::Why would anyone be against lifesaving malaria bednets?
+2024-12-16 13:33:11.169606 INFO::A booming economy might not save the Biden campaign
+2024-12-16 13:33:11.444971 INFO::page url: https://www.vox.com/archives/2024/1/3
+2024-12-16 13:33:11.446011 INFO::articles per page: 15
+2024-12-16 13:33:11.446787 INFO::scraped titles:
+2024-12-16 13:33:11.80579 INFO::It’s not your imagination. There has been more war lately.
+2024-12-16 13:33:12.08395 INFO::Would you dump someone if they didn’t peel you an orange?
+2024-12-16 13:33:12.389484 INFO::How to microdose movement
+2024-12-16 13:33:12.663358 INFO::No, DEI isn’t making airplanes fall apart
+2024-12-16 13:33:12.945483 INFO::Surprise! There’s a reason to be (cautiously) optimistic about the climate.
+2024-12-16 13:33:13.216827 INFO::The nine-month cruise that took over TikTok
+2024-12-16 13:33:13.486079 INFO::A deadly new outbreak is testing Africa’s ambitious public health efforts
+2024-12-16 13:33:13.766156 INFO::After Real Housewives of Salt Lake City, is Bravo headed for a fan-pocalypse?
+2024-12-16 13:33:14.046769 INFO::Hawaii’s out-of-control, totally bizarre fight over stray cats
