@@ -2,11 +2,60 @@
 title: "Blog 1"
 format: html
 editor: visual
+author: Aki Wada and Alec Chen
+output:
+  html_document:
+    theme: journal
+self-contained: true
 ---
 
 In the modern era it seems that people are moving farther and farther away from print media. With the advent of the 24 hour news cycle started at the turn of the century and the ever present diminishing attention span, People are now consuming their news in different media than their parents generation. Even as newspapers evolve more to be online in forms of online posts and websites, more people are more engaged in media that can be listened to. So as news changes the way it is dispersed how does that change the way news is received?
 
-In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section. First, of course got to get all the packages
+In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section. 
+
+###Three Big Questions
+
+Given the breadth and depth of Vox's catalog of articles and podcasts, we decided to focus on three critical questions in the comparison between Vox podcasts and articles.
+
+ - What is the overall sentiment across Vox's podcasts, and how does it vary by topic?
+
+ - Does sentiment shift during specific episodes, perhaps reflecting the emotional arc of the         conversation?
+
+ - For comparison with traditional articles, we are hand-picking an article from Vox's website        that corresponds to the topic area and relative date when the podcast was posted.
+
+###Word Frequency Analysis
+
+Unfortunately we were unable to complete the sentiment analysis portion of analysis before completion of this blog. Sentiment analysis is a complicated process that we are currently working through. We can however provide metrics on distribution of words used in the Vox podcasts.
+
+![Word count](..\\blog\\most_common_words.png)
+
+
+We first found the twenty most frequent words in our dataset.
+
+
+Many of these words are commonplace and don't provide any affective meaning to our analysis so we decided to remove them from the dataset. This process is known as "removing stop words".
+
+![](..\\blog\\top_words.png)
+
+Words like "like," "know," "think," and "really" suggest that the conversational and relatable tone of Vox podcasts remains a strong characteristic. Recurring words like "Trump" and "Noel" indicate important and recurring characters on the show. In this case, "Noel" is one of the authors of the podcast so her name is a frequent word where the word "Trump" indicates that the Vox podcast talks about Trump a lot.
+
+![](..\\blog\\wordcloud.png)
+
+We can visualize these word frequencies in a word cloud. The large purple "people" and smaller in size word "right" indicate that Vox podcast is a human-centric podcast focused on correct decisions in terms of societal good.
+
+We also created a histogram of the frequency of words. The highly skewed distribution of words indicate that a small number of words (the most frequent words) occur very often, while the majority of words appear rarely.
+
+![](..\\blog\\word_freq_distribution.png)
+
+###Takeaways
+
+The frequent use of conversational words like "like," "know," "really," and "think" from word distribution analysis indicate that the Vox podcast has a casual and relatable tone suggesting a slightly positive to neutral tone. However the frequency distribution and word cloud do not directly measure sentiment.
+
+The histogram of word frequencies shows a large vocabulary, indicating varied discussions. This diversity of language could reflect shifts in tone or sentiment throughout episodes as topics and conversational dynamics evolve. One key limitation here is that these plots don't show any actual emotive change over time, so we cannot know for certain how if the sentiment is changing throughout a podcast episode.
+
+The major limitations in our analysis are the lack of temporal granularity and contextual ambiguity in our podcasts. These metrics are aggregated over all podcasts so we cannot know exactly when podcasts shift tone. Also, while we know which words were frequently used, we do not know the context in which words were used. The word "like" could be used conversational or formally and without context, we cannot determine if it has a positive or negative connotation. Further, aggregated analysis may obscure the unique voices and tones of individual speakers, particularly marginalized voices or dissenting opinions. As such, more analysis is needed to complete our report
+
+Now with that all our of the way, lets load in all of the the packages
 
 ```{r}
 # install.packages('tidytext')
@@ -18,9 +67,13 @@ library(readtext)
 library(tidytext)
 ```
 
-One package that we used that is not in common use is syuzhet. This package is used for sentiment analysis. You might be asking what is sentiment analysis? how does it work? Well sentiment analysis is when you assign words emotional valence. Standard sentiment analysis will simply find if a word evokes a positve emotion or a negative emotion. If we were to go deeper into a subject, we can find an nrc sentiment, which splits the sentiment into different categories such as trust, disgust, joy, or anger. We were originally going to use our own sentiment analysis code for this project, but alas our machine had a very low accuracy rate so we scrapped it.
+###Syuzhet Package
 
-First we looked at the podcast data. Lucky for us we didn't have to scrape the web for "Voxxed: Explained" as they had their transcripts readily available (even if they were a little bit messy). with a little bit of cleaning we were able to have some usable data
+One package that we used that is not in common use is syuzhet. This package is used for sentiment analysis. You might be asking what is sentiment analysis? how does it work? Well sentiment analysis is when you assign words emotional valence. Standard sentiment analysis will simply find if a word evokes a positive emotion or a negative emotion. If we were to go deeper into a subject, we can find an nrc sentiment, which splits the sentiment into different categories such as trust, disgust, joy, or anger. We were originally going to use our own sentiment analysis code for this project, but alas our machine had a very low accuracy rate so we scrapped it.
+
+###Getting started on the Scrapping
+
+First we looked at the podcast data. Lucky for us we didn't have to scrape the web for "Voxxed: Explained" as they had their transcripts readily available (even if they were a little bit messy). with a little bit of cleaning we were able to have some usable data. Then we scrapped the data from the Vox website to get all the articles.
 
 ```{r}
 #transcript side is so that we split it per podcast episode
@@ -33,7 +86,7 @@ Ptranscript_cleaned <- Ptranscript %>%
   mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), date = str_extract(doc_id, "[0-9]*_[0-9]*_[0-9]*"))
 
 #makes the date column a date variable
-Ptranscript_cleaned$date <- as.Date(Ptranscript_cleaned$date,format = "%Y_%m_%d")
+Ptranscript_cleaned$date <- as.Date(Ptranscript_cleaned$date,format = "%m_%d_%y")
 
 #splits the cleaned transcript to individual words so that we can run an sentiment analysis on it
 Ptranscript_split <- Ptranscript_cleaned %>%
@@ -43,16 +96,12 @@ Ptranscript_split <- Ptranscript_cleaned %>%
 ##1562.74 words per podcast average
 
 #Articles cleaning
-VoxA <- readRDS("..\\data\\scraped_pages_with_date_title_duplicates.rds")
-VoxA_transcript <- VoxA %>%
-  map_dfr(~ map_dfr(.x, as.data.frame)) %>%
-  unique()
+VoxA_transcript <- readRDS("..\\data\\2024-2025_All_Vox_Articles.rds")
   
 
 VoxA_cleaned <- VoxA_transcript %>%
-  mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), doc_id = title) %>%
+  mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), doc_id = title, date = datetime) %>%
   filter(text != "")
-VoxA_cleaned$date <- mdy_hms(VoxA_cleaned$date, tz = "UTC")
 VoxA_cleaned$date <- format(VoxA_cleaned$date, "%Y-%m-%d")
 VoxA_cleaned$date <- as.Date(VoxA_cleaned$date, format = "%Y-%m-%d")
 
@@ -63,11 +112,8 @@ VoxA_split <- VoxA_cleaned %>%
 ##680.40 words per article average
 ```
 
-With this we split each podcast transcript and prepare them to be put through an sentiment processor. And just in case, I did some extra code to get a more whole version of the text, by combining all the transcripts together into one big texts.
+In this study we pretty much looked exclusively at 2024-2025. This is because our podcast transcript data has the most activity in this time. With this we split each podcast transcript and prepare them to be put through an sentiment processor. This processor will take each word from the transcript and assign it a sentiment value. For instance the word "love" has a sentiment value of 0.75, while the value of "murder" is -0.75. How do we get these sentiment values? Well, because language is so abstract, we have to make dictionaries for them based on personal preferences and the such. We in this case specifically used the syuzhet dictionary.
 
-# `{r} # #text side so that we get a wholistic view # #turns the transcript into a character vector so easier to deal with # Ptext <- Ptranscript$text #  # #cleans the text so that it is only words then makes it a dataframe # Ptext_clean <- Ptext %>% #   str_to_lower() %>% #   str_remove_all("[^[:alpha:][:space:]]") %>% #   data.frame(text = .) #  # #splits the individual words for sentiment usage # Ptext_split <- Ptext_clean %>% #   unnest_tokens(word, text) %>% #   anti_join(stop_words, by = "word") #  #  # ##Articles # Atext <- VoxA_transcript$text #  # Atext_clean <- Atext %>% #   str_to_lower() %>% #   str_remove_all("[^[:alpha:][:space:]]") %>% #   data.frame(text = .) #  # Atext_split <- Atext_clean %>% #   unnest_tokens(word, text) %>% #   anti_join(stop_words, by = "word") #  #`
-
-And with that we get the sentiment of all of the transcripts. We get some interesting data from this. Firstly, we learn how absolutely negative the the text is, we get an overall transcript score of -694.3. For context, the sentiment for the word "murder" is -0.75 and the sentiment for love is 0.75.Too most people, this seems reasonable. How much of our news that we receive nowadays is so negative, everything seems to be so centered around fear. But this is not getting the whole story.
 
 ```{r}
 Psentiment_transcript <- get_sentiment(Ptranscript_cleaned$text, method="syuzhet") # sentiment per document
@@ -94,7 +140,7 @@ ATranscriptDatebySentiment <- VoxA_cleaned %>%
   mutate(sentiment = Asentiment_transcript)
 ```
 
-The
+And with that we get the sentiment of all of the transcripts. We get some interesting data from this. The first little thing we learn from the data is that the news apparently is pretty positive, and on top of that podcast is quite a bit more positive than the articles. The sentiment for Articles are about a positive 7.98 on average on average while the average for podcasts seem are 15.26, double that of articles. Does this mean that the podcasts are more positive than the articles. And even before that, Is our news actually more positive than we think it is. It always feels like every news related thing we see is always so negative and scary, yet the data says otherwise.
 
 ```{r}
 #Podcast
@@ -129,6 +175,8 @@ Abestsentiment <- ATranscriptDatebySentiment %>%
   Aworstsentiment_sen <- get_sentiment(Aworstsentiment$word, method="syuzhet")
 ```
 
+If we look deeper into the data, I got curious. What are the articles that got the best and worst sentiments? There is actually some similarities here. When it comes to the worst sentiments of both articles and podcast, it seems to fall on war in the middle east. Whether that be the Hamas and Isreal conflict or Sudanese civil war, it seems America can't see, to escape the horrible things that are happening in the middle east.
+
 ```{r}
 ##Podcast
 ggplot(PTranscriptDatebySentiment, aes(x = date, y = sentiment)) +
@@ -162,6 +210,10 @@ plot(
 
 ```
 
+###Sentiment Analysis Overtime
+
+This graphic shows our podcast transcripts in an easier light. It shows the sentiment of each podcast episode over time. The first graph shows why we really on got our data from 2024-2025, Before then we really didn't have that much data. As we Zoom into the time between 2024 and 2025, our graph is really chaotic. It just goes up and down constantly. This sort of makes sense as a news segment that is a neutral slant will not really get anyone to listen to them, There always has to be some sort of emotion that the authors are trying to evoke.
+
 ```{r}
 ##Articles
 ggplot(ATranscriptDatebySentiment, aes(x = date, y = sentiment)) +
@@ -190,35 +242,37 @@ plot(
 
 ```
 
+If we move on to how the article look, we see that it is alot more messy and alot more dramatic, This is because it is so much easier to churn out articles, and most of the time you make many articles in the same day. This also has the same dramatic look because they need to keep getting clicks in order to make money. This is also why we have so much more data on the articles than on the podcasts - its really hard to to make a lot of podcasts at the same time. Their might be timing conflicts, technical errors, and other things that might cause you to have to even retake the entire session.
+
 ```{r}
-
-sentTest <- unlist(strsplit(Ptranscript$text, "(?<=\\.)", perl = TRUE)) %>%
-  discard(function(x) x == "." || x == " " || x == " .")
-test <- map(sentTest, syuzhet::mixed_messages)
-entropes <- do.call(rbind, test)
-
-# Combine entropy values with the corresponding sentences
-out <- data.frame(entropes, sentence = sentTest, stringsAsFactors = FALSE)
-
-# Plotting the emotional entropy with ggplot2
-ggplot(out, aes(x = 1:nrow(out), y = entropy)) +
-  geom_line(color = "blue", size = 1) +
-  geom_point(color = "red") +
-  labs(
-    title = "Emotional Entropy in Vox Explained",
-    x = "Sentence Index",
-    y = "Entropy"
-  ) +
-  theme_minimal() +
-  theme(
-    legend.position = "top", # Customize legend position
-    axis.text.x = element_text(angle = 45, hjust = 1) # Rotate x-axis labels if needed
-  )
-
-
-simple_plot(out$entropy,title = "Emotional Entropy in Madame Bovary",legend_pos = "top")
-
-sentTest
+# 
+# sentTest <- unlist(strsplit(Ptranscript$text, "(?<=\\.)", perl = TRUE)) %>%
+#   discard(function(x) x == "." || x == " " || x == " .")
+# test <- map(sentTest, syuzhet::mixed_messages)
+# entropes <- do.call(rbind, test)
+# 
+# # Combine entropy values with the corresponding sentences
+# out <- data.frame(entropes, sentence = sentTest, stringsAsFactors = FALSE)
+# 
+# # Plotting the emotional entropy with ggplot2
+# ggplot(out, aes(x = 1:nrow(out), y = entropy)) +
+#   geom_line(color = "blue", size = 1) +
+#   geom_point(color = "red") +
+#   labs(
+#     title = "Emotional Entropy in Vox Explained",
+#     x = "Sentence Index",
+#     y = "Entropy"
+#   ) +
+#   theme_minimal() +
+#   theme(
+#     legend.position = "top", # Customize legend position
+#     axis.text.x = element_text(angle = 45, hjust = 1) # Rotate x-axis labels if needed
+#   )
+# 
+# 
+# simple_plot(out$entropy,title = "Emotional Entropy in Madame Bovary",legend_pos = "top")
+# 
+# sentTest
 ```
 
 ```{r}
@@ -248,6 +302,19 @@ ggplot(emotions, aes(x = Emotion, y = Percentage, fill = Media)) +
   scale_fill_manual(values = c("Article Percentage" = "steelblue", "Podcast Percentage" = "darkorange"))
 ```
 
-Work Cited https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html
+###NRC Emotional Valence
+
+If we were to look at the specific emotional content of the words we find that both the articles and the podcast are very similar, almost exactly the same in percentage. First and foremost we can see that Vox prioritizes trust in their news coverage more than anything else. Which I would say is a good sign, as I would rather have that than fear mongering news stories. Although we can still see fear still has a relatively high percentage of the data, I think a good amount of fear is probably necessary in the news industry to stay alive (which comprimises the validity of the story, but I digress).
+
+###Problems/Issues with our data
+
+But as always there is some problem with our research. For one, we really only looked at one news site. It is very possible that Vox might be an exception and the data might not be applicable outside of Vox. for instance if we were to find some Media that has a speciality demographic, such as Shark News, or has a strong political lean, like Fox news, we might get completely different data.
+
+
+
+Work Cited
+https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html
 
 https://stackoverflow.com/
+
+sessionInfo()
