@@ -155,9 +155,9 @@ all_vox_articles_2024 <- all_vox_articles_2024 %>%
   filter(!str_detect(text, "Today, Explained"))
 
 # Save cleaned dataset
-saveRDS(all_vox_articles_2024, file = "2024_all_vox_articles.rds")
-write.csv(all_vox_articles_2024, file = "2024_all_vox_articles.csv", row.names = FALSE)
+saveRDS(all_vox_articles_2024, file = "../data/vox_articles/2024_all_vox_articles.rds")
+write.csv(all_vox_articles_2024, file = "../data/vox_articles/2024_all_vox_articles.csv", row.names = FALSE)
 
 # Save raw dataset
-saveRDS(all_vox_articles_2024_raw, file = "2024_all_vox_articles_raw.rds")
-write.csv(all_vox_articles_2024_raw, file = "2024_all_vox_articles_raw.csv", row.names = FALSE)
+saveRDS(all_vox_articles_2024_raw, file = "../data/vox_articles/2024_all_vox_articles_raw.rds")
+write.csv(all_vox_articles_2024_raw, file = "../data/vox_articles/2024_all_vox_articles_raw.csv", row.names = FALSE)
