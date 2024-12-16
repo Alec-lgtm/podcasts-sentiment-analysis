@@ -1,10 +1,20 @@
+# Script Title: Scraping all vox articles from 2024
+# Author: Alec Chen 
+# Date: 2024-12-15
+# Version: 0.1.0
+# Purpose: Analyze sentiment of vox articles
+
+# ---- Load Libraries ----
+
 library(tidyverse)
 library(rvest)
 library(stringr)
 
+# ---- Scraping Functions ---- 
+
 base_url <- "https://www.vox.com/"
 
-# Function to scrape the text, title, and date of each individual article
+# Extracts the text, title, and date of an individual article
 scrape_vox_article <- function(article_url, debug = FALSE) {
   Sys.sleep(0.2)
   
@@ -58,9 +68,8 @@ non_article_urls <- c(
 )
 
 
-# 'Gets every article on each page of archived vox articles
-# 'Calls scrape_articles() on each article
-scrape_vox_archive_page <- function(page_url, debug = FALSE) {
+# Extracts the text, title, and date of every article on a given vox page
+scrape_vox_page <- function(page_url, debug = FALSE) {
   Sys.sleep(0.2)
   page_html <- read_html(page_url)
   
@@ -74,53 +83,81 @@ scrape_vox_archive_page <- function(page_url, debug = FALSE) {
   
   # Creates full vox article url and removes non-articles urls + duplicates
   full_urls <- str_c(base_url, article_paths)
-  full_urls <- setdiff(full_url, non_article_urls)
+  full_urls <- setdiff(full_urls, non_article_urls)
   full_urls <- unique(full_urls)
   
   if(debug) {
     print(paste("page url:", page_url))
-    print(paste("articles per page:", length(full_url)))
+    print(paste("articles per page:", length(full_urls)))
     print("scraped titles:")
   }
 
+  # Scrapes all articles and combines scraped elements into a dataframe
   scraped_articles <- map(full_urls, ~ scrape_vox_article(.x, debug)) %>%
     list_rbind()
   
-  print(class(scraped_articles))
-                          
   return(scraped_articles)
 }
 
 # Testing:
 # test_df <- scrape_page("https://www.vox.com/archives/2024/11/6", TRUE)
 # test_df_2 <- scrape_page("https://www.vox.com", TRUE)
-test_df_3 <- scrape_page("https://www.vox.com")
+# test_df_3 <- scrape_page("https://www.vox.com")
 
-
-# Retrieves all articles published in a given month
+# Retrieves title, text, and date for all vox articles published in a given month
 scrape_vox_month <-function(month_number, debug = FALSE) {
   Sys.sleep(0.3)
-  print(paste0("month number: ", month_number))
+  
+  # Read in page html
   page_url <- paste0(base_url, "archives/2024/", month_number, "/")
   page_html <- read_html(page_url)
   
+  # Gets pagination text (ex: Previous 1 of 7 Next)
   pagination_text <- page_html %>%
     html_element(".so8yiu0") %>%
     html_text()
   
-  print(pagination_text)
-  
-  # Extracts the number of pages each month has
+  # Extracts the number of pages in the vox archive for the given month
   page_last_number <- str_extract(pagination_text, "\\d+(?=Next)")
   
-  # Scrape each page in the month's archive
-  scraped_pages <- list()
-  scraped_pages <- map(1:page_last_number, ~ scrape_page(paste0(page_url, .x))) %>%
-    flatten() %>% # Flatten the list of results
+  if(debug) {
+    print(paste0("month number: ", month_number))
+    print(paste0("number of pages: ", page_last_number))
+  }
+  
+  # Scrape each page in the given month's vox archive
+  scraped_pages <- map(1:page_last_number, ~ scrape_vox_page(paste0(page_url, .x), debug)) %>%
     list_rbind()  # Combine all results into a single data frame
   
   return(scraped_pages)
 }
 
 # Testing:
-# test_df <- scrape_page("https://www.vox.com/archives/2024/11/", TRUE)
+# test_df <- scrape_vox_month(11, TRUE)
+# test_df <- scrape_vox_month(2, TRUE)
+
+# ---- Run Article Scraping ---- 
+# Takes about 15-20 minutes to run
+
+# Extract titles, url, text, and date for all vox articles in the year 2024
+all_vox_articles_2024_raw <- map(1:12,scrape_vox_month, TRUE) %>% 
+  list_rbind()
+
+# Remove vox sites that are chronologies / timelines or aggregations of other articles
+all_vox_articles_2024 <- all_vox_articles_2024_raw %>%
+  filter(text != "")
+
+# Verify no more NA values (should return FALSE)
+any(is.na(all_vox_articles_2024))
+
+# Filter out podcasts from articles
+all_vox_articles_2024 <- all_vox_articles_2024 %>%
+  filter(!str_detect(text, "Today, Explained"))
+
+# Save cleaned dataset
+saveRDS(all_vox_articles_2024, file = "2024_all_vox_articles.rds")
+write.csv(all_vox_articles_2024, file = "2024_all_vox_articles.csv", row.names = FALSE)
+
+# Save raw dataset
+saveRDS(all_vox_articles_2024_raw, file = "2024_all_vox_articles_raw.rds")
+write.csv(all_vox_articles_2024_raw, file = "2024_all_vox_articles_raw.csv", row.names = FALSE)
