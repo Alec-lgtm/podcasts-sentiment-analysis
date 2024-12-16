@@ -127,7 +127,7 @@ scrape_page <- function(page_url) {
   # }
   
   # Loop through the URLs
-  for (i in seq_along(urls)) {
+  for (i in seq_along(full_urls)) {
     current_url <- full_url[[i]]
     
     # print(current_url)
@@ -177,10 +177,6 @@ scrape_month <-function(month_number) {
 # hello<- scrape_month(12)
 
 # test_m <- scrape_month(2)
-
-# onepage <- scrape_page(1)
-# testpage <- scrape_page(1)
-# secondpage <- scrape_page(6)
 
 # check <- scrape_month(11)
 
