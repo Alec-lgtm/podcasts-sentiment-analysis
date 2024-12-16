@@ -65,38 +65,9 @@ VoxA_split <- VoxA_cleaned %>%
 
 With this we split each podcast transcript and prepare them to be put through an sentiment processor. And just in case, I did some extra code to get a more whole version of the text, by combining all the transcripts together into one big texts.
 
-# ```{r}
-# #text side so that we get a wholistic view
-# #turns the transcript into a character vector so easier to deal with
-# Ptext <- Ptranscript$text
-# 
-# #cleans the text so that it is only words then makes it a dataframe
-# Ptext_clean <- Ptext %>%
-#   str_to_lower() %>%
-#   str_remove_all("[^[:alpha:][:space:]]") %>%
-#   data.frame(text = .)
-# 
-# #splits the individual words for sentiment usage
-# Ptext_split <- Ptext_clean %>%
-#   unnest_tokens(word, text) %>%
-#   anti_join(stop_words, by = "word")
-# 
-# 
-# ##Articles
-# Atext <- VoxA_transcript$text
-# 
-# Atext_clean <- Atext %>%
-#   str_to_lower() %>%
-#   str_remove_all("[^[:alpha:][:space:]]") %>%
-#   data.frame(text = .)
-# 
-# Atext_split <- Atext_clean %>%
-#   unnest_tokens(word, text) %>%
-#   anti_join(stop_words, by = "word")
-# 
-# ```
+# `{r} # #text side so that we get a wholistic view # #turns the transcript into a character vector so easier to deal with # Ptext <- Ptranscript$text #  # #cleans the text so that it is only words then makes it a dataframe # Ptext_clean <- Ptext %>% #   str_to_lower() %>% #   str_remove_all("[^[:alpha:][:space:]]") %>% #   data.frame(text = .) #  # #splits the individual words for sentiment usage # Ptext_split <- Ptext_clean %>% #   unnest_tokens(word, text) %>% #   anti_join(stop_words, by = "word") #  #  # ##Articles # Atext <- VoxA_transcript$text #  # Atext_clean <- Atext %>% #   str_to_lower() %>% #   str_remove_all("[^[:alpha:][:space:]]") %>% #   data.frame(text = .) #  # Atext_split <- Atext_clean %>% #   unnest_tokens(word, text) %>% #   anti_join(stop_words, by = "word") #  #`
 
-And with that we get the sentiment of all of the transcripts. We get some interesting data from this. Firstly, we learn how absolutely negative the the text is, we get an overall transcript score of -694.3. For context, the sentiment for the word "murder" is -0.75 and  the sentiment for love is 0.75.Too most people, this seems reasonable. How much of our news that we receive nowadays is so negative, everything seems to be so centered around fear. But this is not getting the whole story.
+And with that we get the sentiment of all of the transcripts. We get some interesting data from this. Firstly, we learn how absolutely negative the the text is, we get an overall transcript score of -694.3. For context, the sentiment for the word "murder" is -0.75 and the sentiment for love is 0.75.Too most people, this seems reasonable. How much of our news that we receive nowadays is so negative, everything seems to be so centered around fear. But this is not getting the whole story.
 
 ```{r}
 Psentiment_transcript <- get_sentiment(Ptranscript_cleaned$text, method="syuzhet") # sentiment per document
@@ -122,6 +93,7 @@ Anrc_data <- get_nrc_sentiment(VoxA_transcript$text) #nrc for text as a whole
 ATranscriptDatebySentiment <- VoxA_cleaned %>%
   mutate(sentiment = Asentiment_transcript)
 ```
+
 The
 
 ```{r}
@@ -249,7 +221,6 @@ simple_plot(out$entropy,title = "Emotional Entropy in Madame Bovary",legend_pos 
 sentTest
 ```
 
-
 ```{r}
 ##podcast
 pemotions <- prop.table(Pnrc_data[, 1:8]) %>%
@@ -277,9 +248,6 @@ ggplot(emotions, aes(x = Emotion, y = Percentage, fill = Media)) +
   scale_fill_manual(values = c("Article Percentage" = "steelblue", "Podcast Percentage" = "darkorange"))
 ```
 
-
-
-Work Cited
-https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html
+Work Cited https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html
 
 https://stackoverflow.com/

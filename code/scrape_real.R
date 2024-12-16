@@ -99,6 +99,12 @@ for (i in 1:5) {
   scraped_pages[[i]] <- scrape_page(i)
 }
 
+# Vim motions
+# viw visual select the inner word
+# ciw change the inner word
+# yiw yank the inner word
+# vi{ gets the inner of the {}
+# dt{ deletes everything to the {
 
 # Fix page 6
 

@@ -2,6 +2,8 @@
 title: "Blog Post"
 format: html
 editor: visual
+self-contained: true
+embed-resources: true
 ---
 
 ## Sentiment Analysis on Vox Podcasts: Insights into the Voice of News
@@ -46,6 +48,8 @@ The frequent use of conversational words like "like," "know," "really," and "thi
 The histogram of word frequencies shows a large vocabulary, indicating varied discussions. This diversity of language could reflect shifts in tone or sentiment throughout episodes as topics and conversational dynamics evolve. One key limitation here is that these plots don't show any actual emotive change over time, so we cannot know for certain how if the sentiment is changing throughout a podcast episode.
 
 The major limitations in our analysis are the lack of temporal granularity and contextual ambiguity in our podcasts. These metrics are aggregated over all podcasts so we cannot know exactly when podcasts shift tone. Also, while we know which words were frequently used, we do not know the context in which words were used. The word "like" could be used conversational or formally and without context, we cannot determine if it has a positive or negative connotation. Further, aggregated analysis may obscure the unique voices and tones of individual speakers, particularly marginalized voices or dissenting opinions. As such, more analysis is needed to complete our report
+
+sessionInfo()
 
 ### Old
 

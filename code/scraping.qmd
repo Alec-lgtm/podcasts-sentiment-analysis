@@ -89,6 +89,8 @@ test1 <- scrape_articles("https://www.vox.com/politics/373376/trump-loss-2024-el
 scrape_articles("https://www.vox.com/politics/390953/the-onion-infowars-alex-jones")
 test <- scrape_articles("https://www.vox.com/politics/390108/working-class-definition-voters-2024")
 
+scrape_page("https://www.vox.com/archives/2024/1/1")
+
 # Goes through vox/archives/# to and scrapes all the page
 scrape_page <- function(page_url) {
   Sys.sleep(0.2)
@@ -104,11 +106,15 @@ scrape_page <- function(page_url) {
     html_elements(".qcd9z1") %>%
     html_attr("href")
   
+  print(urls)
+  
   urls <- str_sub(urls, 2)
   # browser()
   print(length(urls))
   
   full_url <- str_c(base_url, urls)
+  
+  print(class(full_url))
   
   scraped_urls <- character()
   
@@ -198,6 +204,7 @@ for (i in 1:12) {
 # Fix page 6
 
 saveRDS(scraped_pages, file = "scraped_pages_with_date_title_duplicates.rds")
+
 ```
 
 
@@ -206,6 +213,11 @@ saveRDS(scraped_pages, file = "scraped_pages_with_date_title_duplicates.rds")
 # Filtered podcast
 filtered_data <- the_big_one %>%
   filter(!str_detect(text, "Today, Explained"))
+
+write.csv(filtered_data, file = "vox_articles.csv", row.names = FALSE)
+
+getwd()
+
 
 # Define a function to extract 'like' with surrounding context
 extract_context <- function(text) {
