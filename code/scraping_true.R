@@ -5,7 +5,7 @@ library(stringr)
 base_url <- "https://www.vox.com/"
 
 # Function to scrape the text, title, and date of each individual article
-scrape_articles <- function(article_url, debug = FALSE) {
+scrape_vox_article <- function(article_url, debug = FALSE) {
   Sys.sleep(0.2)
   
   # Gets article html
@@ -69,63 +69,58 @@ scrape_page <- function(page_url, debug = FALSE) {
     html_elements(".qcd9z1") %>%
     html_attr("href")
   
-  
   # removes '/' from the beginning of the url string
   article_paths <- str_sub(article_paths, 2)
   
-  # Creates full vox article url and removes non-articles urls
+  # Creates full vox article url and removes non-articles urls + duplicates
   full_urls <- str_c(base_url, article_paths)
   full_urls <- setdiff(full_url, non_article_urls)
+  full_urls <- unique(full_urls)
   
   if(debug) {
     print(paste("page url:", page_url))
     print(paste("articles per page:", length(full_url)))
     print("scraped titles:")
   }
+
+  scraped_articles <- map(full_urls, ~ scrape_vox_article(.x, debug)) %>%
+    list_rbind()
   
-  scraped_urls <- character()
-  scraped_articles <- list()
-  
-  # Loop through the URLs
-  for (i in seq_along(full_urls)) {
-    current_url <- full_urls[[i]]
-    
-    # Check if the URL has already been scraped
-    if (!(current_url %in% scraped_urls)) {
-      # Scrape the article and store it
-      scraped_articles[[length(scraped_articles) + 1]] <- scrape_articles(current_url, debug)
-      
-      # Add the URL to the list of scraped URLs
-      scraped_urls <- c(scraped_urls, current_url)
-    } else {
-      message("Already scraped: ", current_url)
-    }
-  }
-  
-  # Returns a list of tibbles
+  print(class(scraped_articles))
+                          
   return(scraped_articles)
 }
 
 # Testing:
 # test_df <- scrape_page("https://www.vox.com/archives/2024/11/6", TRUE)
+# test_df_2 <- scrape_page("https://www.vox.com", TRUE)
+test_df_3 <- scrape_page("https://www.vox.com")
 
+
+# Retrieves all articles published in a given month
 scrape_month <-function(month_number, debug = FALSE) {
-  #Sys.sleep(0.3)
+  Sys.sleep(0.3)
   print(paste0("month number: ", month_number))
   page_url <- paste0(base_url, "archives/2024/", month_number, "/")
-  page <- read_html(page_url)
+  page_html <- read_html(page_url)
   
-  pagination_text <- page %>%
+  pagination_text <- page_html %>%
     html_element(".so8yiu0") %>%
     html_text()
   
+  print(pagination_text)
+  
+  # Extracts the number of pages each month has
   page_last_number <- str_extract(pagination_text, "\\d+(?=Next)")
   
+  # Scrape each page in the month's archive
   scraped_pages <- list()
   scraped_pages <- map(1:page_last_number, ~ scrape_page(paste0(page_url, .x))) %>%
-    flatten() %>%
-    list_rbind()
+    flatten() %>% # Flatten the list of results
+    list_rbind()  # Combine all results into a single data frame
   
   return(scraped_pages)
 }
 
+# Testing:
+# test_df <- scrape_page("https://www.vox.com/archives/2024/11/", TRUE)
