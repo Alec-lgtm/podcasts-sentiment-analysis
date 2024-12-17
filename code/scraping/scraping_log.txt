@@ -1,203 +1,328 @@
-2024-12-16 13:27:59.577702 INFO::Starting script
-2024-12-16 13:33:01.49504 INFO::month number: 1
-2024-12-16 13:33:01.499388 INFO::number of pages: 10
-2024-12-16 13:33:01.851423 INFO::page url: https://www.vox.com/archives/2024/1/1
-2024-12-16 13:33:01.853664 INFO::articles per page: 15
-2024-12-16 13:33:01.854963 INFO::scraped titles:
-2024-12-16 13:33:02.160529 INFO::Why conservatives are melting down over Taylor Swift
-2024-12-16 13:33:02.430625 INFO::Why men are secretive about prostate cancer
-2024-12-16 13:33:02.703841 INFO::The allegations against the UN’s Palestinian refugee relief agency, explained
-2024-12-16 13:33:02.98563 INFO::How Boeing put profits over planes
-2024-12-16 13:33:03.253384 INFO::We can still make a good economy much better
-2024-12-16 13:33:03.560248 INFO::The sun’s poles are about to flip. It’s awesome — and slightly terrifying.
-2024-12-16 13:33:03.933783 INFO::The US uses endangered monkeys to test drugs. This law could free them.
-2024-12-16 13:33:04.20972 INFO::Is this a newborn great white shark? Big if true.
-2024-12-16 13:33:04.48613 INFO::The great American natural gas reckoning is upon us
-2024-12-16 13:33:04.763778 INFO::You’re probably eating way too much protein
-2024-12-16 13:33:05.043924 INFO::The bland allure of Hailey Bieber
-2024-12-16 13:33:05.321367 INFO::How the nation’s capital became an outlier on violent crime
-2024-12-16 13:33:05.592392 INFO::Zyn, the nicotine pouch at the center of a brewing culture war, explained
-2024-12-16 13:33:05.876125 INFO::Kiley Reid’s Come and Get It is a witty, overstuffed campus satire
-2024-12-16 13:33:06.156115 INFO::Bats have a unique superpower. Climate change is turning it into a liability.
-2024-12-16 13:33:06.421798 INFO::page url: https://www.vox.com/archives/2024/1/2
-2024-12-16 13:33:06.424181 INFO::articles per page: 15
-2024-12-16 13:33:06.425461 INFO::scraped titles:
-2024-12-16 13:33:06.70003 INFO::Would the US intervene to defend Taiwan? Ask Japan.
-2024-12-16 13:33:06.977352 INFO::America no longer has a monopoly on deadly drones
-2024-12-16 13:33:07.25238 INFO::The nurse practitioner will see you now
-2024-12-16 13:33:07.612696 INFO::Psychedelics are outperforming trauma researchers’ expectations. But why?
-2024-12-16 13:33:08.288078 INFO::We don’t have much money, but want to improve our lives. Where do we start?
-2024-12-16 13:33:08.654634 INFO::The legal fight over whether Texas can seize control of the border, explained
-2024-12-16 13:33:08.931848 INFO::Narendra Modi is celebrating his scary vision for India’s future
-2024-12-16 13:33:09.208901 INFO::The ICJ orders in South Africa’s genocide case against Israel, explained
-2024-12-16 13:33:09.477559 INFO::Does Barbie need all the Oscars for feminism?
-2024-12-16 13:33:09.750762 INFO::A controversial execution in Alabama renews the fight over capital punishment
-2024-12-16 13:33:10.031473 INFO::How the internet built a conspiracy theory around a new spy flick, a debut novel, and Taylor Swift
-2024-12-16 13:33:10.308908 INFO::Why I’m glad my newborn received a false positive test for a rare genetic disorder
-2024-12-16 13:33:10.594178 INFO::Why Trump fears a Biden-GOP immigration deal
-2024-12-16 13:33:10.869504 INFO::Why would anyone be against lifesaving malaria bednets?
-2024-12-16 13:33:11.169606 INFO::A booming economy might not save the Biden campaign
-2024-12-16 13:33:11.444971 INFO::page url: https://www.vox.com/archives/2024/1/3
-2024-12-16 13:33:11.446011 INFO::articles per page: 15
-2024-12-16 13:33:11.446787 INFO::scraped titles:
-2024-12-16 13:33:11.80579 INFO::It’s not your imagination. There has been more war lately.
-2024-12-16 13:33:12.08395 INFO::Would you dump someone if they didn’t peel you an orange?
-2024-12-16 13:33:12.389484 INFO::How to microdose movement
-2024-12-16 13:33:12.663358 INFO::No, DEI isn’t making airplanes fall apart
-2024-12-16 13:33:12.945483 INFO::Surprise! There’s a reason to be (cautiously) optimistic about the climate.
-2024-12-16 13:33:13.216827 INFO::The nine-month cruise that took over TikTok
-2024-12-16 13:33:13.486079 INFO::A deadly new outbreak is testing Africa’s ambitious public health efforts
-2024-12-16 13:33:13.766156 INFO::After Real Housewives of Salt Lake City, is Bravo headed for a fan-pocalypse?
-2024-12-16 13:33:14.046769 INFO::Hawaii’s out-of-control, totally bizarre fight over stray cats
-2024-12-16 18:40:43.785836 INFO::month number: 1
-2024-12-16 18:40:43.791787 INFO::number of pages: 10
-2024-12-16 18:40:44.072918 INFO::page url: https://www.vox.com/archives/2024/1/1
-2024-12-16 18:40:44.07426 INFO::articles per page: 15
-2024-12-16 18:40:44.075068 INFO::scraped titles:
-2024-12-16 18:40:44.373195 INFO::Why conservatives are melting down over Taylor Swift
-2024-12-16 18:40:44.656966 INFO::Why men are secretive about prostate cancer
-2024-12-16 18:40:44.926758 INFO::The allegations against the UN’s Palestinian refugee relief agency, explained
-2024-12-16 18:40:45.206577 INFO::How Boeing put profits over planes
-2024-12-16 18:40:45.480209 INFO::We can still make a good economy much better
-2024-12-16 18:40:45.761654 INFO::The sun’s poles are about to flip. It’s awesome — and slightly terrifying.
-2024-12-16 18:40:46.037189 INFO::The US uses endangered monkeys to test drugs. This law could free them.
-2024-12-16 18:40:46.30833 INFO::Is this a newborn great white shark? Big if true.
-2024-12-16 18:40:46.597867 INFO::The great American natural gas reckoning is upon us
-2024-12-16 18:40:46.871581 INFO::You’re probably eating way too much protein
-2024-12-16 18:40:47.135885 INFO::The bland allure of Hailey Bieber
-2024-12-16 18:40:47.418646 INFO::How the nation’s capital became an outlier on violent crime
-2024-12-16 18:40:47.710096 INFO::Zyn, the nicotine pouch at the center of a brewing culture war, explained
-2024-12-16 18:40:47.988848 INFO::Kiley Reid’s Come and Get It is a witty, overstuffed campus satire
-2024-12-16 18:40:48.266376 INFO::Bats have a unique superpower. Climate change is turning it into a liability.
-2024-12-16 18:40:48.530576 INFO::page url: https://www.vox.com/archives/2024/1/2
-2024-12-16 18:40:48.531681 INFO::articles per page: 15
-2024-12-16 18:40:48.532458 INFO::scraped titles:
-2024-12-16 18:40:48.803636 INFO::Would the US intervene to defend Taiwan? Ask Japan.
-2024-12-16 18:40:49.293327 INFO::America no longer has a monopoly on deadly drones
-2024-12-16 18:40:49.574827 INFO::The nurse practitioner will see you now
-2024-12-16 18:40:49.853395 INFO::Psychedelics are outperforming trauma researchers’ expectations. But why?
-2024-12-16 18:40:50.361514 INFO::We don’t have much money, but want to improve our lives. Where do we start?
-2024-12-16 18:40:50.637262 INFO::The legal fight over whether Texas can seize control of the border, explained
-2024-12-16 18:40:50.911411 INFO::Narendra Modi is celebrating his scary vision for India’s future
-2024-12-16 18:40:51.198566 INFO::The ICJ orders in South Africa’s genocide case against Israel, explained
-2024-12-16 18:40:51.47319 INFO::Does Barbie need all the Oscars for feminism?
-2024-12-16 18:40:51.753409 INFO::A controversial execution in Alabama renews the fight over capital punishment
-2024-12-16 18:40:52.033728 INFO::How the internet built a conspiracy theory around a new spy flick, a debut novel, and Taylor Swift
-2024-12-16 18:40:52.300561 INFO::Why I’m glad my newborn received a false positive test for a rare genetic disorder
-2024-12-16 18:40:52.574857 INFO::Why Trump fears a Biden-GOP immigration deal
-2024-12-16 18:40:52.850967 INFO::Why would anyone be against lifesaving malaria bednets?
-2024-12-16 18:40:53.127609 INFO::A booming economy might not save the Biden campaign
-2024-12-16 18:40:53.388481 INFO::page url: https://www.vox.com/archives/2024/1/3
-2024-12-16 18:40:53.390011 INFO::articles per page: 15
-2024-12-16 18:40:53.390878 INFO::scraped titles:
-2024-12-16 18:40:53.664413 INFO::It’s not your imagination. There has been more war lately.
-2024-12-16 18:40:53.941599 INFO::Would you dump someone if they didn’t peel you an orange?
-2024-12-16 18:40:54.207781 INFO::How to microdose movement
-2024-12-16 18:40:54.486055 INFO::No, DEI isn’t making airplanes fall apart
-2024-12-16 18:40:54.773425 INFO::Surprise! There’s a reason to be (cautiously) optimistic about the climate.
-2024-12-16 18:40:55.057599 INFO::The nine-month cruise that took over TikTok
-2024-12-16 18:40:55.331345 INFO::A deadly new outbreak is testing Africa’s ambitious public health efforts
-2024-12-16 18:40:55.605584 INFO::After Real Housewives of Salt Lake City, is Bravo headed for a fan-pocalypse?
-2024-12-16 18:40:55.883022 INFO::Hawaii’s out-of-control, totally bizarre fight over stray cats
-2024-12-16 18:40:56.165311 INFO::A new Supreme Court case threatens to take away your right to protest
-2024-12-16 18:40:56.43938 INFO::2 winners and 2 losers from the New Hampshire primary
-2024-12-16 18:40:56.705581 INFO::The 2024 New Hampshire primary is underway. Here’s the latest.
-2024-12-16 18:40:56.98051 INFO::What would it take for Nikki Haley to win at this point?
-2024-12-16 18:40:57.2767 INFO::The war in Gaza isn’t going well for Israel, but it’s far from over for Netanyahu
-2024-12-16 18:40:57.553078 INFO::4 winners and 3 losers from this year’s Oscar nominations
-2024-12-16 18:40:57.810696 INFO::page url: https://www.vox.com/archives/2024/1/4
-2024-12-16 18:40:57.812631 INFO::articles per page: 15
-2024-12-16 18:40:57.813792 INFO::scraped titles:
-2024-12-16 18:40:58.089108 INFO::Your home’s cleaner, better heating system comes with one major cost
-2024-12-16 18:40:58.360488 INFO::How a Haley presidency would be better — and worse — than Trump
-2024-12-16 18:40:58.631337 INFO::The Supreme Court says no, Texas can’t use razor wire to restrain federal agents
-2024-12-16 18:40:58.916486 INFO::Oklahoma is begging the Supreme Court not to make it kill a man
-2024-12-16 18:40:59.188715 INFO::The complicated lives and deaths of TikTok’s illness influencers
-2024-12-16 18:40:59.463383 INFO::Is Nikki Haley a moderate or a conservative? Yes.
-2024-12-16 18:40:59.747725 INFO::Where do billionaires come from? Mom and Dad.
-2024-12-16 18:41:00.026692 INFO::Ron DeSantis got the Republican Party wrong
-2024-12-16 18:41:00.291282 INFO::The 2024 Iowa caucuses
-2024-12-16 18:41:00.578165 INFO::Who is etiquette for?
-2024-12-16 18:41:00.869737 INFO::What the conspiracy theory about Nikki Haley’s citizenship is really about
-2024-12-16 18:41:01.141707 INFO::How to be alone with your thoughts
-2024-12-16 18:41:01.436434 INFO::The GOP is moderating — and coming unhinged
-2024-12-16 18:41:01.699141 INFO::The Iran-Pakistan strikes aren’t about Gaza. They’re still alarming.
-2024-12-16 18:41:01.970961 INFO::The tragic story of this famous meteorite
-2024-12-16 18:41:02.237895 INFO::page url: https://www.vox.com/archives/2024/1/5
-2024-12-16 18:41:02.239368 INFO::articles per page: 15
-2024-12-16 18:41:02.240134 INFO::scraped titles:
-2024-12-16 18:41:02.50861 INFO::The US and UK hit Houthi targets in Yemen. It probably won’t stop Red Sea attacks.
-2024-12-16 18:41:02.778214 INFO::Pitting Real Housewives against Survivor villains, The Traitors is reality TV at its best
-2024-12-16 18:41:03.058089 INFO::Why have our winters gotten so weird?
-2024-12-16 18:41:03.325802 INFO::Congress averted a shutdown, but the funding fight isn’t over
-2024-12-16 18:41:03.597265 INFO::If you want to understand modern politics, you have to understand modern fandom
-2024-12-16 18:41:03.878431 INFO::10 ocean mysteries scientists haven’t solved yet
-2024-12-16 18:41:04.153445 INFO::How copyright lawsuits could kill OpenAI
-2024-12-16 18:41:04.429011 INFO::How cyberscams are drawing China into Myanmar’s civil war
-2024-12-16 18:41:04.699639 INFO::The Biden administration’s plan to slash bank overdraft fees, explained
-2024-12-16 18:41:04.972619 INFO::John Roberts and Amy Coney Barrett are unsure if they should be in charge of everything
-2024-12-16 18:41:05.239976 INFO::A practical guide to eating less meat
-2024-12-16 18:41:05.510729 INFO::What the FAA gets right about airplane regulation
-2024-12-16 18:41:05.786828 INFO::Astronomers spotted something perplexing near the beginning of time
-2024-12-16 18:41:06.060302 INFO::Something weird is happening to these Alpine goats. Scientists say it’s an ominous sign.
-2024-12-16 18:41:06.334037 INFO::New Hampshire’s messy Democratic primary, explained
-2024-12-16 18:41:07.720245 INFO::page url: https://www.vox.com/archives/2024/1/6
-2024-12-16 18:41:07.722088 INFO::articles per page: 15
-2024-12-16 18:41:07.723281 INFO::scraped titles:
-2024-12-16 18:41:07.993369 INFO::Ultraviolet light can kill almost all the viruses in a room. Why isn’t it everywhere?
-2024-12-16 18:41:08.285622 INFO::The Supreme Court is running away from transgender rights cases
-2024-12-16 18:41:08.561354 INFO::After Iowa, is it time to trust the polls again?
-2024-12-16 18:41:08.831721 INFO::The first GOP debate: August 23, 2023
-2024-12-16 18:41:09.689282 INFO::The second GOP debate: September 27, 2023
-2024-12-16 18:41:09.965157 INFO::All the Republicans running for president in 2024, explained
-2024-12-16 18:41:10.242784 INFO::How Black churches could lead the way on teen mental health
-2024-12-16 18:41:10.517759 INFO::How 50 Cent became the most versatile man in entertainment
-2024-12-16 18:41:10.789391 INFO::1 winner and 3 losers from the Iowa caucuses
-2024-12-16 18:41:11.061457 INFO::Is it over yet? What the Iowa caucus results mean for the GOP presidential race.
-2024-12-16 18:41:11.370614 INFO::How Trump went from disgraced insurrectionist to Iowa caucus winner
-2024-12-16 18:41:11.64775 INFO::America is retreating from global health leadership at the worst possible time
-2024-12-16 18:41:11.925445 INFO::How to decode the Iowa caucuses result
-2024-12-16 18:41:12.220085 INFO::What China wants out of Myanmar’s civil war
-2024-12-16 18:41:12.494066 INFO::In Taiwan’s high-stakes elections, China is the loser
-2024-12-16 18:41:12.745453 INFO::page url: https://www.vox.com/archives/2024/1/7
-2024-12-16 18:41:12.74765 INFO::articles per page: 15
-2024-12-16 18:41:12.74908 INFO::scraped titles:
-2024-12-16 18:41:13.020537 INFO::How plagiarism became the latest weapon in the culture wars
-2024-12-16 18:41:13.299257 INFO::Taiwan elects Lai Ching-te, denying China’s hopes for reunification
-2024-12-16 18:41:13.576285 INFO::The Iowa caucuses only matter because people believe they matter
-2024-12-16 18:41:13.854236 INFO::Who is Bill Ackman and why is he so mad?
-2024-12-16 18:41:14.132562 INFO::The Supreme Court will decide what cities can do about tent encampments
-2024-12-16 18:41:14.408802 INFO::South Africa’s genocide case against Israel, explained
-2024-12-16 18:41:14.689018 INFO::Seriously, what is Aaron Rodgers’s deal?
-2024-12-16 18:41:14.967053 INFO::How a Yemeni rebel group is creating chaos in the global economy
-2024-12-16 18:41:15.233418 INFO::When one twin goes vegan and the other doesn’t
-2024-12-16 18:48:40.316699 INFO::month number: 1
-2024-12-16 18:48:40.323915 INFO::number of pages: 10
-2024-12-16 18:48:40.598078 INFO::Page Url: https://www.vox.com/archives/2024/1/1
-2024-12-16 18:48:40.599213 INFO::Number of Articles on this Page: 15
-2024-12-16 18:51:02.427039 INFO::month number: 1
-2024-12-16 18:51:02.430322 INFO::number of pages: 10
-2024-12-16 18:51:02.704689 INFO::Page Url: https://www.vox.com/archives/2024/1/1
-2024-12-16 18:51:02.70601 INFO::Number of Articles on this Page: 15
-2024-12-16 19:00:01.717806 INFO::month number: 1
-2024-12-16 19:00:01.719083 INFO::number of pages: 10
-2024-12-16 19:00:49.2865 INFO::month number: 1
-2024-12-16 19:00:49.289584 INFO::number of pages: 10
-2024-12-16 19:00:49.564964 INFO::Page Url: https://www.vox.com/archives/2024/1/1
-2024-12-16 19:00:49.565947 INFO::Number of Articles on this Page: 15
-2024-12-16 19:00:54.059323 INFO::Page Url: https://www.vox.com/archives/2024/1/2
-2024-12-16 19:00:54.061349 INFO::Number of Articles on this Page: 15
-2024-12-16 19:00:58.453454 INFO::Page Url: https://www.vox.com/archives/2024/1/3
-2024-12-16 19:00:58.4552 INFO::Number of Articles on this Page: 15
-2024-12-16 19:01:03.042582 INFO::Page Url: https://www.vox.com/archives/2024/1/4
-2024-12-16 19:01:03.044328 INFO::Number of Articles on this Page: 15
-2024-12-16 19:01:07.392493 INFO::Page Url: https://www.vox.com/archives/2024/1/5
-2024-12-16 19:01:07.393891 INFO::Number of Articles on this Page: 15
-2024-12-16 19:01:11.767453 INFO::Page Url: https://www.vox.com/archives/2024/1/6
-2024-12-16 19:01:11.768832 INFO::Number of Articles on this Page: 15
-2024-12-16 19:01:16.168871 INFO::Page Url: https://www.vox.com/archives/2024/1/7
-2024-12-16 19:01:16.170316 INFO::Number of Articles on this Page: 15
-2024-12-16 19:01:20.555101 INFO::Page Url: https://www.vox.com/archives/2024/1/8
-2024-12-16 19:01:20.55681 INFO::Number of Articles on this Page: 15
-2024-12-16 19:01:24.932385 INFO::Page Url: https://www.vox.com/archives/2024/1/9
-2024-12-16 19:01:24.933773 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:11.790562 INFO::month number: 1
+2024-12-16 20:13:11.795648 INFO::number of pages: 10
+2024-12-16 20:13:12.069456 INFO::Page Url: https://www.vox.com/archives/2024/1/1
+2024-12-16 20:13:12.072567 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:16.623422 INFO::Page Url: https://www.vox.com/archives/2024/1/2
+2024-12-16 20:13:16.624491 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:21.010937 INFO::Page Url: https://www.vox.com/archives/2024/1/3
+2024-12-16 20:13:21.012335 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:25.735468 INFO::Page Url: https://www.vox.com/archives/2024/1/4
+2024-12-16 20:13:25.736728 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:30.294222 INFO::Page Url: https://www.vox.com/archives/2024/1/5
+2024-12-16 20:13:30.296034 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:34.77128 INFO::Page Url: https://www.vox.com/archives/2024/1/6
+2024-12-16 20:13:34.773818 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:39.257587 INFO::Page Url: https://www.vox.com/archives/2024/1/7
+2024-12-16 20:13:39.258867 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:43.691914 INFO::Page Url: https://www.vox.com/archives/2024/1/8
+2024-12-16 20:13:43.694162 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:49.082452 INFO::Page Url: https://www.vox.com/archives/2024/1/9
+2024-12-16 20:13:49.08349 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:53.686687 INFO::Page Url: https://www.vox.com/archives/2024/1/10
+2024-12-16 20:13:53.688212 INFO::Number of Articles on this Page: 15
+2024-12-16 20:13:58.565954 INFO::month number: 2
+2024-12-16 20:13:58.567213 INFO::number of pages: 12
+2024-12-16 20:13:58.82281 INFO::Page Url: https://www.vox.com/archives/2024/2/1
+2024-12-16 20:13:58.824409 INFO::Number of Articles on this Page: 14
+2024-12-16 20:14:02.932923 INFO::Page Url: https://www.vox.com/archives/2024/2/2
+2024-12-16 20:14:02.93413 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:07.602284 INFO::Page Url: https://www.vox.com/archives/2024/2/3
+2024-12-16 20:14:07.603651 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:11.994114 INFO::Page Url: https://www.vox.com/archives/2024/2/4
+2024-12-16 20:14:11.996335 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:16.440014 INFO::Page Url: https://www.vox.com/archives/2024/2/5
+2024-12-16 20:14:16.44135 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:20.989586 INFO::Page Url: https://www.vox.com/archives/2024/2/6
+2024-12-16 20:14:20.991032 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:25.419201 INFO::Page Url: https://www.vox.com/archives/2024/2/7
+2024-12-16 20:14:25.420831 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:30.03737 INFO::Page Url: https://www.vox.com/archives/2024/2/8
+2024-12-16 20:14:30.039551 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:34.474904 INFO::Page Url: https://www.vox.com/archives/2024/2/9
+2024-12-16 20:14:34.476632 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:38.910837 INFO::Page Url: https://www.vox.com/archives/2024/2/10
+2024-12-16 20:14:38.91278 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:43.260021 INFO::Page Url: https://www.vox.com/archives/2024/2/11
+2024-12-16 20:14:43.260904 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:47.668446 INFO::Page Url: https://www.vox.com/archives/2024/2/12
+2024-12-16 20:14:47.670295 INFO::Number of Articles on this Page: 1
+2024-12-16 20:14:48.406848 INFO::month number: 3
+2024-12-16 20:14:48.408771 INFO::number of pages: 13
+2024-12-16 20:14:48.671942 INFO::Page Url: https://www.vox.com/archives/2024/3/1
+2024-12-16 20:14:48.673375 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:53.090921 INFO::Page Url: https://www.vox.com/archives/2024/3/2
+2024-12-16 20:14:53.092202 INFO::Number of Articles on this Page: 15
+2024-12-16 20:14:58.527876 INFO::Page Url: https://www.vox.com/archives/2024/3/3
+2024-12-16 20:14:58.529389 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:02.885863 INFO::Page Url: https://www.vox.com/archives/2024/3/4
+2024-12-16 20:15:02.887159 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:07.303176 INFO::Page Url: https://www.vox.com/archives/2024/3/5
+2024-12-16 20:15:07.304468 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:11.648942 INFO::Page Url: https://www.vox.com/archives/2024/3/6
+2024-12-16 20:15:11.650468 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:16.144479 INFO::Page Url: https://www.vox.com/archives/2024/3/7
+2024-12-16 20:15:16.146139 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:20.584891 INFO::Page Url: https://www.vox.com/archives/2024/3/8
+2024-12-16 20:15:20.586745 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:24.983591 INFO::Page Url: https://www.vox.com/archives/2024/3/9
+2024-12-16 20:15:24.985032 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:29.403972 INFO::Page Url: https://www.vox.com/archives/2024/3/10
+2024-12-16 20:15:29.406102 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:33.783775 INFO::Page Url: https://www.vox.com/archives/2024/3/11
+2024-12-16 20:15:33.795672 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:38.40789 INFO::Page Url: https://www.vox.com/archives/2024/3/12
+2024-12-16 20:15:38.40921 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:42.824942 INFO::Page Url: https://www.vox.com/archives/2024/3/13
+2024-12-16 20:15:42.826576 INFO::Number of Articles on this Page: 10
+2024-12-16 20:15:46.000415 INFO::month number: 4
+2024-12-16 20:15:46.002287 INFO::number of pages: 12
+2024-12-16 20:15:46.26382 INFO::Page Url: https://www.vox.com/archives/2024/4/1
+2024-12-16 20:15:46.264979 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:50.622192 INFO::Page Url: https://www.vox.com/archives/2024/4/2
+2024-12-16 20:15:50.632218 INFO::Number of Articles on this Page: 15
+2024-12-16 20:15:55.405622 INFO::Page Url: https://www.vox.com/archives/2024/4/3
+2024-12-16 20:15:55.406879 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:00.288347 INFO::Page Url: https://www.vox.com/archives/2024/4/4
+2024-12-16 20:16:00.290859 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:04.612207 INFO::Page Url: https://www.vox.com/archives/2024/4/5
+2024-12-16 20:16:04.613527 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:09.256043 INFO::Page Url: https://www.vox.com/archives/2024/4/6
+2024-12-16 20:16:09.258883 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:13.833603 INFO::Page Url: https://www.vox.com/archives/2024/4/7
+2024-12-16 20:16:13.834182 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:18.051512 INFO::Page Url: https://www.vox.com/archives/2024/4/8
+2024-12-16 20:16:18.053054 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:22.327752 INFO::Page Url: https://www.vox.com/archives/2024/4/9
+2024-12-16 20:16:22.328996 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:26.537545 INFO::Page Url: https://www.vox.com/archives/2024/4/10
+2024-12-16 20:16:26.539461 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:30.824605 INFO::Page Url: https://www.vox.com/archives/2024/4/11
+2024-12-16 20:16:30.825987 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:35.056573 INFO::Page Url: https://www.vox.com/archives/2024/4/12
+2024-12-16 20:16:35.057968 INFO::Number of Articles on this Page: 4
+2024-12-16 20:16:36.557832 INFO::month number: 5
+2024-12-16 20:16:36.559599 INFO::number of pages: 12
+2024-12-16 20:16:36.809672 INFO::Page Url: https://www.vox.com/archives/2024/5/1
+2024-12-16 20:16:36.811069 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:41.096404 INFO::Page Url: https://www.vox.com/archives/2024/5/2
+2024-12-16 20:16:41.098329 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:45.609706 INFO::Page Url: https://www.vox.com/archives/2024/5/3
+2024-12-16 20:16:45.610936 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:50.023458 INFO::Page Url: https://www.vox.com/archives/2024/5/4
+2024-12-16 20:16:50.02503 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:54.429407 INFO::Page Url: https://www.vox.com/archives/2024/5/5
+2024-12-16 20:16:54.430479 INFO::Number of Articles on this Page: 15
+2024-12-16 20:16:58.869816 INFO::Page Url: https://www.vox.com/archives/2024/5/6
+2024-12-16 20:16:58.871826 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:03.224783 INFO::Page Url: https://www.vox.com/archives/2024/5/7
+2024-12-16 20:17:03.226725 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:07.683638 INFO::Page Url: https://www.vox.com/archives/2024/5/8
+2024-12-16 20:17:07.6851 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:12.784641 INFO::Page Url: https://www.vox.com/archives/2024/5/9
+2024-12-16 20:17:12.786761 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:17.210583 INFO::Page Url: https://www.vox.com/archives/2024/5/10
+2024-12-16 20:17:17.212231 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:21.587237 INFO::Page Url: https://www.vox.com/archives/2024/5/11
+2024-12-16 20:17:21.58928 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:26.001733 INFO::Page Url: https://www.vox.com/archives/2024/5/12
+2024-12-16 20:17:26.003105 INFO::Number of Articles on this Page: 13
+2024-12-16 20:17:30.463861 INFO::month number: 6
+2024-12-16 20:17:30.465437 INFO::number of pages: 14
+2024-12-16 20:17:30.743405 INFO::Page Url: https://www.vox.com/archives/2024/6/1
+2024-12-16 20:17:30.745306 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:35.105554 INFO::Page Url: https://www.vox.com/archives/2024/6/2
+2024-12-16 20:17:35.10725 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:39.695131 INFO::Page Url: https://www.vox.com/archives/2024/6/3
+2024-12-16 20:17:39.697371 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:44.074749 INFO::Page Url: https://www.vox.com/archives/2024/6/4
+2024-12-16 20:17:44.076078 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:48.639659 INFO::Page Url: https://www.vox.com/archives/2024/6/5
+2024-12-16 20:17:48.641095 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:53.095313 INFO::Page Url: https://www.vox.com/archives/2024/6/6
+2024-12-16 20:17:53.09693 INFO::Number of Articles on this Page: 15
+2024-12-16 20:17:57.523042 INFO::Page Url: https://www.vox.com/archives/2024/6/7
+2024-12-16 20:17:57.524606 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:01.894075 INFO::Page Url: https://www.vox.com/archives/2024/6/8
+2024-12-16 20:18:01.895545 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:06.313807 INFO::Page Url: https://www.vox.com/archives/2024/6/9
+2024-12-16 20:18:06.31563 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:11.156085 INFO::Page Url: https://www.vox.com/archives/2024/6/10
+2024-12-16 20:18:11.162531 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:15.447357 INFO::Page Url: https://www.vox.com/archives/2024/6/11
+2024-12-16 20:18:15.448808 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:20.094552 INFO::Page Url: https://www.vox.com/archives/2024/6/12
+2024-12-16 20:18:20.095759 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:24.347141 INFO::Page Url: https://www.vox.com/archives/2024/6/13
+2024-12-16 20:18:24.348563 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:30.156895 INFO::Page Url: https://www.vox.com/archives/2024/6/14
+2024-12-16 20:18:30.158638 INFO::Number of Articles on this Page: 6
+2024-12-16 20:18:32.258646 INFO::month number: 7
+2024-12-16 20:18:32.260286 INFO::number of pages: 15
+2024-12-16 20:18:32.518159 INFO::Page Url: https://www.vox.com/archives/2024/7/1
+2024-12-16 20:18:32.520019 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:37.026021 INFO::Page Url: https://www.vox.com/archives/2024/7/2
+2024-12-16 20:18:37.027205 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:41.268568 INFO::Page Url: https://www.vox.com/archives/2024/7/3
+2024-12-16 20:18:41.270097 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:45.601745 INFO::Page Url: https://www.vox.com/archives/2024/7/4
+2024-12-16 20:18:45.604467 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:51.259056 INFO::Page Url: https://www.vox.com/archives/2024/7/5
+2024-12-16 20:18:51.264791 INFO::Number of Articles on this Page: 15
+2024-12-16 20:18:56.732213 INFO::Page Url: https://www.vox.com/archives/2024/7/6
+2024-12-16 20:18:56.734094 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:01.245193 INFO::Page Url: https://www.vox.com/archives/2024/7/7
+2024-12-16 20:19:01.248815 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:05.669269 INFO::Page Url: https://www.vox.com/archives/2024/7/8
+2024-12-16 20:19:05.671268 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:10.065941 INFO::Page Url: https://www.vox.com/archives/2024/7/9
+2024-12-16 20:19:10.067412 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:14.422209 INFO::Page Url: https://www.vox.com/archives/2024/7/10
+2024-12-16 20:19:14.423872 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:18.822534 INFO::Page Url: https://www.vox.com/archives/2024/7/11
+2024-12-16 20:19:18.823742 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:23.707595 INFO::Page Url: https://www.vox.com/archives/2024/7/12
+2024-12-16 20:19:23.708749 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:28.314983 INFO::Page Url: https://www.vox.com/archives/2024/7/13
+2024-12-16 20:19:28.320289 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:32.576275 INFO::Page Url: https://www.vox.com/archives/2024/7/14
+2024-12-16 20:19:32.577645 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:36.781585 INFO::Page Url: https://www.vox.com/archives/2024/7/15
+2024-12-16 20:19:36.787181 INFO::Number of Articles on this Page: 1
+2024-12-16 20:19:37.511263 INFO::month number: 8
+2024-12-16 20:19:37.5126 INFO::number of pages: 14
+2024-12-16 20:19:37.759771 INFO::Page Url: https://www.vox.com/archives/2024/8/1
+2024-12-16 20:19:37.761648 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:42.423281 INFO::Page Url: https://www.vox.com/archives/2024/8/2
+2024-12-16 20:19:42.425639 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:46.663272 INFO::Page Url: https://www.vox.com/archives/2024/8/3
+2024-12-16 20:19:46.665381 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:50.897711 INFO::Page Url: https://www.vox.com/archives/2024/8/4
+2024-12-16 20:19:50.899925 INFO::Number of Articles on this Page: 14
+2024-12-16 20:19:54.91382 INFO::Page Url: https://www.vox.com/archives/2024/8/5
+2024-12-16 20:19:54.915097 INFO::Number of Articles on this Page: 15
+2024-12-16 20:19:59.476859 INFO::Page Url: https://www.vox.com/archives/2024/8/6
+2024-12-16 20:19:59.479541 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:03.786669 INFO::Page Url: https://www.vox.com/archives/2024/8/7
+2024-12-16 20:20:03.787617 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:08.115916 INFO::Page Url: https://www.vox.com/archives/2024/8/8
+2024-12-16 20:20:08.117732 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:12.539225 INFO::Page Url: https://www.vox.com/archives/2024/8/9
+2024-12-16 20:20:12.540656 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:16.917595 INFO::Page Url: https://www.vox.com/archives/2024/8/10
+2024-12-16 20:20:16.91945 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:21.196561 INFO::Page Url: https://www.vox.com/archives/2024/8/11
+2024-12-16 20:20:21.198425 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:28.792683 INFO::Page Url: https://www.vox.com/archives/2024/8/12
+2024-12-16 20:20:28.796008 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:33.413626 INFO::Page Url: https://www.vox.com/archives/2024/8/13
+2024-12-16 20:20:33.415311 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:37.759133 INFO::Page Url: https://www.vox.com/archives/2024/8/14
+2024-12-16 20:20:37.764233 INFO::Number of Articles on this Page: 2
+2024-12-16 20:20:38.825121 INFO::month number: 9
+2024-12-16 20:20:38.8267 INFO::number of pages: 13
+2024-12-16 20:20:39.069227 INFO::Page Url: https://www.vox.com/archives/2024/9/1
+2024-12-16 20:20:39.069937 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:43.612787 INFO::Page Url: https://www.vox.com/archives/2024/9/2
+2024-12-16 20:20:43.614013 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:48.836489 INFO::Page Url: https://www.vox.com/archives/2024/9/3
+2024-12-16 20:20:48.838279 INFO::Number of Articles on this Page: 14
+2024-12-16 20:20:52.922525 INFO::Page Url: https://www.vox.com/archives/2024/9/4
+2024-12-16 20:20:52.92446 INFO::Number of Articles on this Page: 15
+2024-12-16 20:20:57.530559 INFO::Page Url: https://www.vox.com/archives/2024/9/5
+2024-12-16 20:20:57.533333 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:02.118774 INFO::Page Url: https://www.vox.com/archives/2024/9/6
+2024-12-16 20:21:02.120638 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:07.36399 INFO::Page Url: https://www.vox.com/archives/2024/9/7
+2024-12-16 20:21:07.365436 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:11.666123 INFO::Page Url: https://www.vox.com/archives/2024/9/8
+2024-12-16 20:21:11.668196 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:16.042798 INFO::Page Url: https://www.vox.com/archives/2024/9/9
+2024-12-16 20:21:16.044927 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:20.31634 INFO::Page Url: https://www.vox.com/archives/2024/9/10
+2024-12-16 20:21:20.318398 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:24.54524 INFO::Page Url: https://www.vox.com/archives/2024/9/11
+2024-12-16 20:21:24.546446 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:28.961462 INFO::Page Url: https://www.vox.com/archives/2024/9/12
+2024-12-16 20:21:28.968279 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:33.274921 INFO::Page Url: https://www.vox.com/archives/2024/9/13
+2024-12-16 20:21:33.276167 INFO::Number of Articles on this Page: 7
+2024-12-16 20:21:35.62505 INFO::month number: 10
+2024-12-16 20:21:35.62772 INFO::number of pages: 15
+2024-12-16 20:21:35.884119 INFO::Page Url: https://www.vox.com/archives/2024/10/1
+2024-12-16 20:21:35.88556 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:40.18278 INFO::Page Url: https://www.vox.com/archives/2024/10/2
+2024-12-16 20:21:40.184539 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:44.681145 INFO::Page Url: https://www.vox.com/archives/2024/10/3
+2024-12-16 20:21:44.683254 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:48.978685 INFO::Page Url: https://www.vox.com/archives/2024/10/4
+2024-12-16 20:21:48.980105 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:53.297876 INFO::Page Url: https://www.vox.com/archives/2024/10/5
+2024-12-16 20:21:53.302985 INFO::Number of Articles on this Page: 15
+2024-12-16 20:21:57.647024 INFO::Page Url: https://www.vox.com/archives/2024/10/6
+2024-12-16 20:21:57.648984 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:02.455751 INFO::Page Url: https://www.vox.com/archives/2024/10/7
+2024-12-16 20:22:02.457522 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:07.102271 INFO::Page Url: https://www.vox.com/archives/2024/10/8
+2024-12-16 20:22:07.104236 INFO::Number of Articles on this Page: 14
+2024-12-16 20:22:11.218502 INFO::Page Url: https://www.vox.com/archives/2024/10/9
+2024-12-16 20:22:11.219417 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:15.522665 INFO::Page Url: https://www.vox.com/archives/2024/10/10
+2024-12-16 20:22:15.52408 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:20.168271 INFO::Page Url: https://www.vox.com/archives/2024/10/11
+2024-12-16 20:22:20.170855 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:24.984991 INFO::Page Url: https://www.vox.com/archives/2024/10/12
+2024-12-16 20:22:24.985633 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:29.428836 INFO::Page Url: https://www.vox.com/archives/2024/10/13
+2024-12-16 20:22:29.429811 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:33.864283 INFO::Page Url: https://www.vox.com/archives/2024/10/14
+2024-12-16 20:22:33.868683 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:38.591902 INFO::Page Url: https://www.vox.com/archives/2024/10/15
+2024-12-16 20:22:38.593679 INFO::Number of Articles on this Page: 1
+2024-12-16 20:22:39.320437 INFO::month number: 11
+2024-12-16 20:22:39.322289 INFO::number of pages: 15
+2024-12-16 20:22:39.585136 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2024-12-16 20:22:39.586953 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:44.015355 INFO::Page Url: https://www.vox.com/archives/2024/11/2
+2024-12-16 20:22:44.016768 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:48.686501 INFO::Page Url: https://www.vox.com/archives/2024/11/3
+2024-12-16 20:22:48.688156 INFO::Number of Articles on this Page: 15
+2024-12-16 20:22:52.939737 INFO::Page Url: https://www.vox.com/archives/2024/11/4
+2024-12-16 20:22:52.940515 INFO::Number of Articles on this Page: 14
+2024-12-16 20:22:57.023834 INFO::Page Url: https://www.vox.com/archives/2024/11/5
+2024-12-16 20:22:57.025438 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:01.420091 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2024-12-16 20:23:01.421523 INFO::Number of Articles on this Page: 14
+2024-12-16 20:23:05.555757 INFO::Page Url: https://www.vox.com/archives/2024/11/7
+2024-12-16 20:23:05.558546 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:10.006311 INFO::Page Url: https://www.vox.com/archives/2024/11/8
+2024-12-16 20:23:10.007907 INFO::Number of Articles on this Page: 14
+2024-12-16 20:23:14.208617 INFO::Page Url: https://www.vox.com/archives/2024/11/9
+2024-12-16 20:23:14.210292 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:18.823585 INFO::Page Url: https://www.vox.com/archives/2024/11/10
+2024-12-16 20:23:18.824765 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:23.633098 INFO::Page Url: https://www.vox.com/archives/2024/11/11
+2024-12-16 20:23:23.635175 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:28.319072 INFO::Page Url: https://www.vox.com/archives/2024/11/12
+2024-12-16 20:23:28.320319 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:32.783866 INFO::Page Url: https://www.vox.com/archives/2024/11/13
+2024-12-16 20:23:32.786939 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:37.224566 INFO::Page Url: https://www.vox.com/archives/2024/11/14
+2024-12-16 20:23:37.225977 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:42.645467 INFO::Page Url: https://www.vox.com/archives/2024/11/15
+2024-12-16 20:23:42.647738 INFO::Number of Articles on this Page: 14
+2024-12-16 20:23:47.019463 INFO::month number: 12
+2024-12-16 20:23:47.021296 INFO::number of pages: 7
+2024-12-16 20:23:47.279023 INFO::Page Url: https://www.vox.com/archives/2024/12/1
+2024-12-16 20:23:47.280467 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:51.647719 INFO::Page Url: https://www.vox.com/archives/2024/12/2
+2024-12-16 20:23:51.649487 INFO::Number of Articles on this Page: 15
+2024-12-16 20:23:56.398531 INFO::Page Url: https://www.vox.com/archives/2024/12/3
+2024-12-16 20:23:56.400652 INFO::Number of Articles on this Page: 15
+2024-12-16 20:24:01.170099 INFO::Page Url: https://www.vox.com/archives/2024/12/4
+2024-12-16 20:24:01.172124 INFO::Number of Articles on this Page: 14
+2024-12-16 20:24:05.470444 INFO::Page Url: https://www.vox.com/archives/2024/12/5
+2024-12-16 20:24:05.471384 INFO::Number of Articles on this Page: 15
+2024-12-16 20:24:09.854032 INFO::Page Url: https://www.vox.com/archives/2024/12/6
+2024-12-16 20:24:09.856367 INFO::Number of Articles on this Page: 15
+2024-12-16 20:24:14.294161 INFO::Page Url: https://www.vox.com/archives/2024/12/7
+2024-12-16 20:24:14.295871 INFO::Number of Articles on this Page: 14
