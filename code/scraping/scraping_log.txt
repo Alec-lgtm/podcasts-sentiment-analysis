@@ -49,3 +49,155 @@
 2024-12-16 13:33:13.486079 INFO::A deadly new outbreak is testing Africa’s ambitious public health efforts
 2024-12-16 13:33:13.766156 INFO::After Real Housewives of Salt Lake City, is Bravo headed for a fan-pocalypse?
 2024-12-16 13:33:14.046769 INFO::Hawaii’s out-of-control, totally bizarre fight over stray cats
+2024-12-16 18:40:43.785836 INFO::month number: 1
+2024-12-16 18:40:43.791787 INFO::number of pages: 10
+2024-12-16 18:40:44.072918 INFO::page url: https://www.vox.com/archives/2024/1/1
+2024-12-16 18:40:44.07426 INFO::articles per page: 15
+2024-12-16 18:40:44.075068 INFO::scraped titles:
+2024-12-16 18:40:44.373195 INFO::Why conservatives are melting down over Taylor Swift
+2024-12-16 18:40:44.656966 INFO::Why men are secretive about prostate cancer
+2024-12-16 18:40:44.926758 INFO::The allegations against the UN’s Palestinian refugee relief agency, explained
+2024-12-16 18:40:45.206577 INFO::How Boeing put profits over planes
+2024-12-16 18:40:45.480209 INFO::We can still make a good economy much better
+2024-12-16 18:40:45.761654 INFO::The sun’s poles are about to flip. It’s awesome — and slightly terrifying.
+2024-12-16 18:40:46.037189 INFO::The US uses endangered monkeys to test drugs. This law could free them.
+2024-12-16 18:40:46.30833 INFO::Is this a newborn great white shark? Big if true.
+2024-12-16 18:40:46.597867 INFO::The great American natural gas reckoning is upon us
+2024-12-16 18:40:46.871581 INFO::You’re probably eating way too much protein
+2024-12-16 18:40:47.135885 INFO::The bland allure of Hailey Bieber
+2024-12-16 18:40:47.418646 INFO::How the nation’s capital became an outlier on violent crime
+2024-12-16 18:40:47.710096 INFO::Zyn, the nicotine pouch at the center of a brewing culture war, explained
+2024-12-16 18:40:47.988848 INFO::Kiley Reid’s Come and Get It is a witty, overstuffed campus satire
+2024-12-16 18:40:48.266376 INFO::Bats have a unique superpower. Climate change is turning it into a liability.
+2024-12-16 18:40:48.530576 INFO::page url: https://www.vox.com/archives/2024/1/2
+2024-12-16 18:40:48.531681 INFO::articles per page: 15
+2024-12-16 18:40:48.532458 INFO::scraped titles:
+2024-12-16 18:40:48.803636 INFO::Would the US intervene to defend Taiwan? Ask Japan.
+2024-12-16 18:40:49.293327 INFO::America no longer has a monopoly on deadly drones
+2024-12-16 18:40:49.574827 INFO::The nurse practitioner will see you now
+2024-12-16 18:40:49.853395 INFO::Psychedelics are outperforming trauma researchers’ expectations. But why?
+2024-12-16 18:40:50.361514 INFO::We don’t have much money, but want to improve our lives. Where do we start?
+2024-12-16 18:40:50.637262 INFO::The legal fight over whether Texas can seize control of the border, explained
+2024-12-16 18:40:50.911411 INFO::Narendra Modi is celebrating his scary vision for India’s future
+2024-12-16 18:40:51.198566 INFO::The ICJ orders in South Africa’s genocide case against Israel, explained
+2024-12-16 18:40:51.47319 INFO::Does Barbie need all the Oscars for feminism?
+2024-12-16 18:40:51.753409 INFO::A controversial execution in Alabama renews the fight over capital punishment
+2024-12-16 18:40:52.033728 INFO::How the internet built a conspiracy theory around a new spy flick, a debut novel, and Taylor Swift
+2024-12-16 18:40:52.300561 INFO::Why I’m glad my newborn received a false positive test for a rare genetic disorder
+2024-12-16 18:40:52.574857 INFO::Why Trump fears a Biden-GOP immigration deal
+2024-12-16 18:40:52.850967 INFO::Why would anyone be against lifesaving malaria bednets?
+2024-12-16 18:40:53.127609 INFO::A booming economy might not save the Biden campaign
+2024-12-16 18:40:53.388481 INFO::page url: https://www.vox.com/archives/2024/1/3
+2024-12-16 18:40:53.390011 INFO::articles per page: 15
+2024-12-16 18:40:53.390878 INFO::scraped titles:
+2024-12-16 18:40:53.664413 INFO::It’s not your imagination. There has been more war lately.
+2024-12-16 18:40:53.941599 INFO::Would you dump someone if they didn’t peel you an orange?
+2024-12-16 18:40:54.207781 INFO::How to microdose movement
+2024-12-16 18:40:54.486055 INFO::No, DEI isn’t making airplanes fall apart
+2024-12-16 18:40:54.773425 INFO::Surprise! There’s a reason to be (cautiously) optimistic about the climate.
+2024-12-16 18:40:55.057599 INFO::The nine-month cruise that took over TikTok
+2024-12-16 18:40:55.331345 INFO::A deadly new outbreak is testing Africa’s ambitious public health efforts
+2024-12-16 18:40:55.605584 INFO::After Real Housewives of Salt Lake City, is Bravo headed for a fan-pocalypse?
+2024-12-16 18:40:55.883022 INFO::Hawaii’s out-of-control, totally bizarre fight over stray cats
+2024-12-16 18:40:56.165311 INFO::A new Supreme Court case threatens to take away your right to protest
+2024-12-16 18:40:56.43938 INFO::2 winners and 2 losers from the New Hampshire primary
+2024-12-16 18:40:56.705581 INFO::The 2024 New Hampshire primary is underway. Here’s the latest.
+2024-12-16 18:40:56.98051 INFO::What would it take for Nikki Haley to win at this point?
+2024-12-16 18:40:57.2767 INFO::The war in Gaza isn’t going well for Israel, but it’s far from over for Netanyahu
+2024-12-16 18:40:57.553078 INFO::4 winners and 3 losers from this year’s Oscar nominations
+2024-12-16 18:40:57.810696 INFO::page url: https://www.vox.com/archives/2024/1/4
+2024-12-16 18:40:57.812631 INFO::articles per page: 15
+2024-12-16 18:40:57.813792 INFO::scraped titles:
+2024-12-16 18:40:58.089108 INFO::Your home’s cleaner, better heating system comes with one major cost
+2024-12-16 18:40:58.360488 INFO::How a Haley presidency would be better — and worse — than Trump
+2024-12-16 18:40:58.631337 INFO::The Supreme Court says no, Texas can’t use razor wire to restrain federal agents
+2024-12-16 18:40:58.916486 INFO::Oklahoma is begging the Supreme Court not to make it kill a man
+2024-12-16 18:40:59.188715 INFO::The complicated lives and deaths of TikTok’s illness influencers
+2024-12-16 18:40:59.463383 INFO::Is Nikki Haley a moderate or a conservative? Yes.
+2024-12-16 18:40:59.747725 INFO::Where do billionaires come from? Mom and Dad.
+2024-12-16 18:41:00.026692 INFO::Ron DeSantis got the Republican Party wrong
+2024-12-16 18:41:00.291282 INFO::The 2024 Iowa caucuses
+2024-12-16 18:41:00.578165 INFO::Who is etiquette for?
+2024-12-16 18:41:00.869737 INFO::What the conspiracy theory about Nikki Haley’s citizenship is really about
+2024-12-16 18:41:01.141707 INFO::How to be alone with your thoughts
+2024-12-16 18:41:01.436434 INFO::The GOP is moderating — and coming unhinged
+2024-12-16 18:41:01.699141 INFO::The Iran-Pakistan strikes aren’t about Gaza. They’re still alarming.
+2024-12-16 18:41:01.970961 INFO::The tragic story of this famous meteorite
+2024-12-16 18:41:02.237895 INFO::page url: https://www.vox.com/archives/2024/1/5
+2024-12-16 18:41:02.239368 INFO::articles per page: 15
+2024-12-16 18:41:02.240134 INFO::scraped titles:
+2024-12-16 18:41:02.50861 INFO::The US and UK hit Houthi targets in Yemen. It probably won’t stop Red Sea attacks.
+2024-12-16 18:41:02.778214 INFO::Pitting Real Housewives against Survivor villains, The Traitors is reality TV at its best
+2024-12-16 18:41:03.058089 INFO::Why have our winters gotten so weird?
+2024-12-16 18:41:03.325802 INFO::Congress averted a shutdown, but the funding fight isn’t over
+2024-12-16 18:41:03.597265 INFO::If you want to understand modern politics, you have to understand modern fandom
+2024-12-16 18:41:03.878431 INFO::10 ocean mysteries scientists haven’t solved yet
+2024-12-16 18:41:04.153445 INFO::How copyright lawsuits could kill OpenAI
+2024-12-16 18:41:04.429011 INFO::How cyberscams are drawing China into Myanmar’s civil war
+2024-12-16 18:41:04.699639 INFO::The Biden administration’s plan to slash bank overdraft fees, explained
+2024-12-16 18:41:04.972619 INFO::John Roberts and Amy Coney Barrett are unsure if they should be in charge of everything
+2024-12-16 18:41:05.239976 INFO::A practical guide to eating less meat
+2024-12-16 18:41:05.510729 INFO::What the FAA gets right about airplane regulation
+2024-12-16 18:41:05.786828 INFO::Astronomers spotted something perplexing near the beginning of time
+2024-12-16 18:41:06.060302 INFO::Something weird is happening to these Alpine goats. Scientists say it’s an ominous sign.
+2024-12-16 18:41:06.334037 INFO::New Hampshire’s messy Democratic primary, explained
+2024-12-16 18:41:07.720245 INFO::page url: https://www.vox.com/archives/2024/1/6
+2024-12-16 18:41:07.722088 INFO::articles per page: 15
+2024-12-16 18:41:07.723281 INFO::scraped titles:
+2024-12-16 18:41:07.993369 INFO::Ultraviolet light can kill almost all the viruses in a room. Why isn’t it everywhere?
+2024-12-16 18:41:08.285622 INFO::The Supreme Court is running away from transgender rights cases
+2024-12-16 18:41:08.561354 INFO::After Iowa, is it time to trust the polls again?
+2024-12-16 18:41:08.831721 INFO::The first GOP debate: August 23, 2023
+2024-12-16 18:41:09.689282 INFO::The second GOP debate: September 27, 2023
+2024-12-16 18:41:09.965157 INFO::All the Republicans running for president in 2024, explained
+2024-12-16 18:41:10.242784 INFO::How Black churches could lead the way on teen mental health
+2024-12-16 18:41:10.517759 INFO::How 50 Cent became the most versatile man in entertainment
+2024-12-16 18:41:10.789391 INFO::1 winner and 3 losers from the Iowa caucuses
+2024-12-16 18:41:11.061457 INFO::Is it over yet? What the Iowa caucus results mean for the GOP presidential race.
+2024-12-16 18:41:11.370614 INFO::How Trump went from disgraced insurrectionist to Iowa caucus winner
+2024-12-16 18:41:11.64775 INFO::America is retreating from global health leadership at the worst possible time
+2024-12-16 18:41:11.925445 INFO::How to decode the Iowa caucuses result
+2024-12-16 18:41:12.220085 INFO::What China wants out of Myanmar’s civil war
+2024-12-16 18:41:12.494066 INFO::In Taiwan’s high-stakes elections, China is the loser
+2024-12-16 18:41:12.745453 INFO::page url: https://www.vox.com/archives/2024/1/7
+2024-12-16 18:41:12.74765 INFO::articles per page: 15
+2024-12-16 18:41:12.74908 INFO::scraped titles:
+2024-12-16 18:41:13.020537 INFO::How plagiarism became the latest weapon in the culture wars
+2024-12-16 18:41:13.299257 INFO::Taiwan elects Lai Ching-te, denying China’s hopes for reunification
+2024-12-16 18:41:13.576285 INFO::The Iowa caucuses only matter because people believe they matter
+2024-12-16 18:41:13.854236 INFO::Who is Bill Ackman and why is he so mad?
+2024-12-16 18:41:14.132562 INFO::The Supreme Court will decide what cities can do about tent encampments
+2024-12-16 18:41:14.408802 INFO::South Africa’s genocide case against Israel, explained
+2024-12-16 18:41:14.689018 INFO::Seriously, what is Aaron Rodgers’s deal?
+2024-12-16 18:41:14.967053 INFO::How a Yemeni rebel group is creating chaos in the global economy
+2024-12-16 18:41:15.233418 INFO::When one twin goes vegan and the other doesn’t
+2024-12-16 18:48:40.316699 INFO::month number: 1
+2024-12-16 18:48:40.323915 INFO::number of pages: 10
+2024-12-16 18:48:40.598078 INFO::Page Url: https://www.vox.com/archives/2024/1/1
+2024-12-16 18:48:40.599213 INFO::Number of Articles on this Page: 15
+2024-12-16 18:51:02.427039 INFO::month number: 1
+2024-12-16 18:51:02.430322 INFO::number of pages: 10
+2024-12-16 18:51:02.704689 INFO::Page Url: https://www.vox.com/archives/2024/1/1
+2024-12-16 18:51:02.70601 INFO::Number of Articles on this Page: 15
+2024-12-16 19:00:01.717806 INFO::month number: 1
+2024-12-16 19:00:01.719083 INFO::number of pages: 10
+2024-12-16 19:00:49.2865 INFO::month number: 1
+2024-12-16 19:00:49.289584 INFO::number of pages: 10
+2024-12-16 19:00:49.564964 INFO::Page Url: https://www.vox.com/archives/2024/1/1
+2024-12-16 19:00:49.565947 INFO::Number of Articles on this Page: 15
+2024-12-16 19:00:54.059323 INFO::Page Url: https://www.vox.com/archives/2024/1/2
+2024-12-16 19:00:54.061349 INFO::Number of Articles on this Page: 15
+2024-12-16 19:00:58.453454 INFO::Page Url: https://www.vox.com/archives/2024/1/3
+2024-12-16 19:00:58.4552 INFO::Number of Articles on this Page: 15
+2024-12-16 19:01:03.042582 INFO::Page Url: https://www.vox.com/archives/2024/1/4
+2024-12-16 19:01:03.044328 INFO::Number of Articles on this Page: 15
+2024-12-16 19:01:07.392493 INFO::Page Url: https://www.vox.com/archives/2024/1/5
+2024-12-16 19:01:07.393891 INFO::Number of Articles on this Page: 15
+2024-12-16 19:01:11.767453 INFO::Page Url: https://www.vox.com/archives/2024/1/6
+2024-12-16 19:01:11.768832 INFO::Number of Articles on this Page: 15
+2024-12-16 19:01:16.168871 INFO::Page Url: https://www.vox.com/archives/2024/1/7
+2024-12-16 19:01:16.170316 INFO::Number of Articles on this Page: 15
+2024-12-16 19:01:20.555101 INFO::Page Url: https://www.vox.com/archives/2024/1/8
+2024-12-16 19:01:20.55681 INFO::Number of Articles on this Page: 15
+2024-12-16 19:01:24.932385 INFO::Page Url: https://www.vox.com/archives/2024/1/9
+2024-12-16 19:01:24.933773 INFO::Number of Articles on this Page: 15
