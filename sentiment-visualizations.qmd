@@ -13,27 +13,19 @@ In the modern era it seems that people are moving farther and farther away from 
 
 In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section.
 
-###Three Big Questions
+### Big Questions
 
-Given the breadth and depth of Vox's catalog of articles and podcasts, we decided to focus on three critical questions in the comparison between Vox podcasts and articles.
+the breadth and depth of Vox's catalog of articles and podcasts, we decided to focus on two main areas  in the comparison between Vox podcasts and articles.
 
 -   What is the overall sentiment across Vox's podcasts, and how does it vary by topic?
 
 -   Does sentiment shift during specific episodes, perhaps reflecting the emotional arc of the conversation?
 
--   For comparison with traditional articles, we are hand-picking an article from Vox's website that corresponds to the topic area and relative date when the podcast was posted.
+### Word Frequency Analysis
 
-###Word Frequency Analysis
+We can however provide metrics on distribution of words used in the Vox podcasts.
 
-Unfortunately we were unable to complete the sentiment analysis portion of analysis before completion of this blog. Sentiment analysis is a complicated process that we are currently working through. We can however provide metrics on distribution of words used in the Vox podcasts.
-
-![Word count](..\blog\most_common_words.png)
-
-We first found the twenty most frequent words in our dataset.
-
-Many of these words are commonplace and don't provide any affective meaning to our analysis so we decided to remove them from the dataset. This process is known as "removing stop words".
-
-![](..\blog\top_words.png)
+![](..\blog\vox_articles_top_words)
 
 Words like "like," "know," "think," and "really" suggest that the conversational and relatable tone of Vox podcasts remains a strong characteristic. Recurring words like "Trump" and "Noel" indicate important and recurring characters on the show. In this case, "Noel" is one of the authors of the podcast so her name is a frequent word where the word "Trump" indicates that the Vox podcast talks about Trump a lot.
 

@@ -69,7 +69,7 @@ def create_visualizations(combined_counts, output_dir="output"):
     plt.close()
 
 def main():
-    # Set up configuration
+    # Set up file paths
     directory = "../../data/vox_podcasts/2024/"
     output_dir = "../../figures/"
 

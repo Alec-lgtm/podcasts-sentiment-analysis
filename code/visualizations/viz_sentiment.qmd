@@ -4,7 +4,6 @@ format: html
 editor: visual
 ---
 
-
 Load Libraries and Data:
 
 ```{r}
@@ -18,9 +17,9 @@ library(stringr)
 library(zoo)
 
 # Load article and podcast data
-podcast_file_paths <- list.files(path = "../data/vox_podcasts/", full.names = T, recursive = T)
+podcast_file_paths <- list.files(path = "../../data/vox_podcasts/", full.names = T, recursive = T)
 podcast_transcripts <- readtext(podcast_file_paths)
-articles_text <- readRDS("../data/vox_articles/2024_all_vox_articles.rds")
+articles_text <- readRDS("../../data/vox_articles/2024_all_vox_articles.rds")
 ```
 
 ### Data Cleaning
@@ -49,7 +48,7 @@ articles_text_words <- articles_text_clean %>%
   anti_join(stop_words, by = "word") #680.40 words per article average
 ```
 
-### Data Analysis 
+### Data Analysis
 
 Syzuhet Built in Analysis
 
@@ -169,6 +168,7 @@ plot(best_sentiment_article_value,
   xlab = "Narrative Time",
   ylab= "Emotional Valence")
 ```
+
 #### Rolling average sentiment over time
 
 ```{r}
@@ -232,7 +232,6 @@ ggsave("podcast_sentiment_10.png", p1, width = 10, height = 6)
 ggsave("podcast_sentiment_20.png", p2, width = 10, height = 6)
 ggsave("podcast_sentiment_50.png", p3, width = 10, height = 6)
 ```
-
 
 ```{r}
 # Gets the 8 emotions the podcasts and articles will be ranked by

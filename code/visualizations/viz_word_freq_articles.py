@@ -84,7 +84,7 @@ def create_visualizations(combined_counts, output_dir="output"):
     plt.close()
 
 def main():
-    # Set up configuration
+    # Set up file paths 
     csv_file = "../../data/vox_articles/2024_all_vox_articles.csv"
     output_dir = "../../figures"
 
