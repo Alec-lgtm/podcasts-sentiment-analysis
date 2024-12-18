@@ -8,8 +8,8 @@ Project by Aki Wada and Alec Chen
 
 - [About the Project](#about-the-project)
 - [Getting Started](#getting-started)
-- [Overview](#usage)
-- [Acknowledgement](#features)
+- [Overview](#Overview)
+- [Acknowledgement](#Acknowledgement)
 
 ---
 
@@ -17,7 +17,7 @@ Project by Aki Wada and Alec Chen
 
 This project is sentiment analysis of vox articles and podcasts using the `syzuhet` library.
 
-### Built With
+**Built With**
 
 - [R](https://www.r-project.org)
 - [Python](https://www.python.org/)
@@ -25,8 +25,6 @@ This project is sentiment analysis of vox articles and podcasts using the `syzuh
 ---
 
 ## Getting Started
-
-### Prerequisites
 
 Install these Python libraries:
 
