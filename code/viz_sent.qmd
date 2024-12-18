@@ -1,3 +1,13 @@
+---
+title: "viz_sent.R"
+format: html
+editor: visual
+---
+
+
+Load Libraries and Data:
+
+```{r}
 library(syuzhet)
 library(tidyverse)
 library(tm)
@@ -5,15 +15,17 @@ library(ggplot2)
 library(readtext)
 library(tidytext)
 library(stringr)
+library(zoo)
 
-
-# ---- Data Cleaning ----
-
-### Podcasts
-podcast_file_paths <- list.files(path = "../data/vox_podcasts", full.names = T, recursive = T)
+# Load article and podcast data
+podcast_file_paths <- list.files(path = "../data/vox_podcasts/", full.names = T, recursive = T)
 podcast_transcripts <- readtext(podcast_file_paths)
 articles_text <- readRDS("../data/vox_articles/2024_all_vox_articles.rds")
+```
 
+### Data Cleaning
+
+```{r}
 # Cleans the podcast and article text so that they only contains alphanumerics and creates a date column
 podcast_transcripts_clean <- podcast_transcripts %>%
   mutate(text = str_remove_all(text, "[^[:alpha:][:space:]]"), date = str_extract(doc_id, "[0-9]*_[0-9]*_[0-9]*"))
@@ -35,10 +47,13 @@ podcast_transcripts_words <- podcast_transcripts_clean %>%
 articles_text_words <- articles_text_clean %>%
   unnest_tokens(word, text) %>%
   anti_join(stop_words, by = "word") #680.40 words per article average
+```
 
+### Data Analysis 
 
-# ---- Sentiment Analysis ----
+Syzuhet Built in Analysis
 
+```{r}
 ### Syuzhet Built-in analysis
 
 # Calculates the sentiment score for each document in the podcasts and articles
@@ -63,11 +78,12 @@ articles_sentiment_by_date <- articles_text_clean %>%
 podcasts_sentiment_2024 <- podcast_transcripts_clean %>%
   mutate(sentiment = podcasts_sentiment) %>%
   filter(date >= ymd("24-01-01"))
+```
 
-# ---- Individual Points ----
+Find best and worst article and podcast by sentiment
 
-### Podcasts
-
+```{r}
+### Get best and worst sentiment podcast
 worst_sentiment_podcast <- podcasts_sentiment_by_date %>%
   filter(sentiment == min(sentiment)) %>%
   unnest_tokens(word, text) %>%
@@ -79,10 +95,9 @@ best_podcast_sentiment <- podcasts_sentiment_by_date %>%
   anti_join(stop_words, by = "word")
 
   best_sentiment_podcast_value <- get_sentiment(best_podcast_sentiment$word, method="syuzhet")
-
   worst_sentiment_podcast_value <- get_sentiment(worst_sentiment_podcast$word, method="syuzhet")
 
-### Articles
+### Get best and worst sentiment article
 
 worst_sentiment_article <- articles_sentiment_by_date %>%
   filter(sentiment == min(sentiment)) %>%
@@ -94,12 +109,15 @@ best_sentiment_article <- articles_sentiment_by_date %>%
   unnest_tokens(word, text) %>%
   anti_join(stop_words, by = "word")
 
-  best_sentiment_article_value <- get_sentiment(best_sentiment_article$word, method="syuzhet")
+best_sentiment_article_value <- get_sentiment(best_sentiment_article$word, method="syuzhet")
+worst_sentiment_article_value <- get_sentiment(worst_sentiment_article$word, method="syuzhet")
+```
 
-  worst_sentiment_article_value <- get_sentiment(worst_sentiment_article$word, method="syuzhet")
+### Visualizations
 
-# ---- Podcast Sentiment Visualizations ----
+#### Sentiment over a year
 
+```{r}
 # All podcasts from 2020-2024
 ggplot(podcasts_sentiment_by_date, aes(x = date, y = sentiment)) +
   geom_line() +
@@ -114,30 +132,30 @@ ggplot(podcasts_sentiment_2024, aes(x = date, y = sentiment)) +
   labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
   geom_smooth()
 
-
-plot(worst_sentiment_podcast_value,
-  type="l",
-  main="worst",
-  xlab = "Narrative Time",
-  ylab= "Emotional Valence")
-
-
-plot(best_sentiment_podcast_value,
-  type="l",
-  main="best",
-  xlab = "Narrative Time",
-  ylab= "Emotional Valence")
-
-# ---- Articles Sentiment Visualizations ----
-
+# All articles 2024
 ggplot(articles_sentiment_by_date, aes(x = date, y = sentiment)) +
   geom_line() +
   geom_point() +
-  labs(title = "Sentiment over Time", x = "Date", y = "Sentiment Score") +
+  labs(title = "Article sentiment in the year 2024", x = "Date", y = "Sentiment Score") +
   geom_smooth()
+```
 
+#### Sentiment over a single podcast or article
 
-plot(worst_sentiment_article_value, type="l", main="worst", xlab = "Narrative Time", ylab= "Emotional Valence")
+```{r}
+# Sentiment over time in worst podcast
+plot(worst_sentiment_podcast_value,
+  type="l",
+  main="worst",
+  xlab = "How word sentiment changes in the lowest ranking sentiment podcast",
+  ylab= "Emotional Valence")
+
+# Sentiment over time in best podcast
+plot(best_sentiment_podcast_value,
+  type="l",
+  main="best",
+  xlab = "How word sentiment changes in the best ranking sentiment podcast",
+  ylab= "Emotional Valence")
 
 plot(worst_sentiment_article_value,
   type="l",
@@ -150,31 +168,95 @@ plot(best_sentiment_article_value,
   main="best",
   xlab = "Narrative Time",
   ylab= "Emotional Valence")
+```
+#### Rolling average sentiment over time
 
-# ---- NRC Analysis ----
+```{r}
+# Function to visualize podcast sentiment
+visualize_podcast_sentiment <- function(sentiment_vector, window_size = 20) {
+  # Create a data frame with the raw sentiment data
+  df <- data.frame(
+    time = 1:length(sentiment_vector),
+    sentiment = sentiment_vector
+  )
+  
+  # Calculate rolling mean, handling zero values appropriately
+  df$smoothed_sentiment <- rollmean(sentiment_vector, 
+                                  k = window_size, 
+                                  fill = NA, 
+                                  align = "center")
+  
+  # Create main plot with both raw and smoothed data
+  p <- ggplot(df, aes(x = time)) +
+    # Add horizontal line at y = 0
+    geom_hline(yintercept = 0, linetype = "dashed", color = "gray50", alpha = 0.5) +
+    # Raw sentiment points
+    geom_point(aes(y = sentiment), 
+              alpha = 0.3, 
+              size = 1,
+              color = "gray50") +
+    # Smoothed line
+    geom_line(aes(y = smoothed_sentiment),
+              color = "#2563eb",
+              size = 1) +
+    # Add theme and labels
+    theme_minimal() +
+    labs(title = paste("Podcast Sentiment Analysis\n", 
+                      window_size, "-word Moving Average", sep=""),
+         x = "Narrative Time",
+         y = "Sentiment Score") +
+    # Set fixed y-axis limits based on your data range
+    scale_y_continuous(limits = c(-1, 1),
+                      breaks = seq(-1, 1, 0.25)) +
+    # Customize theme elements
+    theme(
+      plot.title = element_text(hjust = 0.5, size = 14),
+      panel.grid.minor = element_blank(),
+      panel.grid.major.x = element_blank(),
+      axis.line = element_line(color = "gray50")
+    )
+  
+  return(p)
+}
 
-podcasts_emotions <- prop.table(podcasts_nrc_data[, 1:8]) %>%
+# Create plots with different window sizes
+p1 <- visualize_podcast_sentiment(worst_sentiment_article_value, window_size = 10)
+p2 <- visualize_podcast_sentiment(worst_sentiment_article_value, window_size = 20)
+p3 <- visualize_podcast_sentiment(worst_sentiment_article_value, window_size = 50)
+
+library(gridExtra)
+grid.arrange(p1, p2, p3, ncol = 1)
+
+# Optional: Save plots
+ggsave("podcast_sentiment_10.png", p1, width = 10, height = 6)
+ggsave("podcast_sentiment_20.png", p2, width = 10, height = 6)
+ggsave("podcast_sentiment_50.png", p3, width = 10, height = 6)
+```
+
+
+```{r}
+# Gets the 8 emotions the podcasts and articles will be ranked by
+podcasts_nrc_emotions <- prop.table(podcasts_nrc_data[, 1:8]) %>%
+  colSums() %>%
+  data.frame(Emotion = names(.), Percentage = .)
+articles_nrc_emotions <- prop.table(articles_nrc_data[, 1:8]) %>%
   colSums() %>%
   data.frame(Emotion = names(.), Percentage = .)
 
-articles_emotions <- prop.table(articles_nrc_data[, 1:8]) %>%
-  colSums() %>%
-  data.frame(Emotion = names(.), Percentage = .)
-
-# TODO: Change name of `emotion`
-emotions <- podcasts_emotions %>%
-  inner_join(articles_emotions, by = "Emotion" ) %>%
+# Joins the podcast and article data
+podcast_articles_nrc_emotion_levels <- podcasts_nrc_emotions %>%
+  inner_join(articles_nrc_emotions, by = "Emotion" ) %>%
   mutate("Podcast Percentage" = Percentage.x, "Article Percentage" = Percentage.y) %>%
   select(Emotion,"Podcast Percentage", "Article Percentage") %>%
   pivot_longer(cols = c("Article Percentage", "Podcast Percentage"),
                names_to = "Media",
                values_to = "Percentage")
 
-# Plot the side-by-side barplot
-ggplot(emotions, aes(x = Emotion, y = Percentage, fill = Media)) +
+# Plots the 
+ggplot(podcast_articles_nrc_emotion_levels, aes(x = Emotion, y = Percentage, fill = Media)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Article NRC vs Podcast NRC",
-       x = "Emotion", y = "Percentage of Sentiment", fill = "Media") +
+  labs(title = "Article Emotion levels vs Podcast Emotion levels",
+       x = "Emotion", y = "Percentage of Sentiment", fill = "Media", caption = "Emotion levels from NRC Database") +
   theme_minimal() +
   scale_fill_manual(values = c("Article Percentage" = "steelblue", "Podcast Percentage" = "darkorange"))
-
+```
