@@ -9,7 +9,8 @@ output:
 self-contained: true
 ---
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, message = FALSE}
+library(tidyverse)
 load("data/visualizations_worspace.RData")
 ```
 
@@ -80,7 +81,7 @@ We first pre-processed the data for binary sentiment analysis.
 head(podcasts_sentiment_2024)
 ```
 
-After cleaning and pre-processing, we found the sentiment scores for each podcast. There are some things to note. First, the news is moderately pretty positive, and podcast are even moreso! The sentiment for Articles are about a positive 8.25 on average on average while the average for podcasts seem are 15.12, double that of articles. This is odd since normally the news is associated with fear and negativity. 
+After cleaning and pre-processing, we found the sentiment scores for each podcast. There are some things to note. First, the news is moderately pretty positive, and podcast are even moreso! The sentiment for articles are about a positive 8.25 on average on average while the average for podcasts seem are 15.12, double that of articles. This is odd since normally the news is associated with fear and negativity. 
 
 If our model of language is correct and we can sum the sentiment of multiple words together, we can make a judgement that the podcasts are more positive than the articles.
 
@@ -110,71 +111,70 @@ best_podcast_sentiment %>%
 
 By contrast the best article and podcast sentiment were on completely different topics. The best sentiment article was about having panic attacks about joy whereas the best sentiment podcast was about bringing back the SAT.
 
-#### Visualization
+#### Sentiment over 2024
 
-**The year 2024**
+Our sentiment analysis of articles and podcasts over the year 2024 reveals similar trends and behaviors across the two media formats.
 
-The sentiment analysis of articles and podcasts over the year 2024 reveals similar trends and behaviors across the two media formats. 
-
-For articles, the sentiment scores exhibit significant fluctuations throughout the year, with a mix of both highly positive and negative values. Despite this variability, a slight upward linear trend suggests a gradual increase in positivity over time. The data is densely clustered around the neutral score (0), indicating relative stability in sentiment despite frequent spikes and dips.
+For articles, the sentiment scores jump around with a mix of positive and negative values, but overall, we notice a slight upward trend, showing that articles become a bit more positive as the year goes on. Most of the scores cluster near neutral, which tells us that articles tend to stay pretty steady and balanced. We believe this may be due to editorial choices that keep the news source consistent.
 
 ```{r,echo = FALSE, error = FALSE}
 articles_2024_viz
 ```
 
-Podcasts have simiarly significant fluctuations throughout the year. However, the general trend line seems to have a minor increase in positive sentiment, followed by a gradual decline toward the end of 2024. Podcasts seem to exhibit sharper sentiment scores in the greater than 40 in the negative and positive direction indicating people may use stronger words in conversation compared to text.
+For podcasts, we see a much more slightly dynamic pattern. There’s a slight rise in positive sentiment around the middle of the year, but then it starts to dip again as the year wraps up. This suggests podcasts might be responding to changing events or themes over time. Podcasts seem to exhibit sharper sentiment scores in the greater than 40 in the negative and positive direction indicating people may use stronger words in conversation compared to text.
 
 ```{r, echo = FALSE, error = FALSE}
 podcast_2024_viz
 ```
 
-```{r}
+### Sentiment over the best and worst texts
+
+For the podcasts and articles with the worst and best sentiment score. We plotted the sentiment score over narrative time (were one point in narrative time correlating with a word in the text). We took the ten word moving average for each point in narrative time since the data was extremely volatile.
+
+**Worst Sentiment Scores**
+
+For both the worst sentiment article and worst sentiment podcast, both their moving average trended below 0 for the majority of narrative time. There seems to be a slight trend upward at narrative time ~800 in the article sentiment moving average but the majority of moving average stays below 0 still during that time. The narrative time for the article is longer than the narrative time for the podcast.
+
+```{r, error = FALSE, echo = FALSE}
 article_worst
-article_best
+podcast_worst
 ```
 
+**Best Sentiment Scores**
 
+For the podcast best sentiment score, the sentiment score stays fairly neutral, with small fluctuations above zero for most of the narrative. We notice a sharp dip midway through, which could indicate a particularly negative segment before returning to balance. The overall tone remains steady without big swings, except for that standout drop.
 
+For the article best sentiment score, the sentiment score stays above 0 by a significant margin. There's much more varability and like the worst sentiment score, the article has a longer narrative time than the article.
+
+```{r, error = FALSE}
+article_best
+podcast_best
+```
+
+**Comparing emotional levels across articles and podcasts**
+
+Looking at the specific emotional content of the words we find that both the articles and the podcast are very similar, almost exactly the same in percentage. We can see that vox prioritizes trust in their news coverage more than anything else. This seems like a positive marker for the new source since it brings credibility to their reporting. Although we can still see fear still has a relatively high percentage of words in our article-podcast dataset. 
 
 ```{r}
-##podcast
-pemotions <- prop.table(Pnrc_data[, 1:8]) %>%
-  colSums() %>%
-  data.frame(Emotion = names(.), Percentage = .)
-
-Aemotions <- prop.table(Anrc_data[, 1:8]) %>%
-  colSums() %>%
-  data.frame(Emotion = names(.), Percentage = .)
-
-emotions <- pemotions %>%
-  inner_join(Aemotions, by = "Emotion" ) %>%
-  mutate("Podcast Percentage" = Percentage.x, "Article Percentage" = Percentage.y) %>%
-  select(Emotion,"Podcast Percentage", "Article Percentage") %>%
-  pivot_longer(cols = c("Article Percentage", "Podcast Percentage"),
-               names_to = "Media", 
-               values_to = "Percentage")
-
-# Plot the side-by-side barplot
-ggplot(emotions, aes(x = Emotion, y = Percentage, fill = Media)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Article NRC vs Podcast NRC",
-       x = "Emotion", y = "Percentage of Sentiment", fill = "Media") +
-  theme_minimal() +
-  scale_fill_manual(values = c("Article Percentage" = "steelblue", "Podcast Percentage" = "darkorange"))
+nrc_emotional_levels_viz
 ```
 
-###NRC Emotional Valence
+### Conclusions
 
-If we were to look at the specific emotional content of the words we find that both the articles and the podcast are very similar, almost exactly the same in percentage. First and foremost we can see that Vox prioritizes trust in their news coverage more than anything else. Which I would say is a good sign, as I would rather have that than fear mongering news stories. Although we can still see fear still has a relatively high percentage of the data, I think a good amount of fear is probably necessary in the news industry to stay alive (which comprimises the validity of the story, but I digress).
+In conclusion, our sentiment analysis of Vox podcasts and articles from 2024 revealed some interesting insights into how news media tone varies across different formats. Overall, we found that both podcasts and articles maintain a relatively neutral to slightly positive tone on average. However, podcasts exhibited more variability and stronger sentiment swings in both the positive and negative directions compared to articles. This suggests the more conversational nature of podcasts allows for greater emotional range and dynamism, while articles adhere to a steadier, more balanced tone, likely due to editorial standards. When examining the best and worst sentiment scores, the lowest scoring podcast and article both focused on coverage of conflicts and wars, while the most positive podcast and article covered more light-hearted, emotionally uplifting content. Across both media, our emotional analysis showed that words related to trust were most prevalent, indicating vox's focus on credibility in its reporting. However, words associated with fear were also notably frequent, perhaps unavoidable in news coverage. In short, while both media follow similar sentiment trends overall, key differences emerge in their variability, topical drivers of extreme emotions, and format-specific patterns.
 
-###Problems/Issues with our data
+As with any analysis, our work has some limitations worth noting. Firstly, our dataset focuses solely on Vox media, so our findings may not be generalizable to other news outlets. Vox's editorial slant, target audience and topical focus is unique, so sentiment patterns we observed may not hold for drastically different media entities, such as those with an overt political bias or niche focus. Furthermore, the Syuzhet sentiment analysis package, while a powerful tool, is not infallible - it relies on predetermined word scores which may not always perfectly capture the nuanced emotions of a text, especially for words whose meaning is highly context-dependent. We also only focused on overall valence (positive vs negative) rather than more complex emotional states. Finally, by analyzing data from a single year, our findings offer a snapshot in time, but sentiment may evolve in the long run based on shifting news cycles and sociopolitical climates. To build on this exploratory work, future analyses could expand the dataset across different news sources, compare multiple years, and explore more granular emotional analysis.
 
-But as always there is some problem with our research. For one, we really only looked at one news site. It is very possible that Vox might be an exception and the data might not be applicable outside of Vox. for instance if we were to find some Media that has a speciality demographic, such as Shark News, or has a strong political lean, like Fox news, we might get completely different data.
+### Work Cited:
 
-Work Cited:
+- https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm
 
-https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html
+- https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html
 
-https://stackoverflow.com/
+- https://stackoverflow.com/
 
+### R Version
+
+```{r, echo = FALSE}
 sessionInfo()
+```
