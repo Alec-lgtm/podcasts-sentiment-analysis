@@ -63,7 +63,7 @@ def create_visualizations(combined_counts, output_dir="output"):
     plt.figure(figsize=(15,8))
     sns.barplot(data=top_words_df, x='Word', y='Count')
     plt.xticks(rotation=45, ha='right')
-    plt.title('Top 20 Most Frequent Words')
+    plt.title('Top 20 Most Frequent Words in Vox Podcasts')
     plt.tight_layout()
     plt.savefig(Path(output_dir) / 'vox_podcasts_top_words.png', bbox_inches='tight', dpi=300)
     plt.close()

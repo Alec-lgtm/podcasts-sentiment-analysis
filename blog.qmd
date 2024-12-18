@@ -9,55 +9,47 @@ output:
 self-contained: true
 ---
 
+## Sentiment Analysis on Vox Podcasts: Insights into the Voice of News
+
 In the modern era it seems that people are moving farther and farther away from print media. With the advent of the 24 hour news cycle started at the turn of the century and the ever present diminishing attention span, People are now consuming their news in different media than their parents generation. Even as newspapers evolve more to be online in forms of online posts and websites, more people are more engaged in media that can be listened to. So as news changes the way it is dispersed how does that change the way news is received?
 
 In our project we are specifically looking at the "sentiment" of podcast episodes and news articles. First we wanted to get a consistent type of content from both the articles and the podcast. So we decided that meant we used the same source for both, Vox. Vox has both a news podcast section called "Voxxed: Explained" and a standard print news section.
 
 ### Big Questions
 
-the breadth and depth of Vox's catalog of articles and podcasts, we decided to focus on two main areas  in the comparison between Vox podcasts and articles.
+Given the breadth and depth of Vox's catalog of articles and podcasts, we decided to focus on two main areas in the comparison between Vox podcasts and articles.
 
 -   What is the overall sentiment across Vox's podcasts, and how does it vary by topic?
 
 -   Does sentiment shift during specific episodes, perhaps reflecting the emotional arc of the conversation?
 
+We conducted this analysis on all vox podcasts and vox articles up to December 16th 2024.
+
 ### Word Frequency Analysis
 
-We can however provide metrics on distribution of words used in the Vox podcasts.
+We first analyzed the distribution of words in vox podcasts and vox articles. We took the top twenty most frequent words out of the vox podcasts and vox articles. We removed words that provided no emotional meaning like "and" and "the".
 
-![](..\blog\vox_articles_top_words)
+![](figures/vox_podcasts_top_words.png)
 
-Words like "like," "know," "think," and "really" suggest that the conversational and relatable tone of Vox podcasts remains a strong characteristic. Recurring words like "Trump" and "Noel" indicate important and recurring characters on the show. In this case, "Noel" is one of the authors of the podcast so her name is a frequent word where the word "Trump" indicates that the Vox podcast talks about Trump a lot.
+For vox podcasts, words like "like," "know," "think," and "really" suggest that the conversational and relatable tone of Vox podcasts remains a strong characteristic. Recurring words like "Trump" and "Noel" indicate important and recurring characters on the show. In this case, "Noel" and "Sean" are both the authors of the podcast so their names are frequent words where the word "Trump" indicates that the Vox podcast talks about Trump a significant amount of the time.
 
-![](..\blog\wordcloud.png)
+![](figures/vox_articles_top_words.png)
 
-We can visualize these word frequencies in a word cloud. The large purple "people" and smaller in size word "right" indicate that Vox podcast is a human-centric podcast focused on correct decisions in terms of societal good.
+In vox articles, we see similar informal language like "like" and "also". The topics are similar with the word "Trump" ranking similarly highly among vox articles. This suggests both vox podcasts and articles have a slightly positive to neutral tone
 
-We also created a histogram of the frequency of words. The highly skewed distribution of words indicate that a small number of words (the most frequent words) occur very often, while the majority of words appear rarely.
+We can visualize these word frequencies in a word cloud. Below is the word cloud for vox podcasts. The green word "people" and smaller in size purple word "right" indicate that Vox podcast is a human-centric podcast focused on correct decisions in terms of societal good. 
 
-![](..\blog\word_freq_distribution.png)
+![Vox Podcast Word Cloud](figures/vox_podcasts_wordcloud.png)
 
-###Takeaways
+The vox article word cloud shows many of the same words but notably, the word "know" is missing. Of note, many of the smaller words on the vox article word cloud indicate much more formal language. For example words like "government", state" and "law" in the vox articles can be constrasted with words like "things", "part" and "yeah" from the vox podcast. 
 
-The frequent use of conversational words like "like," "know," "really," and "think" from word distribution analysis indicate that the Vox podcast has a casual and relatable tone suggesting a slightly positive to neutral tone. However the frequency distribution and word cloud do not directly measure sentiment.
+![Vox Article Word Cloud](figures/vox_articles_wordcloud.png)
 
-The histogram of word frequencies shows a large vocabulary, indicating varied discussions. This diversity of language could reflect shifts in tone or sentiment throughout episodes as topics and conversational dynamics evolve. One key limitation here is that these plots don't show any actual emotive change over time, so we cannot know for certain how if the sentiment is changing throughout a podcast episode.
+Overall, this suggests that while both vox podcasts and articles have a generally informal and approachable tone, vox articles are more formal than vox podcasts.
 
-The major limitations in our analysis are the lack of temporal granularity and contextual ambiguity in our podcasts. These metrics are aggregated over all podcasts so we cannot know exactly when podcasts shift tone. Also, while we know which words were frequently used, we do not know the context in which words were used. The word "like" could be used conversational or formally and without context, we cannot determine if it has a positive or negative connotation. Further, aggregated analysis may obscure the unique voices and tones of individual speakers, particularly marginalized voices or dissenting opinions. As such, more analysis is needed to complete our report
+However, word frequency cannot tell the full story since it lacks the temporal and sequential nature of podcasts and articles. These metrics are aggregated over all podcasts and articles so we cannot know exactly when an the tone shifts in a conversation in a podcast or an article. As such we performed a more rigorous analysis of the sentiment in vox articles and podcasts using the package Syuzhet.
 
-Now with that all our of the way, lets load in all of the the packages
-
-```{r}
-# install.packages('tidytext')
-library(tidyverse)
-library(syuzhet)
-library(tm)
-library(ggplot2)
-library(readtext)
-library(tidytext)
-```
-
-###Syuzhet Package
+### Sentiment Analysis 
 
 One package that we used that is not in common use is syuzhet. This package is used for sentiment analysis. You might be asking what is sentiment analysis? how does it work? Well sentiment analysis is when you assign words emotional valence. Standard sentiment analysis will simply find if a word evokes a positive emotion or a negative emotion. If we were to go deeper into a subject, we can find an nrc sentiment, which splits the sentiment into different categories such as trust, disgust, joy, or anger. We were originally going to use our own sentiment analysis code for this project, but alas our machine had a very low accuracy rate so we scrapped it.
 
