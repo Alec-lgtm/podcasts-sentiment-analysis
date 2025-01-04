@@ -26,6 +26,9 @@ articles_text_clean$date <- as.Date(articles_text_clean$date, format = "%Y-%m-%d
 # Add podcast title
 podcast_transcripts_clean$title <- str_extract(podcast_transcripts_clean$doc_id, "\\d+_\\d+_\\d+_\\s*(.*?)\\.docx")
 
+# Save cleaned podcast_transcript
+write.csv(podcast_transcripts_clean, file = "../../data/vox_podcasts/podcasts_transcripts_clean.csv", row.names = FALSE)
+
 # Splits the cleaned text into individual words so that we can run an sentiment analysis on it
 podcast_transcripts_words <- podcast_transcripts_clean %>%
   unnest_tokens(word, text) %>%
@@ -211,7 +214,7 @@ podcast_articles_nrc_emotion_levels <- podcasts_nrc_emotions %>%
                names_to = "Media",
                values_to = "Percentage")
 
-# Plots the 
+# Plots the percentage of words associated with that emotion.
 nrc_emotional_levels_viz <- ggplot(podcast_articles_nrc_emotion_levels, aes(x = Emotion, y = Percentage, fill = Media)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(title = "Article Emotion levels vs Podcast Emotion levels",
