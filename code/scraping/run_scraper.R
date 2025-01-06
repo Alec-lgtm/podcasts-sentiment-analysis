@@ -32,23 +32,45 @@ all_vox_articles_2024 <- all_vox_articles_2024_raw %>%
 # Verify no more NA values (should return FALSE)
 any(is.na(all_vox_articles_2024))
 
-# Filter out podcasts from articles
-all_vox_articles_2024 <- all_vox_articles_2024 %>%
-  filter(!str_detect(text, "Today, Explained"))
+# Remove videos and articles about podcasts
+remove_base_urls <- c(
+    "https://www.vox.com/videos/",
+    "https://www.vox.com/today-explained-podcast/",
+    "https://www.vox.com/explain-it-to-me/",
+    "https://www.vox.com/the-gray-area/",
+    "https://www.vox.com/unexplainable/"
+)
+
+
+filtered_df <- all_vox_articles_2024 %>%
+  filter(!map_lgl(url, ~ any(startsWith(.x, remove_base_urls))))
 
 # ---- Check this ----
+
+"https://www.vox.com/videos/"
+
+df <- all_vox_articles_2024 %>%
+  filter(str_detect(text, "Today, Explained"))
+
+"https://www.vox.com/today-explained-podcast/"
 
 # Go through these
 df <- all_vox_articles_2024 %>%
   filter(str_detect(text, "Explain It to Me"))
 
+"https://www.vox.com/explain-it-to-me/"
+
 # works
 df1 <- all_vox_articles_2024 %>%
   filter(str_detect(text, "The Gray Area"))
 
+"https://www.vox.com/the-gray-area/"
+
 # just remove the front of the url
 df3 <- all_vox_articles_2024 %>%
   filter(str_detect(text, "Unexplainable"))
+
+"https://www.vox.com/unexplainable/"
 
 # Also remove urls of vox videos
 
