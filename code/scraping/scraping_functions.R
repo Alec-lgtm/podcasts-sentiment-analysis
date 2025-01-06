@@ -17,8 +17,10 @@ addHandler(writeToFile, file = "scraping_log.txt")
 
 # Manually removed article urls
 non_article_urls <- c(
-  "https://www.vox.com/future-perfect/386449/2024-future-perfect-50-progress-ai-climate-animal-welfare-innovation",
-  "https://www.vox.com/24066297/oscars-2024-guide-96th-academy-awards-what-to-watch-poor-things-oppenheimer-american-fiction"
+  "https://www.vox.com/future-perfect/386449/2024-future-perfect-50-progress-ai-climate-animal-welfare-innovation", # Scraper has trouble reading this
+  "https://www.vox.com/24066297/oscars-2024-guide-96th-academy-awards-what-to-watch-poor-things-oppenheimer-american-fiction", # Aggregation of articles
+  "https://www.vox.com/23700653/explain-it-to-me-crowdsourcing-ask-vox", # Asking for help, not an article
+  "https://www.vox.com/even-better/24031429/dry-january-how-to-quit-drinking-sober-curious" # All pictures, no text
 )
 
 # ---- Scraping Functions ----

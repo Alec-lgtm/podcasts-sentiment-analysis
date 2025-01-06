@@ -7,8 +7,7 @@
 # Load libraries and functions
 source('scraping_functions.R')
 
-# ---- Data Cleaning ----
-
+# ---- Article Scraping ----
 # Filter Vox staff articles
 # Note: Vox staff articles aren't exactly articles, they're more aggregations of other articles which is why we filter them
 vox_staff_articles <- scrape_vox_archive(6,"authors/vox-staff/archives/", url_only = TRUE, debug_page = TRUE, debug_article = TRUE)
@@ -16,14 +15,15 @@ vox_staff_articles <- scrape_vox_archive(6,"authors/vox-staff/archives/", url_on
 excluded_urls = c(non_article_urls,vox_staff_articles$url)
 
 test_df <- scrape_vox_month(month_number = 11, filter_urls = excluded_urls, debug_month = T, debug_page = T, debug_article = T)
-
-# ---- Article Scraping ----
 # Takes about 10-15 minutes to run
 # Logs are stored in scraping_log.txt
 
 # Extract titles, url, text, and date for all vox articles in the year 2024
 all_vox_articles_2024_raw <- map(1:12,scrape_vox_month, filter_urls = excluded_urls, debug_month = TRUE, debug_page = TRUE, debug_article = FALSE) %>%
   list_rbind()
+
+
+# ---- Data Cleaning ----
 
 # Remove vox sites that are chronologies / timelines or aggregations of other articles
 all_vox_articles_2024 <- all_vox_articles_2024_raw %>%
@@ -44,8 +44,6 @@ remove_base_urls <- c(
 # Remove videos and articles about podcasts
 all_vox_articles_2024 <- all_vox_articles_2024 %>%
   filter(!map_lgl(url, ~ any(startsWith(.x, remove_base_urls))))
-
-# ---- Finish this ----
 
 # Save cleaned dataset
 saveRDS(all_vox_articles_2024, file = "../../data/vox_articles/2024_all_vox_articles.rds")
