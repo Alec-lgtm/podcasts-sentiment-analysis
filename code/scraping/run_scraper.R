@@ -4,16 +4,25 @@
 # Version: 0.0.1
 # Purpose: Analyze sentiment of vox articles
 
+# Load libraries and functions
+source('scraping_functions.R')
+
+# ---- Data Cleaning ----
+
+# Filter Vox staff articles
+# Note: Vox staff articles aren't exactly articles, they're more aggregations of other articles which is why we filter them
+vox_staff_articles <- scrape_vox_archive(6,"authors/vox-staff/archives/", url_only = TRUE, debug_page = TRUE, debug_article = TRUE)
+
+excluded_urls = c(non_article_urls,vox_staff_articles$url)
+
+test_df <- scrape_vox_month(month_number = 11, filter_urls = excluded_urls, debug_month = T, debug_page = T, debug_article = T)
 
 # ---- Article Scraping ----
 # Takes about 10-15 minutes to run
 # Logs are stored in scraping_log.txt
 
-# Load libraries and functions
-source('scraping_functions.R')
-
 # Extract titles, url, text, and date for all vox articles in the year 2024
-all_vox_articles_2024_raw <- map(1:12,scrape_vox_month, debug_month = TRUE, debug_page = TRUE, debug_article = FALSE) %>%
+all_vox_articles_2024_raw <- map(1:12,scrape_vox_month, filter_urls = excluded_urls, debug_month = TRUE, debug_page = TRUE, debug_article = FALSE) %>%
   list_rbind()
 
 # Remove vox sites that are chronologies / timelines or aggregations of other articles

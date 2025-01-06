@@ -326,3 +326,1544 @@
 2024-12-16 20:24:09.856367 INFO::Number of Articles on this Page: 15
 2024-12-16 20:24:14.294161 INFO::Page Url: https://www.vox.com/archives/2024/12/7
 2024-12-16 20:24:14.295871 INFO::Number of Articles on this Page: 14
+2025-01-06 14:15:20.095978 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 14:15:20.104369 INFO::Number of Articles on this Page: 14
+2025-01-06 14:17:13.009693 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 14:17:13.013137 INFO::Number of Articles on this Page: 14
+2025-01-06 14:17:49.479157 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 14:17:49.482293 INFO::Number of Articles on this Page: 14
+2025-01-06 14:18:27.050252 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 14:18:27.052734 INFO::Number of Articles on this Page: 14
+2025-01-06 15:24:22.973804 INFO::month number: 11
+2025-01-06 15:24:22.976652 INFO::number of pages: 15
+2025-01-06 15:24:23.400181 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2025-01-06 15:24:23.401855 INFO::Number of Articles on this Page: 15
+2025-01-06 15:24:23.402843 INFO::Scraped Titles Below:
+2025-01-06 15:24:23.808751 INFO::How did Elphaba become wicked? There’s a hidden message people keep missing.
+2025-01-06 15:24:24.20729 INFO::Should we put pig organs in humans? We asked an ethicist.
+2025-01-06 15:24:24.634407 INFO::Holiday movies are hornier than ever
+2025-01-06 15:24:25.017958 INFO::Black Friday is a trap
+2025-01-06 15:24:25.393139 INFO::The author of the seminal book about loneliness explains what we’re getting wrong
+2025-01-06 15:24:25.773003 INFO::No, FBI checks aren’t required for Trump’s nominees. Yes, it’s concerning.
+2025-01-06 15:24:26.154874 INFO::Wicked, explained
+2025-01-06 15:24:26.544664 INFO::Why Wicked’s politics feel so bizarrely timely
+2025-01-06 15:24:26.928408 INFO::Family estrangement doesn’t have to be forever
+2025-01-06 15:24:27.386908 INFO::8 million turkeys will be thrown in the trash this Thanksgiving
+2025-01-06 15:24:27.764656 INFO::Is it possible to have both pride and humility?
+2025-01-06 15:25:34.594384 INFO::number of pages: 6
+2025-01-06 15:25:35.397631 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/1
+2025-01-06 15:25:35.398867 INFO::Number of Articles on this Page: 10
+2025-01-06 15:25:40.343536 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/2
+2025-01-06 15:25:40.344772 INFO::Number of Articles on this Page: 10
+2025-01-06 15:25:44.471789 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/3
+2025-01-06 15:25:44.473232 INFO::Number of Articles on this Page: 10
+2025-01-06 15:25:49.973153 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/4
+2025-01-06 15:25:49.974427 INFO::Number of Articles on this Page: 10
+2025-01-06 15:25:55.036557 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/5
+2025-01-06 15:25:55.038506 INFO::Number of Articles on this Page: 10
+2025-01-06 15:25:59.26252 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/6
+2025-01-06 15:25:59.263842 INFO::Number of Articles on this Page: 10
+2025-01-06 15:26:04.062106 INFO::month number: 11
+2025-01-06 15:26:04.0632 INFO::number of pages: 15
+2025-01-06 15:26:04.717626 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2025-01-06 15:26:04.718783 INFO::Number of Articles on this Page: 15
+2025-01-06 15:26:04.71936 INFO::Scraped Titles Below:
+2025-01-06 15:26:05.425993 INFO::How did Elphaba become wicked? There’s a hidden message people keep missing.
+2025-01-06 15:26:06.197962 INFO::Should we put pig organs in humans? We asked an ethicist.
+2025-01-06 15:26:06.777245 INFO::Holiday movies are hornier than ever
+2025-01-06 15:26:07.262675 INFO::Black Friday is a trap
+2025-01-06 15:26:07.665549 INFO::The author of the seminal book about loneliness explains what we’re getting wrong
+2025-01-06 15:26:08.029461 INFO::No, FBI checks aren’t required for Trump’s nominees. Yes, it’s concerning.
+2025-01-06 15:26:08.424241 INFO::Wicked, explained
+2025-01-06 15:26:08.818765 INFO::Why Wicked’s politics feel so bizarrely timely
+2025-01-06 15:26:09.188924 INFO::Family estrangement doesn’t have to be forever
+2025-01-06 15:26:09.604588 INFO::8 million turkeys will be thrown in the trash this Thanksgiving
+2025-01-06 15:26:10.074303 INFO::Is it possible to have both pride and humility?
+2025-01-06 15:26:10.451463 INFO::How not to poison your loved ones during your big holiday feast
+2025-01-06 15:26:11.154066 INFO::Trump’s win is part of a mysterious — and ominous — worldwide trend
+2025-01-06 15:26:11.756795 INFO::Will Trump’s pick for labor secretary be able to act on her pro-union ideas?
+2025-01-06 15:26:12.135787 INFO::Polarization is bad for our health. Could RFK help?
+2025-01-06 15:26:13.804286 INFO::Page Url: https://www.vox.com/archives/2024/11/2
+2025-01-06 15:26:13.805747 INFO::Number of Articles on this Page: 15
+2025-01-06 15:26:13.806342 INFO::Scraped Titles Below:
+2025-01-06 15:26:14.185839 INFO::Israel and Hezbollah seem headed for a ceasefire. Here’s what we know.
+2025-01-06 15:26:14.591468 INFO::What do Rome guys think of Gladiator II? We asked one.
+2025-01-06 15:26:15.018131 INFO::Wondering what’s what in Wicked? We can help.
+2025-01-06 15:26:15.437896 INFO::The stunning success of vaccines in America, in one chart
+2025-01-06 15:26:15.84237 INFO::Trump’s tariff plan is an inflation plan
+2025-01-06 15:26:16.209939 INFO::If Democrats could compromise with Republicans on abortion, should they?
+2025-01-06 15:26:16.647872 INFO::The Democrat who won in Trump country
+2025-01-06 15:26:17.029013 INFO::Could tweaks to the tax code lead to more marriages — and more kids?
+2025-01-06 15:26:17.43792 INFO::How America broke the turkey
+2025-01-06 15:26:17.841259 INFO::Tribal lands were stolen. What happens when those ancestral territories are returned?
+2025-01-06 15:26:18.241539 INFO::How to raise kids who give back to the world
+2025-01-06 15:26:18.639196 INFO::The perils of using payment apps as your bank account
+2025-01-06 15:26:19.458364 INFO::As the US yields on climate leadership, China rises to fill the void
+2025-01-06 15:26:20.14108 INFO::Should I pay someone to invest for me?
+2025-01-06 15:26:20.986454 INFO::Fans are “holding space”  for Wicked’s press tour
+2025-01-06 15:26:22.590873 INFO::Page Url: https://www.vox.com/archives/2024/11/3
+2025-01-06 15:26:22.591831 INFO::Number of Articles on this Page: 15
+2025-01-06 15:26:22.592404 INFO::Scraped Titles Below:
+2025-01-06 15:26:23.004608 INFO::The huge stakes in a Supreme Court case about vaping
+2025-01-06 15:26:23.405374 INFO::Elon Musk and the age of shameless oligarchy
+2025-01-06 15:26:23.816089 INFO::Trump says he wants to get rid of “woke” generals. He can.
+2025-01-06 15:26:24.257271 INFO::Giving thanks may make your brain more altruistic
+2025-01-06 15:26:24.652538 INFO::Health care costs could spike for millions of families
+2025-01-06 15:26:25.03874 INFO::Why Elon Musk can never balance the budget, in one chart
+2025-01-06 15:26:25.431726 INFO::The case for earning lots of money — and giving lots of it away
+2025-01-06 15:26:25.824438 INFO::Celebrity look-alike contests are part of a glorious tradition
+2025-01-06 15:26:26.245502 INFO::The unexpected place that could become an immigration flashpoint under Trump
+2025-01-06 15:26:26.634473 INFO::Biden wants to free you from all those subscriptions you meant to cancel but didn’t
+2025-01-06 15:26:27.168142 INFO::The not-so-subtle message of Trump’s disturbing Cabinet picks
+2025-01-06 15:26:27.590072 INFO::You deserve a better browser than Google Chrome
+2025-01-06 15:26:27.987053 INFO::International arrest warrants are out for Netanyahu and Gallant. What happens next?
+2025-01-06 15:26:28.385865 INFO::The myth that could cost Democrats the next election
+2025-01-06 15:26:28.780577 INFO::Why is it still so hard to breathe in India and Pakistan?
+2025-01-06 15:26:30.400519 INFO::Page Url: https://www.vox.com/archives/2024/11/4
+2025-01-06 15:26:30.401711 INFO::Number of Articles on this Page: 14
+2025-01-06 15:26:30.402412 INFO::Scraped Titles Below:
+2025-01-06 15:26:30.801306 INFO::The three foreign policy factions fighting for Trump’s ear
+2025-01-06 15:26:31.252178 INFO::Say Nothing’s Gerry Adams disclaimer, explained
+2025-01-06 15:26:32.045117 INFO::Trump wants to stack the DOJ’s leadership with his personal lawyers
+2025-01-06 15:26:32.453627 INFO::Matt Gaetz, Trump’s uniquely unqualified pick for attorney general, withdraws
+2025-01-06 15:26:32.846274 INFO::Americans are eating less meat. And more meat. How?
+2025-01-06 15:26:33.23361 INFO::Vox Releases 2024 Future Perfect 50 List Celebrating Inspiring Changemakers
+2025-01-06 15:26:33.650839 INFO::America’s literacy crisis isn’t what you think
+2025-01-06 15:26:34.156134 INFO::John Green’s crusade to make the world “suck less”
+2025-01-06 15:26:34.849605 INFO::There’s never been a better time to buy a used phone
+2025-01-06 15:26:35.637031 INFO::Chef José Andrés knows how to feed people in a crisis
+2025-01-06 15:26:37.224973 INFO::What would a world with abundant energy look like? Materials scientist Deb Chachra has an idea.
+2025-01-06 15:26:37.818302 INFO::Only 1 percent of neuroscience faculty is Black. Kaela Singleton hopes to change that.
+2025-01-06 15:26:38.230363 INFO::Neuroscientist Rafael Yuste could play your brain like an instrument. He wants to protect it instead.
+2025-01-06 15:26:38.622046 INFO::Shannon Vallor says AI does present an existential risk — but not the one you think
+2025-01-06 15:26:40.217764 INFO::Page Url: https://www.vox.com/archives/2024/11/5
+2025-01-06 15:26:40.21896 INFO::Number of Articles on this Page: 15
+2025-01-06 15:26:40.21962 INFO::Scraped Titles Below:
+2025-01-06 15:26:40.623263 INFO::Denmark is tiny. Its ambition to make its food system more climate-friendly is huge.
+2025-01-06 15:26:41.017646 INFO::The climate crisis is a big problem. Marine biologist Ayana Elizabeth Johnson is dreaming of even bigger solutions.
+2025-01-06 15:26:41.647817 INFO::How Christopher Nolan made the threat of nuclear extinction feel real
+2025-01-06 15:26:42.042155 INFO::Gen Z superstar Billie Eilish doesn’t separate climate activism from animal welfare
+2025-01-06 15:26:42.432605 INFO::Trump wants to use the military for mass deportations. Can he actually do that?
+2025-01-06 15:26:42.820464 INFO::The House will have its first openly trans member next year. The GOP is already attacking her.
+2025-01-06 15:26:43.192212 INFO::Could Trump actually get rid of the Department of Education?
+2025-01-06 15:26:43.578953 INFO::Trump wants a big expansion in fossil fuel production. Can he do that?
+2025-01-06 15:26:45.361051 INFO::Trump’s coalition is a mess of contradictions — and they’re about to be exposed
+2025-01-06 15:26:45.762781 INFO::Trump loves tariffs. Will the rest of America?
+2025-01-06 15:26:46.186309 INFO::Holiday travel can break the bank. Here’s how to manage expectations.
+2025-01-06 15:26:46.553602 INFO::Why do hotel lobbies smell like that?
+2025-01-06 15:26:47.017505 INFO::Are we actually in the middle of a generosity crisis?
+2025-01-06 15:26:47.4046 INFO::It’s probably time you learned about the Costco Guys
+2025-01-06 15:26:47.796801 INFO::Biden is letting Ukraine use a powerful new weapon. What happens next?
+2025-01-06 15:26:48.204544 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 15:26:48.205193 INFO::Number of Articles on this Page: 15
+2025-01-06 15:26:48.205502 INFO::Scraped Titles Below:
+2025-01-06 15:26:48.585622 INFO::Project 2025 is infiltrating the Trump administration already
+2025-01-06 15:26:49.000791 INFO::America’s reactionary moment is here
+2025-01-06 15:26:49.391904 INFO::The law is clear on birthright citizenship. Can Trump end it anyway?
+2025-01-06 15:26:50.119228 INFO::The surprisingly selfish reason people give terrible gifts
+2025-01-06 15:26:50.903145 INFO::The least thoughtful holiday present you should definitely give
+2025-01-06 15:26:51.779605 INFO::Want to donate to charity? Here are 10 guidelines for giving effectively.
+2025-01-06 15:26:52.417126 INFO::Trump says he wants to influence interest rates. Can he?
+2025-01-06 15:26:53.065689 INFO::Biden screwed up on inflation — badly
+2025-01-06 15:26:53.495828 INFO::Why so many families are “drowning in toys”
+2025-01-06 15:26:54.003332 INFO::Trump didn’t gut foreign aid last time. This time could be different.
+2025-01-06 15:26:54.366193 INFO::I give 10 percent of my income to charity. You should, too.
+2025-01-06 15:26:54.747708 INFO::Are you a bad gift-giver? Here’s how to tell, according to a pro.
+2025-01-06 15:26:55.155565 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:29:34.569367 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:31:11.009117 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:33:35.177032 INFO::number of pages: 6
+2025-01-06 15:33:35.838735 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/1
+2025-01-06 15:33:35.840032 INFO::Number of Articles on this Page: 10
+2025-01-06 15:33:35.840723 INFO::Scraped Titles Below:
+2025-01-06 15:34:21.677562 INFO::number of pages: 6
+2025-01-06 15:34:22.460444 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/1
+2025-01-06 15:34:22.46184 INFO::Number of Articles on this Page: 10
+2025-01-06 15:34:22.462662 INFO::Scraped Titles Below:
+2025-01-06 15:34:36.885788 INFO::number of pages: 6
+2025-01-06 15:34:37.726698 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/1
+2025-01-06 15:34:37.727948 INFO::Number of Articles on this Page: 10
+2025-01-06 15:34:37.728625 INFO::Scraped Titles Below:
+2025-01-06 15:34:38.479607 INFO::Take a mental break with the newest Vox crossword
+2025-01-06 15:34:39.074277 INFO::Get exclusive early access to Vox’s 2024 year-end video
+2025-01-06 15:34:39.794685 INFO::The movies, shows, books, and music we couldn’t stop thinking about this year 
+2025-01-06 15:34:40.267716 INFO::How would a second Trump presidency change America’s courts?
+2025-01-06 15:34:40.654832 INFO::Welcome to the December issue of The Highlight
+2025-01-06 15:34:41.017545 INFO::Wicked, explained
+2025-01-06 15:34:41.393839 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:34:41.79801 INFO::Sign up for The Rebuild
+2025-01-06 15:34:42.200509 INFO::Trump may start his second term with a stunning power grab
+2025-01-06 15:34:42.633691 INFO::Donald Trump wins 2024 election: News, analysis, and explainers
+2025-01-06 15:34:43.045226 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/2
+2025-01-06 15:34:43.046459 INFO::Number of Articles on this Page: 10
+2025-01-06 15:34:43.047155 INFO::Scraped Titles Below:
+2025-01-06 15:34:43.42781 INFO::Need a Distraction?
+2025-01-06 15:34:43.801777 INFO::Welcome to the Drug Issue of The Highlight
+2025-01-06 15:34:44.243495 INFO::15 ways the next president could affect the climate and your life
+2025-01-06 15:34:44.628287 INFO::The 7 states that will decide the 2024 election
+2025-01-06 15:34:44.997332 INFO::The big political shift that explains the 2024 election
+2025-01-06 15:34:45.431347 INFO::The latest on Hurricanes Milton and Helene
+2025-01-06 15:34:45.868514 INFO::Let’s get divorced
+2025-01-06 15:34:46.255978 INFO::Vox podcasts tackle the Israel-Hamas war
+2025-01-06 15:34:46.639337 INFO::What to know about the Vance-Walz VP debate
+2025-01-06 15:34:47.076291 INFO::Would another Trump defeat end Trumpism?
+2025-01-06 15:34:47.434926 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/3
+2025-01-06 15:34:47.436277 INFO::Number of Articles on this Page: 10
+2025-01-06 15:34:47.437051 INFO::Scraped Titles Below:
+2025-01-06 15:34:47.803499 INFO::The guessing game over Kamala Harris’s foreign policy
+2025-01-06 15:34:48.19503 INFO::Trump’s immigration policies are his old ones — but worse
+2025-01-06 15:34:48.616779 INFO::Democratic National Convention 2024
+2025-01-06 15:34:49.073674 INFO::Confronting the self
+2025-01-06 15:34:49.436259 INFO::Kamala Harris picks Tim Walz as running mate
+2025-01-06 15:34:49.837765 INFO::Biden drops out, backs Harris in 2024 race
+2025-01-06 15:34:50.214761 INFO::Republican National Convention 2024
+2025-01-06 15:34:50.594506 INFO::Donald Trump targeted in assassination attempt
+2025-01-06 15:34:50.966032 INFO::The Highlight — The Summer Issue
+2025-01-06 15:34:51.386966 INFO::Biden vs. Trump: The first 2024 presidential debate
+2025-01-06 15:34:52.123006 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/4
+2025-01-06 15:34:52.124516 INFO::Number of Articles on this Page: 10
+2025-01-06 15:34:52.125357 INFO::Scraped Titles Below:
+2025-01-06 15:34:53.021909 INFO::Facts on the Ground
+2025-01-06 15:34:53.868743 INFO::What the Supreme Court is doing when you’re not paying attention
+2025-01-06 15:34:54.509563 INFO::What the Supreme Court is doing when you’re not paying attention
+2025-01-06 15:34:55.071407 INFO::The Highlight: The Parenting Issue
+2025-01-06 15:34:55.579847 INFO::This Changed Everything
+2025-01-06 15:34:56.015493 INFO::The last 10 years, explained
+2025-01-06 15:34:56.388094 INFO::A crisis on America’s roads
+2025-01-06 15:34:56.745369 INFO::How to listen to Today, Explained on the radio
+2025-01-06 15:34:57.222677 INFO::The Israel-Hamas war is shifting quickly. Find the latest coverage from Vox here.
+2025-01-06 15:34:57.60409 INFO::The rapid development of AI has benefits — and poses serious risks
+2025-01-06 15:34:57.991733 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/5
+2025-01-06 15:34:57.992925 INFO::Number of Articles on this Page: 10
+2025-01-06 15:34:57.993606 INFO::Scraped Titles Below:
+2025-01-06 15:34:58.384854 INFO::Your guide to 2024’s rare cicadapocalypse
+2025-01-06 15:34:58.779584 INFO::What to know about TikTok’s fate in the US
+2025-01-06 15:34:59.219267 INFO::TikTok: the most exciting, and controversial, social media app on the planet
+2025-01-06 15:34:59.597881 INFO::On the Money
+2025-01-06 15:34:59.989076 INFO::Everything you need to know about the 2024 solar eclipse
+2025-01-06 15:35:00.369319 INFO::Beyoncé’s Cowboy Carter, explained
+2025-01-06 15:35:00.754615 INFO::Turkey and Syria earthquakes: Aftermath and updates on the humanitarian crisis
+2025-01-06 15:35:01.128458 INFO::Total solar eclipse passes over US
+2025-01-06 15:35:01.583707 INFO::The collapse of FTX and Sam Bankman-Fried’s shocking downfall
+2025-01-06 15:35:01.998669 INFO::Kate Middleton’s whereabouts, explained
+2025-01-06 15:35:02.35515 INFO::Page Url: https://www.vox.com/authors/vox-staff/archives/6
+2025-01-06 15:35:02.356584 INFO::Number of Articles on this Page: 10
+2025-01-06 15:35:02.357382 INFO::Scraped Titles Below:
+2025-01-06 15:35:02.718093 INFO::Trump investigations: The Georgia election interference case
+2025-01-06 15:35:03.084383 INFO::What’s happening to our winters?
+2025-01-06 15:35:03.448711 INFO::The 2024 New Hampshire primary is underway. Here’s the latest.
+2025-01-06 15:35:03.83436 INFO::The 2024 Iowa caucuses
+2025-01-06 15:35:04.210108 INFO::The first GOP debate: August 23, 2023
+2025-01-06 15:35:04.563475 INFO::The second GOP debate: September 27, 2023
+2025-01-06 15:35:04.985702 INFO::The Big Squeeze
+2025-01-06 15:35:05.370102 INFO::Abortion medication in America: News and updates
+2025-01-06 15:35:05.747116 INFO::We’re tracking the biggest cases the Supreme Court will hear in the 2023-2024 term
+2025-01-06 15:35:06.142098 INFO::Giving Tuesday 2019: news and updates
+2025-01-06 15:37:43.55907 INFO::month number: 11
+2025-01-06 15:37:43.562511 INFO::number of pages: 15
+2025-01-06 15:37:44.305956 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2025-01-06 15:37:44.307426 INFO::Number of Articles on this Page: 14
+2025-01-06 15:37:44.308544 INFO::Scraped Titles Below:
+2025-01-06 15:37:44.930764 INFO::How did Elphaba become wicked? There’s a hidden message people keep missing.
+2025-01-06 15:37:45.679986 INFO::Should we put pig organs in humans? We asked an ethicist.
+2025-01-06 15:37:46.080397 INFO::Holiday movies are hornier than ever
+2025-01-06 15:37:46.467886 INFO::Black Friday is a trap
+2025-01-06 15:37:46.844983 INFO::The author of the seminal book about loneliness explains what we’re getting wrong
+2025-01-06 15:37:47.211385 INFO::No, FBI checks aren’t required for Trump’s nominees. Yes, it’s concerning.
+2025-01-06 15:37:47.588299 INFO::Why Wicked’s politics feel so bizarrely timely
+2025-01-06 15:37:47.98854 INFO::Family estrangement doesn’t have to be forever
+2025-01-06 15:37:48.376581 INFO::8 million turkeys will be thrown in the trash this Thanksgiving
+2025-01-06 15:37:48.76719 INFO::Is it possible to have both pride and humility?
+2025-01-06 15:37:49.156351 INFO::How not to poison your loved ones during your big holiday feast
+2025-01-06 15:37:49.608296 INFO::Trump’s win is part of a mysterious — and ominous — worldwide trend
+2025-01-06 15:37:49.972612 INFO::Will Trump’s pick for labor secretary be able to act on her pro-union ideas?
+2025-01-06 15:37:50.346188 INFO::Polarization is bad for our health. Could RFK help?
+2025-01-06 15:37:50.717697 INFO::Page Url: https://www.vox.com/archives/2024/11/2
+2025-01-06 15:37:50.719625 INFO::Number of Articles on this Page: 15
+2025-01-06 15:37:50.720472 INFO::Scraped Titles Below:
+2025-01-06 15:37:51.085415 INFO::Israel and Hezbollah seem headed for a ceasefire. Here’s what we know.
+2025-01-06 15:37:51.48038 INFO::What do Rome guys think of Gladiator II? We asked one.
+2025-01-06 15:37:51.875078 INFO::Wondering what’s what in Wicked? We can help.
+2025-01-06 15:37:52.255967 INFO::The stunning success of vaccines in America, in one chart
+2025-01-06 15:37:52.643071 INFO::Trump’s tariff plan is an inflation plan
+2025-01-06 15:37:53.053889 INFO::If Democrats could compromise with Republicans on abortion, should they?
+2025-01-06 15:37:53.450028 INFO::The Democrat who won in Trump country
+2025-01-06 15:37:53.830756 INFO::Could tweaks to the tax code lead to more marriages — and more kids?
+2025-01-06 15:37:54.223779 INFO::How America broke the turkey
+2025-01-06 15:37:54.62553 INFO::Tribal lands were stolen. What happens when those ancestral territories are returned?
+2025-01-06 15:37:54.996748 INFO::How to raise kids who give back to the world
+2025-01-06 15:37:55.378091 INFO::The perils of using payment apps as your bank account
+2025-01-06 15:37:55.765768 INFO::As the US yields on climate leadership, China rises to fill the void
+2025-01-06 15:37:56.162239 INFO::Should I pay someone to invest for me?
+2025-01-06 15:37:56.551349 INFO::Fans are “holding space”  for Wicked’s press tour
+2025-01-06 15:37:56.94065 INFO::Page Url: https://www.vox.com/archives/2024/11/3
+2025-01-06 15:37:56.941946 INFO::Number of Articles on this Page: 15
+2025-01-06 15:37:56.942758 INFO::Scraped Titles Below:
+2025-01-06 15:37:57.341426 INFO::The huge stakes in a Supreme Court case about vaping
+2025-01-06 15:37:57.945711 INFO::Elon Musk and the age of shameless oligarchy
+2025-01-06 15:37:58.740311 INFO::Trump says he wants to get rid of “woke” generals. He can.
+2025-01-06 15:37:59.889568 INFO::Giving thanks may make your brain more altruistic
+2025-01-06 15:38:00.697574 INFO::Health care costs could spike for millions of families
+2025-01-06 15:38:01.163259 INFO::Why Elon Musk can never balance the budget, in one chart
+2025-01-06 15:38:01.541689 INFO::The case for earning lots of money — and giving lots of it away
+2025-01-06 15:38:01.913595 INFO::Celebrity look-alike contests are part of a glorious tradition
+2025-01-06 15:38:02.309274 INFO::The unexpected place that could become an immigration flashpoint under Trump
+2025-01-06 15:38:02.673856 INFO::Biden wants to free you from all those subscriptions you meant to cancel but didn’t
+2025-01-06 15:38:03.037699 INFO::The not-so-subtle message of Trump’s disturbing Cabinet picks
+2025-01-06 15:38:03.41609 INFO::You deserve a better browser than Google Chrome
+2025-01-06 15:38:03.783017 INFO::International arrest warrants are out for Netanyahu and Gallant. What happens next?
+2025-01-06 15:38:04.14549 INFO::The myth that could cost Democrats the next election
+2025-01-06 15:38:04.51914 INFO::Why is it still so hard to breathe in India and Pakistan?
+2025-01-06 15:38:04.894118 INFO::Page Url: https://www.vox.com/archives/2024/11/4
+2025-01-06 15:38:04.895049 INFO::Number of Articles on this Page: 14
+2025-01-06 15:38:04.895466 INFO::Scraped Titles Below:
+2025-01-06 15:38:05.29198 INFO::The three foreign policy factions fighting for Trump’s ear
+2025-01-06 15:38:05.68459 INFO::Say Nothing’s Gerry Adams disclaimer, explained
+2025-01-06 15:38:06.051553 INFO::Trump wants to stack the DOJ’s leadership with his personal lawyers
+2025-01-06 15:38:06.422942 INFO::Matt Gaetz, Trump’s uniquely unqualified pick for attorney general, withdraws
+2025-01-06 15:38:06.797787 INFO::Americans are eating less meat. And more meat. How?
+2025-01-06 15:38:07.200973 INFO::Vox Releases 2024 Future Perfect 50 List Celebrating Inspiring Changemakers
+2025-01-06 15:38:07.559144 INFO::America’s literacy crisis isn’t what you think
+2025-01-06 15:38:07.943905 INFO::John Green’s crusade to make the world “suck less”
+2025-01-06 15:38:08.315792 INFO::There’s never been a better time to buy a used phone
+2025-01-06 15:38:08.726704 INFO::Chef José Andrés knows how to feed people in a crisis
+2025-01-06 15:38:09.137787 INFO::What would a world with abundant energy look like? Materials scientist Deb Chachra has an idea.
+2025-01-06 15:38:09.508413 INFO::Only 1 percent of neuroscience faculty is Black. Kaela Singleton hopes to change that.
+2025-01-06 15:38:09.947783 INFO::Neuroscientist Rafael Yuste could play your brain like an instrument. He wants to protect it instead.
+2025-01-06 15:38:10.294085 INFO::Shannon Vallor says AI does present an existential risk — but not the one you think
+2025-01-06 15:38:10.67433 INFO::Page Url: https://www.vox.com/archives/2024/11/5
+2025-01-06 15:38:10.675232 INFO::Number of Articles on this Page: 15
+2025-01-06 15:38:10.675638 INFO::Scraped Titles Below:
+2025-01-06 15:38:11.054391 INFO::Denmark is tiny. Its ambition to make its food system more climate-friendly is huge.
+2025-01-06 15:38:11.433413 INFO::The climate crisis is a big problem. Marine biologist Ayana Elizabeth Johnson is dreaming of even bigger solutions.
+2025-01-06 15:38:11.830223 INFO::How Christopher Nolan made the threat of nuclear extinction feel real
+2025-01-06 15:38:12.22431 INFO::Gen Z superstar Billie Eilish doesn’t separate climate activism from animal welfare
+2025-01-06 15:38:12.592785 INFO::Trump wants to use the military for mass deportations. Can he actually do that?
+2025-01-06 15:38:13.322315 INFO::The House will have its first openly trans member next year. The GOP is already attacking her.
+2025-01-06 15:38:14.102055 INFO::Could Trump actually get rid of the Department of Education?
+2025-01-06 15:38:14.837672 INFO::Trump wants a big expansion in fossil fuel production. Can he do that?
+2025-01-06 15:38:15.65249 INFO::Trump’s coalition is a mess of contradictions — and they’re about to be exposed
+2025-01-06 15:38:16.279074 INFO::Trump loves tariffs. Will the rest of America?
+2025-01-06 15:38:16.685591 INFO::Holiday travel can break the bank. Here’s how to manage expectations.
+2025-01-06 15:38:17.047596 INFO::Why do hotel lobbies smell like that?
+2025-01-06 15:38:17.422265 INFO::Are we actually in the middle of a generosity crisis?
+2025-01-06 15:38:17.773337 INFO::It’s probably time you learned about the Costco Guys
+2025-01-06 15:38:18.13197 INFO::Biden is letting Ukraine use a powerful new weapon. What happens next?
+2025-01-06 15:38:18.524289 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 15:38:18.52565 INFO::Number of Articles on this Page: 14
+2025-01-06 15:38:18.526301 INFO::Scraped Titles Below:
+2025-01-06 15:38:18.870209 INFO::Project 2025 is infiltrating the Trump administration already
+2025-01-06 15:38:19.224861 INFO::America’s reactionary moment is here
+2025-01-06 15:38:19.608512 INFO::The law is clear on birthright citizenship. Can Trump end it anyway?
+2025-01-06 15:38:19.972668 INFO::The surprisingly selfish reason people give terrible gifts
+2025-01-06 15:38:20.351004 INFO::The least thoughtful holiday present you should definitely give
+2025-01-06 15:38:20.722644 INFO::Want to donate to charity? Here are 10 guidelines for giving effectively.
+2025-01-06 15:38:21.203108 INFO::Trump says he wants to influence interest rates. Can he?
+2025-01-06 15:38:21.560891 INFO::Biden screwed up on inflation — badly
+2025-01-06 15:38:21.930314 INFO::Why so many families are “drowning in toys”
+2025-01-06 15:38:22.32965 INFO::Trump didn’t gut foreign aid last time. This time could be different.
+2025-01-06 15:38:22.717967 INFO::I give 10 percent of my income to charity. You should, too.
+2025-01-06 15:38:23.090278 INFO::Are you a bad gift-giver? Here’s how to tell, according to a pro.
+2025-01-06 15:38:23.468545 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:38:23.845812 INFO::How to host holiday gatherings without losing your mind
+2025-01-06 15:38:25.357128 INFO::Page Url: https://www.vox.com/archives/2024/11/7
+2025-01-06 15:38:25.358672 INFO::Number of Articles on this Page: 15
+2025-01-06 15:38:25.359507 INFO::Scraped Titles Below:
+2025-01-06 15:38:25.736378 INFO::I don’t have much money. Is it okay if I don’t give to charity?
+2025-01-06 15:38:26.138947 INFO::Could Dune: Prophecy really be the next Game of Thrones? 
+2025-01-06 15:38:26.543308 INFO::The future of same-sex marriage under a second Trump administration, explained
+2025-01-06 15:38:26.958827 INFO::I saw the Hurricane Helene response up close. This is how disaster relief actually works.
+2025-01-06 15:38:27.358861 INFO::Deep-blue California’s rightward slide, explained
+2025-01-06 15:38:27.758988 INFO::Democrats got wiped out in 2004. This is what they did next.
+2025-01-06 15:38:28.317064 INFO::Screw it, it’s Christmas now
+2025-01-06 15:38:29.193767 INFO::Trump may start his second term with a stunning power grab
+2025-01-06 15:38:29.99371 INFO::Want to understand why Trump won the election? Look at pop culture.
+2025-01-06 15:38:30.797514 INFO::The trans school sports rule the Democrats didn’t talk about
+2025-01-06 15:38:31.420104 INFO::What RFK Jr. can — and can’t — actually do as Trump’s health secretary
+2025-01-06 15:38:31.997531 INFO::The Trump Cabinet picks who seriously threaten democracy — and the ones who don’t
+2025-01-06 15:38:32.35713 INFO::America’s fractured trust in science, explained in 3 charts
+2025-01-06 15:38:32.718986 INFO::A GOP Supreme Court will now decide the fate of transgender Americans
+2025-01-06 15:38:33.184182 INFO::The left’s comforting myth about why Harris lost
+2025-01-06 15:38:34.694644 INFO::Page Url: https://www.vox.com/archives/2024/11/8
+2025-01-06 15:38:34.695834 INFO::Number of Articles on this Page: 14
+2025-01-06 15:38:34.696518 INFO::Scraped Titles Below:
+2025-01-06 15:38:35.095408 INFO::Why everyone you know is running a marathon
+2025-01-06 15:38:35.497362 INFO::How Democrats can win back the Latinos they lost to Trump
+2025-01-06 15:38:35.881871 INFO::Bluesky brings the fun, weird vibes of old Twitter back to life
+2025-01-06 15:38:36.308164 INFO::Trump is staffing up his White House with loyalists
+2025-01-06 15:38:37.024984 INFO::Can Trump ban trans athletes from school sports?
+2025-01-06 15:38:37.452172 INFO::We were supposed to hit peak emissions. Why won’t they stop rising?
+2025-01-06 15:38:37.872092 INFO::The real reason Mike Tyson is fighting Jake Paul
+2025-01-06 15:38:38.672649 INFO::Most “humane” farms are lying to you — and the government isn’t stopping them
+2025-01-06 15:38:39.065592 INFO::These apps promise to help you make new friends. Could it work for me?
+2025-01-06 15:38:39.467677 INFO::What to buy before Trump makes everything more expensive
+2025-01-06 15:38:39.843443 INFO::Did Trump win in 2024 because of racism? It’s complicated.
+2025-01-06 15:38:40.238938 INFO::Scientists just discovered a sea creature as large as two basketball courts. Here’s what it looks like.
+2025-01-06 15:38:40.641396 INFO::The most dangerous roads in America have one thing in common
+2025-01-06 15:38:41.020703 INFO::The confusing recent history of People’s Sexiest Man Alive
+2025-01-06 15:38:42.572751 INFO::Page Url: https://www.vox.com/archives/2024/11/9
+2025-01-06 15:38:42.573557 INFO::Number of Articles on this Page: 15
+2025-01-06 15:38:42.574041 INFO::Scraped Titles Below:
+2025-01-06 15:38:42.957372 INFO::Trump tapped Musk to co-lead the “Department of Government Efficiency.” What the heck is that?
+2025-01-06 15:38:43.339837 INFO::“Your body, my choice”: The misogynist MAGA attack, explained
+2025-01-06 15:38:44.074575 INFO::Could carbon capture fix climate change?
+2025-01-06 15:38:44.828453 INFO::The system failed us. We’ll still miss it when it’s gone.
+2025-01-06 15:38:45.848545 INFO::In times of defeat, turn toward each other
+2025-01-06 15:38:46.555915 INFO::Why the attempt to deplatform Trump failed so utterly
+2025-01-06 15:38:47.148081 INFO::Why libraries need librarians
+2025-01-06 15:38:47.531947 INFO::How Big Toilet Paper dupes us all
+2025-01-06 15:38:48.000374 INFO::Safe sex doesn’t just mean condoms anymore
+2025-01-06 15:38:48.39119 INFO::It’s not normal for the East Coast to be on fire
+2025-01-06 15:38:48.861937 INFO::The election was a loss for Palestinians — and not just because Trump won
+2025-01-06 15:38:49.260693 INFO::Trump is demanding an important change to the Senate confirmation process
+2025-01-06 15:38:49.676594 INFO::The Delphi murders were a local tragedy. Then they became “true crime.”
+2025-01-06 15:38:50.252246 INFO::The debate over why Harris lost is in full swing. Here’s a guide.
+2025-01-06 15:38:50.645588 INFO::43 lab monkeys escaped in South Carolina. They have a legal claim to freedom.
+2025-01-06 15:38:52.588703 INFO::Page Url: https://www.vox.com/archives/2024/11/10
+2025-01-06 15:38:52.590077 INFO::Number of Articles on this Page: 15
+2025-01-06 15:38:52.590802 INFO::Scraped Titles Below:
+2025-01-06 15:38:52.965107 INFO::Can Trump run again in 2028? Here’s what you need to know.
+2025-01-06 15:38:53.340458 INFO::Why Ukraine thinks it can still win over Donald Trump
+2025-01-06 15:38:53.747433 INFO::Do I actually need electrolytes to stay hydrated?
+2025-01-06 15:38:54.144764 INFO::How to bring a dead nuclear power plant back to life
+2025-01-06 15:38:54.536243 INFO::Trump’s techno-libertarian dream team goes to Washington
+2025-01-06 15:38:54.915623 INFO::How to get through this
+2025-01-06 15:38:55.335143 INFO::The antipoverty agenda under Trump isn’t all lost
+2025-01-06 15:38:55.730551 INFO::Trump’s tariffs could tank the economy. Will the Supreme Court stop them?
+2025-01-06 15:38:56.130886 INFO::A top Bernie Sanders strategist on why Kamala Harris lost
+2025-01-06 15:38:56.662774 INFO::Why Conclave and Juror #2 are the movies we need right now
+2025-01-06 15:38:57.068651 INFO::Does being woke do any good?
+2025-01-06 15:38:57.456583 INFO::Conspiracy theories are spreading about Trump’s win. They’re false.
+2025-01-06 15:38:57.828597 INFO::You may never need to remember another password
+2025-01-06 15:38:58.25182 INFO::A Trump second term could bring another family separation crisis
+2025-01-06 15:38:58.646086 INFO::Did Democrats lose the 2024 election because of “bad” policies?
+2025-01-06 15:39:00.360911 INFO::Page Url: https://www.vox.com/archives/2024/11/11
+2025-01-06 15:39:00.36218 INFO::Number of Articles on this Page: 15
+2025-01-06 15:39:00.36291 INFO::Scraped Titles Below:
+2025-01-06 15:39:01.103748 INFO::Germany’s political upheaval, explained
+2025-01-06 15:39:01.700606 INFO::Conservatives tried to repeal one of the country’s strongest climate policies. They failed big time.
+2025-01-06 15:39:02.274257 INFO::From Bibi to Putin, here’s how world leaders reacted to Trump’s win
+2025-01-06 15:39:02.766021 INFO::AI is powerful, dangerous, and controversial. What will Donald Trump do with it?
+2025-01-06 15:39:03.161796 INFO::The debate over what Democrats do now hinges on one question
+2025-01-06 15:39:03.549068 INFO::How to make sense of the 2024 election
+2025-01-06 15:39:03.958585 INFO::Following Trump’s victory, some women consider swearing off men
+2025-01-06 15:39:04.537185 INFO::How to live under rising authoritarianism, according to a philosopher who did it bravely
+2025-01-06 15:39:04.927403 INFO::One big, unexpected loser this election
+2025-01-06 15:39:05.339055 INFO::Arizona’s unprecedented crackdown on homeless encampments
+2025-01-06 15:39:05.727037 INFO::We’re all living inside Elon Musk’s misinformation machine now
+2025-01-06 15:39:06.129439 INFO::Why Democrats couldn’t sell a strong economy, in 3 charts
+2025-01-06 15:39:06.532536 INFO::Guiding kids — and ourselves — through the election aftermath
+2025-01-06 15:39:06.916493 INFO::Is the Gen Z bro media diet to blame?
+2025-01-06 15:39:07.287454 INFO::Russia’s campaign against the West is getting more aggressive
+2025-01-06 15:39:08.564813 INFO::Page Url: https://www.vox.com/archives/2024/11/12
+2025-01-06 15:39:08.566262 INFO::Number of Articles on this Page: 15
+2025-01-06 15:39:08.567106 INFO::Scraped Titles Below:
+2025-01-06 15:39:08.957355 INFO::This one chart foreshadows Trump’s immigration crackdown
+2025-01-06 15:39:09.740214 INFO::One striking pattern hidden in the election results
+2025-01-06 15:39:10.133607 INFO::Donald Trump ran a campaign for men. It worked.
+2025-01-06 15:39:10.524274 INFO::The global trend that pushed Donald Trump to victory
+2025-01-06 15:39:10.936128 INFO::Trump proposed big Medicaid and food stamp cuts. Can he pass them?
+2025-01-06 15:39:11.322521 INFO::The criminal cases against Donald Trump are now basically dead
+2025-01-06 15:39:11.702829 INFO::Can ranking candidates fix elections?
+2025-01-06 15:39:12.06862 INFO::How much should kids know about politics?
+2025-01-06 15:39:12.734281 INFO::Tough-on-crime laws are winning at the ballot box
+2025-01-06 15:39:13.140524 INFO::What happens if another pandemic strikes while Trump is president?
+2025-01-06 15:39:13.514034 INFO::The serious implications of a Republican Senate
+2025-01-06 15:39:14.795293 INFO::Trump won, but so did seven ballot measures protecting abortion rights
+2025-01-06 15:39:15.583852 INFO::How Trump’s second term will be different
+2025-01-06 15:39:16.478212 INFO::How the second Trump presidency could reshape the world
+2025-01-06 15:39:17.200988 INFO::The global risks of a Trump presidency will be much higher this time
+2025-01-06 15:39:18.998042 INFO::Page Url: https://www.vox.com/archives/2024/11/13
+2025-01-06 15:39:18.99869 INFO::Number of Articles on this Page: 13
+2025-01-06 15:39:18.999048 INFO::Scraped Titles Below:
+2025-01-06 15:39:19.391538 INFO::Why Kamala Harris lost
+2025-01-06 15:39:19.7877 INFO::Trump won. So what does that mean for abortion?
+2025-01-06 15:39:20.204259 INFO::Donald Trump has won — and American democracy is now in grave danger
+2025-01-06 15:39:21.630333 INFO::Why is Trump winning? 3 things we know so far.
+2025-01-06 15:39:21.989281 INFO::How do I fix my ballot if it is tossed out?
+2025-01-06 15:39:22.376769 INFO::How news organizations call the election — and why you should trust them
+2025-01-06 15:39:22.749056 INFO::The new Jeffrey Epstein tapes and his friendship with Trump, explained
+2025-01-06 15:39:23.341155 INFO::When we’ll know the next president — and your other biggest election questions, answered
+2025-01-06 15:39:23.703207 INFO::Why are foods banned in other places still on US grocery shelves?
+2025-01-06 15:39:24.249234 INFO::5 reasons to expect a Harris win — and 4 to expect a Trump victory
+2025-01-06 15:39:24.788977 INFO::Should it really be this hard to beat Donald Trump?
+2025-01-06 15:39:25.17292 INFO::How Peanut the Squirrel became an unlikely right-wing celebrity
+2025-01-06 15:39:25.545981 INFO::Elon Musk says he’s giving away $1 million a day to voters. Is that legal?
+2025-01-06 15:39:26.646229 INFO::Page Url: https://www.vox.com/archives/2024/11/14
+2025-01-06 15:39:26.647522 INFO::Number of Articles on this Page: 14
+2025-01-06 15:39:26.648208 INFO::Scraped Titles Below:
+2025-01-06 15:39:27.433731 INFO::The voters who could decide the 2024 election in Michigan
+2025-01-06 15:39:27.823112 INFO::What the final polls show about the 2024 presidential election
+2025-01-06 15:39:28.190849 INFO::So what if Martha Stewart is a perfectionist control freak?
+2025-01-06 15:39:28.748858 INFO::What actually matters this week, according to our politics team
+2025-01-06 15:39:29.165287 INFO::The strange case that the Supreme Court keeps refusing to decide
+2025-01-06 15:39:30.379766 INFO::“I’m looking for a fever dream of a book.”
+2025-01-06 15:39:30.981423 INFO::Mixael Laufer on DIY health care
+2025-01-06 15:39:31.681858 INFO::The big stakes in the Supreme Court’s new, absurdly messy gerrymandering case
+2025-01-06 15:39:33.75393 INFO::What counts as a landslide? Your biggest election questions, answered.
+2025-01-06 15:39:34.146928 INFO::I don’t want children. I do want children. What should I do?
+2025-01-06 15:39:34.541018 INFO::Is America collapsing like ancient Rome?
+2025-01-06 15:39:34.928837 INFO::Are Black voters drifting from Democrats? It’s complicated.
+2025-01-06 15:39:35.330763 INFO::Why the Pentagon just can’t quit Elon Musk
+2025-01-06 15:39:35.730535 INFO::A groundbreaking new plan to get Big Pharma to pay for wildlife conservation
+2025-01-06 15:39:37.235349 INFO::Page Url: https://www.vox.com/archives/2024/11/15
+2025-01-06 15:39:37.236566 INFO::Number of Articles on this Page: 13
+2025-01-06 15:39:37.237189 INFO::Scraped Titles Below:
+2025-01-06 15:39:37.623992 INFO::Were Bad Bunny and Ricky Martin really shadow banned by Instagram and X? 
+2025-01-06 15:39:38.048374 INFO::Starbucks won’t charge extra for plant-based milk. Other companies should follow.
+2025-01-06 15:39:38.44198 INFO::How Americans came to hate each other
+2025-01-06 15:39:38.884026 INFO::It’s not alarmist: A second Trump term really is an extinction-level threat to democracy
+2025-01-06 15:39:39.261029 INFO::The Supreme Court decides not to toss out thousands of Pennsylvania ballots
+2025-01-06 15:39:39.664533 INFO::Inside Trump’s ominous plan to turn civil rights law against vulnerable Americans
+2025-01-06 15:39:40.103644 INFO::What polls can actually tell us
+2025-01-06 15:39:40.511243 INFO::Elon Musk assures voters that Trump’s victory would deliver “temporary hardship”
+2025-01-06 15:39:40.940526 INFO::2024 election violence is already happening
+2025-01-06 15:39:41.324951 INFO::Should you feel guilty about using AI?
+2025-01-06 15:39:41.93831 INFO::How to get through election season without despair
+2025-01-06 15:39:42.852493 INFO::5 mysteries that might determine the 2024 election
+2025-01-06 15:39:43.277578 INFO::Punish Democrats or Stop Trump? Arab Americans are agonizing over their votes.
+2025-01-06 15:42:16.639114 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:44:28.222104 INFO::month number: 11
+2025-01-06 15:44:28.22465 INFO::number of pages: 15
+2025-01-06 15:44:28.599802 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2025-01-06 15:44:28.60087 INFO::Number of Articles on this Page: 14
+2025-01-06 15:44:28.601535 INFO::**Scraped Titles Below:**
+2025-01-06 15:44:29.004336 INFO::How did Elphaba become wicked? There’s a hidden message people keep missing.
+2025-01-06 15:44:29.382058 INFO::Should we put pig organs in humans? We asked an ethicist.
+2025-01-06 15:44:29.7959 INFO::Holiday movies are hornier than ever
+2025-01-06 15:44:30.167961 INFO::Black Friday is a trap
+2025-01-06 15:44:30.590209 INFO::The author of the seminal book about loneliness explains what we’re getting wrong
+2025-01-06 15:44:30.980714 INFO::No, FBI checks aren’t required for Trump’s nominees. Yes, it’s concerning.
+2025-01-06 15:44:31.361123 INFO::Why Wicked’s politics feel so bizarrely timely
+2025-01-06 15:44:31.736092 INFO::Family estrangement doesn’t have to be forever
+2025-01-06 15:44:32.138778 INFO::8 million turkeys will be thrown in the trash this Thanksgiving
+2025-01-06 15:44:32.576913 INFO::Is it possible to have both pride and humility?
+2025-01-06 15:44:32.986949 INFO::How not to poison your loved ones during your big holiday feast
+2025-01-06 15:44:33.416766 INFO::Trump’s win is part of a mysterious — and ominous — worldwide trend
+2025-01-06 15:44:33.799514 INFO::Will Trump’s pick for labor secretary be able to act on her pro-union ideas?
+2025-01-06 15:44:34.199142 INFO::Polarization is bad for our health. Could RFK help?
+2025-01-06 15:44:34.567992 INFO::Page Url: https://www.vox.com/archives/2024/11/2
+2025-01-06 15:44:34.569233 INFO::Number of Articles on this Page: 15
+2025-01-06 15:44:34.569899 INFO::**Scraped Titles Below:**
+2025-01-06 15:44:34.973664 INFO::Israel and Hezbollah seem headed for a ceasefire. Here’s what we know.
+2025-01-06 15:44:35.466823 INFO::What do Rome guys think of Gladiator II? We asked one.
+2025-01-06 15:44:35.871133 INFO::Wondering what’s what in Wicked? We can help.
+2025-01-06 15:44:36.23433 INFO::The stunning success of vaccines in America, in one chart
+2025-01-06 15:44:36.617153 INFO::Trump’s tariff plan is an inflation plan
+2025-01-06 15:44:37.004467 INFO::If Democrats could compromise with Republicans on abortion, should they?
+2025-01-06 15:44:37.403097 INFO::The Democrat who won in Trump country
+2025-01-06 15:44:37.778355 INFO::Could tweaks to the tax code lead to more marriages — and more kids?
+2025-01-06 15:44:38.175109 INFO::How America broke the turkey
+2025-01-06 15:44:38.553342 INFO::Tribal lands were stolen. What happens when those ancestral territories are returned?
+2025-01-06 15:44:38.958248 INFO::How to raise kids who give back to the world
+2025-01-06 15:44:39.391984 INFO::The perils of using payment apps as your bank account
+2025-01-06 15:44:39.77089 INFO::As the US yields on climate leadership, China rises to fill the void
+2025-01-06 15:44:40.447475 INFO::Should I pay someone to invest for me?
+2025-01-06 15:44:41.150596 INFO::Fans are “holding space”  for Wicked’s press tour
+2025-01-06 15:44:41.774312 INFO::Page Url: https://www.vox.com/archives/2024/11/3
+2025-01-06 15:44:41.775532 INFO::Number of Articles on this Page: 15
+2025-01-06 15:44:41.776203 INFO::**Scraped Titles Below:**
+2025-01-06 15:44:42.543332 INFO::The huge stakes in a Supreme Court case about vaping
+2025-01-06 15:44:43.320378 INFO::Elon Musk and the age of shameless oligarchy
+2025-01-06 15:44:43.904531 INFO::Trump says he wants to get rid of “woke” generals. He can.
+2025-01-06 15:44:44.279046 INFO::Giving thanks may make your brain more altruistic
+2025-01-06 15:44:44.731646 INFO::Health care costs could spike for millions of families
+2025-01-06 15:44:45.101782 INFO::Why Elon Musk can never balance the budget, in one chart
+2025-01-06 15:44:45.487587 INFO::The case for earning lots of money — and giving lots of it away
+2025-01-06 15:44:45.85441 INFO::Celebrity look-alike contests are part of a glorious tradition
+2025-01-06 15:44:46.23052 INFO::The unexpected place that could become an immigration flashpoint under Trump
+2025-01-06 15:44:46.677054 INFO::Biden wants to free you from all those subscriptions you meant to cancel but didn’t
+2025-01-06 15:44:47.04414 INFO::The not-so-subtle message of Trump’s disturbing Cabinet picks
+2025-01-06 15:44:47.42045 INFO::You deserve a better browser than Google Chrome
+2025-01-06 15:44:47.813057 INFO::International arrest warrants are out for Netanyahu and Gallant. What happens next?
+2025-01-06 15:44:48.203096 INFO::The myth that could cost Democrats the next election
+2025-01-06 15:44:48.591841 INFO::Why is it still so hard to breathe in India and Pakistan?
+2025-01-06 15:44:48.985723 INFO::Page Url: https://www.vox.com/archives/2024/11/4
+2025-01-06 15:44:48.986853 INFO::Number of Articles on this Page: 14
+2025-01-06 15:44:48.987421 INFO::**Scraped Titles Below:**
+2025-01-06 15:44:49.366152 INFO::The three foreign policy factions fighting for Trump’s ear
+2025-01-06 15:44:49.77981 INFO::Say Nothing’s Gerry Adams disclaimer, explained
+2025-01-06 15:44:50.205242 INFO::Trump wants to stack the DOJ’s leadership with his personal lawyers
+2025-01-06 15:44:50.577314 INFO::Matt Gaetz, Trump’s uniquely unqualified pick for attorney general, withdraws
+2025-01-06 15:44:50.961083 INFO::Americans are eating less meat. And more meat. How?
+2025-01-06 15:44:51.340571 INFO::Vox Releases 2024 Future Perfect 50 List Celebrating Inspiring Changemakers
+2025-01-06 15:44:51.72574 INFO::America’s literacy crisis isn’t what you think
+2025-01-06 15:44:52.097073 INFO::John Green’s crusade to make the world “suck less”
+2025-01-06 15:44:52.489778 INFO::There’s never been a better time to buy a used phone
+2025-01-06 15:44:52.89395 INFO::Chef José Andrés knows how to feed people in a crisis
+2025-01-06 15:44:53.270559 INFO::What would a world with abundant energy look like? Materials scientist Deb Chachra has an idea.
+2025-01-06 15:44:53.640815 INFO::Only 1 percent of neuroscience faculty is Black. Kaela Singleton hopes to change that.
+2025-01-06 15:44:54.032939 INFO::Neuroscientist Rafael Yuste could play your brain like an instrument. He wants to protect it instead.
+2025-01-06 15:44:54.414748 INFO::Shannon Vallor says AI does present an existential risk — but not the one you think
+2025-01-06 15:44:54.795285 INFO::Page Url: https://www.vox.com/archives/2024/11/5
+2025-01-06 15:44:54.796593 INFO::Number of Articles on this Page: 15
+2025-01-06 15:44:54.797281 INFO::**Scraped Titles Below:**
+2025-01-06 15:44:55.195828 INFO::Denmark is tiny. Its ambition to make its food system more climate-friendly is huge.
+2025-01-06 15:44:56.010062 INFO::The climate crisis is a big problem. Marine biologist Ayana Elizabeth Johnson is dreaming of even bigger solutions.
+2025-01-06 15:44:56.707556 INFO::How Christopher Nolan made the threat of nuclear extinction feel real
+2025-01-06 15:44:57.405457 INFO::Gen Z superstar Billie Eilish doesn’t separate climate activism from animal welfare
+2025-01-06 15:44:58.141846 INFO::Trump wants to use the military for mass deportations. Can he actually do that?
+2025-01-06 15:44:58.68515 INFO::The House will have its first openly trans member next year. The GOP is already attacking her.
+2025-01-06 15:44:59.297212 INFO::Could Trump actually get rid of the Department of Education?
+2025-01-06 15:44:59.684563 INFO::Trump wants a big expansion in fossil fuel production. Can he do that?
+2025-01-06 15:45:00.083951 INFO::Trump’s coalition is a mess of contradictions — and they’re about to be exposed
+2025-01-06 15:45:00.495294 INFO::Trump loves tariffs. Will the rest of America?
+2025-01-06 15:45:00.881946 INFO::Holiday travel can break the bank. Here’s how to manage expectations.
+2025-01-06 15:45:01.266499 INFO::Why do hotel lobbies smell like that?
+2025-01-06 15:45:01.641791 INFO::Are we actually in the middle of a generosity crisis?
+2025-01-06 15:45:02.020825 INFO::It’s probably time you learned about the Costco Guys
+2025-01-06 15:45:02.415608 INFO::Biden is letting Ukraine use a powerful new weapon. What happens next?
+2025-01-06 15:45:02.86414 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 15:45:02.865914 INFO::Number of Articles on this Page: 14
+2025-01-06 15:45:02.866808 INFO::**Scraped Titles Below:**
+2025-01-06 15:45:03.233926 INFO::Project 2025 is infiltrating the Trump administration already
+2025-01-06 15:45:03.610643 INFO::America’s reactionary moment is here
+2025-01-06 15:45:03.994036 INFO::The law is clear on birthright citizenship. Can Trump end it anyway?
+2025-01-06 15:45:04.381569 INFO::The surprisingly selfish reason people give terrible gifts
+2025-01-06 15:45:04.755612 INFO::The least thoughtful holiday present you should definitely give
+2025-01-06 15:45:05.167555 INFO::Want to donate to charity? Here are 10 guidelines for giving effectively.
+2025-01-06 15:45:05.540789 INFO::Trump says he wants to influence interest rates. Can he?
+2025-01-06 15:45:05.90494 INFO::Biden screwed up on inflation — badly
+2025-01-06 15:45:06.307432 INFO::Why so many families are “drowning in toys”
+2025-01-06 15:45:06.693829 INFO::Trump didn’t gut foreign aid last time. This time could be different.
+2025-01-06 15:45:07.076688 INFO::I give 10 percent of my income to charity. You should, too.
+2025-01-06 15:45:07.509397 INFO::Are you a bad gift-giver? Here’s how to tell, according to a pro.
+2025-01-06 15:45:07.899293 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:45:08.284043 INFO::How to host holiday gatherings without losing your mind
+2025-01-06 15:45:08.643804 INFO::Page Url: https://www.vox.com/archives/2024/11/7
+2025-01-06 15:45:08.645038 INFO::Number of Articles on this Page: 15
+2025-01-06 15:45:08.645696 INFO::**Scraped Titles Below:**
+2025-01-06 15:45:09.022868 INFO::I don’t have much money. Is it okay if I don’t give to charity?
+2025-01-06 15:45:09.418579 INFO::Could Dune: Prophecy really be the next Game of Thrones? 
+2025-01-06 15:45:09.833617 INFO::The future of same-sex marriage under a second Trump administration, explained
+2025-01-06 15:45:10.254203 INFO::I saw the Hurricane Helene response up close. This is how disaster relief actually works.
+2025-01-06 15:45:10.637374 INFO::Deep-blue California’s rightward slide, explained
+2025-01-06 15:45:11.441394 INFO::Democrats got wiped out in 2004. This is what they did next.
+2025-01-06 15:45:12.164974 INFO::Screw it, it’s Christmas now
+2025-01-06 15:45:12.768851 INFO::Trump may start his second term with a stunning power grab
+2025-01-06 15:45:13.580368 INFO::Want to understand why Trump won the election? Look at pop culture.
+2025-01-06 15:45:14.234461 INFO::The trans school sports rule the Democrats didn’t talk about
+2025-01-06 15:45:14.812183 INFO::What RFK Jr. can — and can’t — actually do as Trump’s health secretary
+2025-01-06 15:45:15.20033 INFO::The Trump Cabinet picks who seriously threaten democracy — and the ones who don’t
+2025-01-06 15:45:15.56543 INFO::America’s fractured trust in science, explained in 3 charts
+2025-01-06 15:45:15.934614 INFO::A GOP Supreme Court will now decide the fate of transgender Americans
+2025-01-06 15:45:16.300897 INFO::The left’s comforting myth about why Harris lost
+2025-01-06 15:45:16.66709 INFO::Page Url: https://www.vox.com/archives/2024/11/8
+2025-01-06 15:45:16.668339 INFO::Number of Articles on this Page: 14
+2025-01-06 15:45:16.66901 INFO::**Scraped Titles Below:**
+2025-01-06 15:45:17.032601 INFO::Why everyone you know is running a marathon
+2025-01-06 15:45:17.403551 INFO::How Democrats can win back the Latinos they lost to Trump
+2025-01-06 15:45:17.797584 INFO::Bluesky brings the fun, weird vibes of old Twitter back to life
+2025-01-06 15:45:18.289159 INFO::Trump is staffing up his White House with loyalists
+2025-01-06 15:45:18.673227 INFO::Can Trump ban trans athletes from school sports?
+2025-01-06 15:45:19.105304 INFO::We were supposed to hit peak emissions. Why won’t they stop rising?
+2025-01-06 15:45:19.514715 INFO::The real reason Mike Tyson is fighting Jake Paul
+2025-01-06 15:45:19.890056 INFO::Most “humane” farms are lying to you — and the government isn’t stopping them
+2025-01-06 15:45:20.263325 INFO::These apps promise to help you make new friends. Could it work for me?
+2025-01-06 15:45:20.66677 INFO::What to buy before Trump makes everything more expensive
+2025-01-06 15:45:21.054252 INFO::Did Trump win in 2024 because of racism? It’s complicated.
+2025-01-06 15:45:21.429639 INFO::Scientists just discovered a sea creature as large as two basketball courts. Here’s what it looks like.
+2025-01-06 15:45:21.817742 INFO::The most dangerous roads in America have one thing in common
+2025-01-06 15:45:22.205151 INFO::The confusing recent history of People’s Sexiest Man Alive
+2025-01-06 15:45:22.592928 INFO::Page Url: https://www.vox.com/archives/2024/11/9
+2025-01-06 15:45:22.594071 INFO::Number of Articles on this Page: 15
+2025-01-06 15:45:22.594734 INFO::**Scraped Titles Below:**
+2025-01-06 15:45:22.953675 INFO::Trump tapped Musk to co-lead the “Department of Government Efficiency.” What the heck is that?
+2025-01-06 15:45:23.351609 INFO::“Your body, my choice”: The misogynist MAGA attack, explained
+2025-01-06 15:45:23.718479 INFO::Could carbon capture fix climate change?
+2025-01-06 15:45:24.103143 INFO::The system failed us. We’ll still miss it when it’s gone.
+2025-01-06 15:45:24.498036 INFO::In times of defeat, turn toward each other
+2025-01-06 15:45:24.874711 INFO::Why the attempt to deplatform Trump failed so utterly
+2025-01-06 15:45:25.252723 INFO::Why libraries need librarians
+2025-01-06 15:45:25.650266 INFO::How Big Toilet Paper dupes us all
+2025-01-06 15:45:26.02208 INFO::Safe sex doesn’t just mean condoms anymore
+2025-01-06 15:45:26.708805 INFO::It’s not normal for the East Coast to be on fire
+2025-01-06 15:45:27.407293 INFO::The election was a loss for Palestinians — and not just because Trump won
+2025-01-06 15:45:28.055492 INFO::Trump is demanding an important change to the Senate confirmation process
+2025-01-06 15:45:28.871028 INFO::The Delphi murders were a local tragedy. Then they became “true crime.”
+2025-01-06 15:45:29.606591 INFO::The debate over why Harris lost is in full swing. Here’s a guide.
+2025-01-06 15:45:30.240005 INFO::43 lab monkeys escaped in South Carolina. They have a legal claim to freedom.
+2025-01-06 15:45:30.633911 INFO::Page Url: https://www.vox.com/archives/2024/11/10
+2025-01-06 15:45:30.635079 INFO::Number of Articles on this Page: 15
+2025-01-06 15:45:30.635748 INFO::**Scraped Titles Below:**
+2025-01-06 15:45:30.996759 INFO::Can Trump run again in 2028? Here’s what you need to know.
+2025-01-06 15:45:31.411809 INFO::Why Ukraine thinks it can still win over Donald Trump
+2025-01-06 15:45:31.822593 INFO::Do I actually need electrolytes to stay hydrated?
+2025-01-06 15:45:32.294626 INFO::How to bring a dead nuclear power plant back to life
+2025-01-06 15:45:32.8288 INFO::Trump’s techno-libertarian dream team goes to Washington
+2025-01-06 15:45:33.340311 INFO::How to get through this
+2025-01-06 15:45:33.741743 INFO::The antipoverty agenda under Trump isn’t all lost
+2025-01-06 15:45:34.159351 INFO::Trump’s tariffs could tank the economy. Will the Supreme Court stop them?
+2025-01-06 15:45:34.647647 INFO::A top Bernie Sanders strategist on why Kamala Harris lost
+2025-01-06 15:45:35.190295 INFO::Why Conclave and Juror #2 are the movies we need right now
+2025-01-06 15:45:36.030352 INFO::Does being woke do any good?
+2025-01-06 15:45:36.435366 INFO::Conspiracy theories are spreading about Trump’s win. They’re false.
+2025-01-06 15:45:36.88837 INFO::You may never need to remember another password
+2025-01-06 15:45:37.309051 INFO::A Trump second term could bring another family separation crisis
+2025-01-06 15:45:37.75898 INFO::Did Democrats lose the 2024 election because of “bad” policies?
+2025-01-06 15:45:38.197455 INFO::Page Url: https://www.vox.com/archives/2024/11/11
+2025-01-06 15:45:38.198508 INFO::Number of Articles on this Page: 15
+2025-01-06 15:45:38.199127 INFO::**Scraped Titles Below:**
+2025-01-06 15:45:38.906225 INFO::Germany’s political upheaval, explained
+2025-01-06 15:45:39.405914 INFO::Conservatives tried to repeal one of the country’s strongest climate policies. They failed big time.
+2025-01-06 15:45:39.868346 INFO::From Bibi to Putin, here’s how world leaders reacted to Trump’s win
+2025-01-06 15:45:41.042464 INFO::AI is powerful, dangerous, and controversial. What will Donald Trump do with it?
+2025-01-06 15:45:42.624771 INFO::The debate over what Democrats do now hinges on one question
+2025-01-06 15:45:43.989529 INFO::How to make sense of the 2024 election
+2025-01-06 15:45:45.005979 INFO::Following Trump’s victory, some women consider swearing off men
+2025-01-06 15:45:45.738077 INFO::How to live under rising authoritarianism, according to a philosopher who did it bravely
+2025-01-06 15:45:46.218988 INFO::One big, unexpected loser this election
+2025-01-06 15:45:46.661945 INFO::Arizona’s unprecedented crackdown on homeless encampments
+2025-01-06 15:45:47.162692 INFO::We’re all living inside Elon Musk’s misinformation machine now
+2025-01-06 15:45:47.693216 INFO::Why Democrats couldn’t sell a strong economy, in 3 charts
+2025-01-06 15:45:48.160018 INFO::Guiding kids — and ourselves — through the election aftermath
+2025-01-06 15:45:48.625064 INFO::Is the Gen Z bro media diet to blame?
+2025-01-06 15:45:49.068227 INFO::Russia’s campaign against the West is getting more aggressive
+2025-01-06 15:45:49.571733 INFO::Page Url: https://www.vox.com/archives/2024/11/12
+2025-01-06 15:45:49.573589 INFO::Number of Articles on this Page: 15
+2025-01-06 15:45:49.574305 INFO::**Scraped Titles Below:**
+2025-01-06 15:45:50.006852 INFO::This one chart foreshadows Trump’s immigration crackdown
+2025-01-06 15:45:50.469829 INFO::One striking pattern hidden in the election results
+2025-01-06 15:45:50.902252 INFO::Donald Trump ran a campaign for men. It worked.
+2025-01-06 15:45:51.354228 INFO::The global trend that pushed Donald Trump to victory
+2025-01-06 15:45:51.781165 INFO::Trump proposed big Medicaid and food stamp cuts. Can he pass them?
+2025-01-06 15:45:52.165477 INFO::The criminal cases against Donald Trump are now basically dead
+2025-01-06 15:45:52.547934 INFO::Can ranking candidates fix elections?
+2025-01-06 15:45:52.916057 INFO::How much should kids know about politics?
+2025-01-06 15:45:53.302485 INFO::Tough-on-crime laws are winning at the ballot box
+2025-01-06 15:45:53.675438 INFO::What happens if another pandemic strikes while Trump is president?
+2025-01-06 15:45:54.053039 INFO::The serious implications of a Republican Senate
+2025-01-06 15:45:54.448397 INFO::Trump won, but so did seven ballot measures protecting abortion rights
+2025-01-06 15:45:54.811875 INFO::How Trump’s second term will be different
+2025-01-06 15:45:55.214097 INFO::How the second Trump presidency could reshape the world
+2025-01-06 15:45:55.717583 INFO::The global risks of a Trump presidency will be much higher this time
+2025-01-06 15:45:56.093296 INFO::Page Url: https://www.vox.com/archives/2024/11/13
+2025-01-06 15:45:56.09462 INFO::Number of Articles on this Page: 13
+2025-01-06 15:45:56.095297 INFO::**Scraped Titles Below:**
+2025-01-06 15:45:56.485463 INFO::Why Kamala Harris lost
+2025-01-06 15:45:56.869339 INFO::Trump won. So what does that mean for abortion?
+2025-01-06 15:45:57.68669 INFO::Donald Trump has won — and American democracy is now in grave danger
+2025-01-06 15:45:58.474507 INFO::Why is Trump winning? 3 things we know so far.
+2025-01-06 15:45:59.186397 INFO::How do I fix my ballot if it is tossed out?
+2025-01-06 15:46:00.193123 INFO::How news organizations call the election — and why you should trust them
+2025-01-06 15:46:00.877123 INFO::The new Jeffrey Epstein tapes and his friendship with Trump, explained
+2025-01-06 15:46:01.268214 INFO::When we’ll know the next president — and your other biggest election questions, answered
+2025-01-06 15:46:01.665588 INFO::Why are foods banned in other places still on US grocery shelves?
+2025-01-06 15:46:02.083967 INFO::5 reasons to expect a Harris win — and 4 to expect a Trump victory
+2025-01-06 15:46:02.468395 INFO::Should it really be this hard to beat Donald Trump?
+2025-01-06 15:46:02.854167 INFO::How Peanut the Squirrel became an unlikely right-wing celebrity
+2025-01-06 15:46:03.241793 INFO::Elon Musk says he’s giving away $1 million a day to voters. Is that legal?
+2025-01-06 15:46:03.673349 INFO::Page Url: https://www.vox.com/archives/2024/11/14
+2025-01-06 15:46:03.674582 INFO::Number of Articles on this Page: 14
+2025-01-06 15:46:03.675261 INFO::**Scraped Titles Below:**
+2025-01-06 15:46:04.056211 INFO::The voters who could decide the 2024 election in Michigan
+2025-01-06 15:46:04.429074 INFO::What the final polls show about the 2024 presidential election
+2025-01-06 15:46:04.788245 INFO::So what if Martha Stewart is a perfectionist control freak?
+2025-01-06 15:46:05.18506 INFO::What actually matters this week, according to our politics team
+2025-01-06 15:46:05.574343 INFO::The strange case that the Supreme Court keeps refusing to decide
+2025-01-06 15:46:05.989786 INFO::“I’m looking for a fever dream of a book.”
+2025-01-06 15:46:06.369335 INFO::Mixael Laufer on DIY health care
+2025-01-06 15:46:06.76553 INFO::The big stakes in the Supreme Court’s new, absurdly messy gerrymandering case
+2025-01-06 15:46:07.150652 INFO::What counts as a landslide? Your biggest election questions, answered.
+2025-01-06 15:46:07.562859 INFO::I don’t want children. I do want children. What should I do?
+2025-01-06 15:46:07.950849 INFO::Is America collapsing like ancient Rome?
+2025-01-06 15:46:08.32584 INFO::Are Black voters drifting from Democrats? It’s complicated.
+2025-01-06 15:46:08.718655 INFO::Why the Pentagon just can’t quit Elon Musk
+2025-01-06 15:46:09.103346 INFO::A groundbreaking new plan to get Big Pharma to pay for wildlife conservation
+2025-01-06 15:46:09.491058 INFO::Page Url: https://www.vox.com/archives/2024/11/15
+2025-01-06 15:46:09.492192 INFO::Number of Articles on this Page: 13
+2025-01-06 15:46:09.492763 INFO::**Scraped Titles Below:**
+2025-01-06 15:46:09.86545 INFO::Were Bad Bunny and Ricky Martin really shadow banned by Instagram and X? 
+2025-01-06 15:46:10.243001 INFO::Starbucks won’t charge extra for plant-based milk. Other companies should follow.
+2025-01-06 15:46:10.625854 INFO::How Americans came to hate each other
+2025-01-06 15:46:11.021443 INFO::It’s not alarmist: A second Trump term really is an extinction-level threat to democracy
+2025-01-06 15:46:11.385574 INFO::The Supreme Court decides not to toss out thousands of Pennsylvania ballots
+2025-01-06 15:46:11.801317 INFO::Inside Trump’s ominous plan to turn civil rights law against vulnerable Americans
+2025-01-06 15:46:12.215161 INFO::What polls can actually tell us
+2025-01-06 15:46:13.040493 INFO::Elon Musk assures voters that Trump’s victory would deliver “temporary hardship”
+2025-01-06 15:46:13.836931 INFO::2024 election violence is already happening
+2025-01-06 15:46:14.57025 INFO::Should you feel guilty about using AI?
+2025-01-06 15:46:15.199391 INFO::How to get through election season without despair
+2025-01-06 15:46:15.765736 INFO::5 mysteries that might determine the 2024 election
+2025-01-06 15:46:16.280045 INFO::Punish Democrats or Stop Trump? Arab Americans are agonizing over their votes.
+2025-01-06 15:48:42.812084 INFO::month number: 1
+2025-01-06 15:48:42.815113 INFO::number of pages: 10
+2025-01-06 15:48:43.187136 INFO::Page Url: https://www.vox.com/archives/2024/1/1
+2025-01-06 15:48:43.188353 INFO::Number of Articles on this Page: 15
+2025-01-06 15:49:02.870642 INFO::month number: 1
+2025-01-06 15:49:02.871773 INFO::number of pages: 10
+2025-01-06 15:49:03.257014 INFO::Page Url: https://www.vox.com/archives/2024/1/1
+2025-01-06 15:49:03.257859 INFO::Number of Articles on this Page: 15
+2025-01-06 15:49:50.657267 INFO::month number: 11
+2025-01-06 15:49:50.659564 INFO::number of pages: 15
+2025-01-06 15:49:51.365722 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2025-01-06 15:49:51.367155 INFO::Number of Articles on this Page: 14
+2025-01-06 15:49:51.367991 INFO::**Scraped Titles Below:**
+2025-01-06 15:49:51.985043 INFO::How did Elphaba become wicked? There’s a hidden message people keep missing.
+2025-01-06 15:49:52.617609 INFO::Should we put pig organs in humans? We asked an ethicist.
+2025-01-06 15:49:53.23435 INFO::Holiday movies are hornier than ever
+2025-01-06 15:49:53.576032 INFO::Black Friday is a trap
+2025-01-06 15:49:53.941786 INFO::The author of the seminal book about loneliness explains what we’re getting wrong
+2025-01-06 15:49:54.187028 INFO::No, FBI checks aren’t required for Trump’s nominees. Yes, it’s concerning.
+2025-01-06 15:49:54.348333 INFO::Why Wicked’s politics feel so bizarrely timely
+2025-01-06 15:49:54.503995 INFO::Family estrangement doesn’t have to be forever
+2025-01-06 15:49:54.67252 INFO::8 million turkeys will be thrown in the trash this Thanksgiving
+2025-01-06 15:49:54.876318 INFO::Is it possible to have both pride and humility?
+2025-01-06 15:49:55.063571 INFO::How not to poison your loved ones during your big holiday feast
+2025-01-06 15:49:55.247326 INFO::Trump’s win is part of a mysterious — and ominous — worldwide trend
+2025-01-06 15:49:55.415469 INFO::Will Trump’s pick for labor secretary be able to act on her pro-union ideas?
+2025-01-06 15:49:55.602955 INFO::Polarization is bad for our health. Could RFK help?
+2025-01-06 15:49:56.020629 INFO::Page Url: https://www.vox.com/archives/2024/11/2
+2025-01-06 15:49:56.021999 INFO::Number of Articles on this Page: 15
+2025-01-06 15:49:56.022645 INFO::**Scraped Titles Below:**
+2025-01-06 15:49:56.203075 INFO::Israel and Hezbollah seem headed for a ceasefire. Here’s what we know.
+2025-01-06 15:49:56.365824 INFO::What do Rome guys think of Gladiator II? We asked one.
+2025-01-06 15:49:56.541014 INFO::Wondering what’s what in Wicked? We can help.
+2025-01-06 15:49:56.747804 INFO::The stunning success of vaccines in America, in one chart
+2025-01-06 15:49:56.926597 INFO::Trump’s tariff plan is an inflation plan
+2025-01-06 15:49:57.105671 INFO::If Democrats could compromise with Republicans on abortion, should they?
+2025-01-06 15:49:57.273434 INFO::The Democrat who won in Trump country
+2025-01-06 15:49:57.450322 INFO::Could tweaks to the tax code lead to more marriages — and more kids?
+2025-01-06 15:49:57.630651 INFO::How America broke the turkey
+2025-01-06 15:49:57.799373 INFO::Tribal lands were stolen. What happens when those ancestral territories are returned?
+2025-01-06 15:49:58.037947 INFO::How to raise kids who give back to the world
+2025-01-06 15:49:58.221791 INFO::The perils of using payment apps as your bank account
+2025-01-06 15:49:58.759255 INFO::As the US yields on climate leadership, China rises to fill the void
+2025-01-06 15:49:58.967178 INFO::Should I pay someone to invest for me?
+2025-01-06 15:49:59.150163 INFO::Fans are “holding space”  for Wicked’s press tour
+2025-01-06 15:49:59.51524 INFO::Page Url: https://www.vox.com/archives/2024/11/3
+2025-01-06 15:49:59.516447 INFO::Number of Articles on this Page: 15
+2025-01-06 15:49:59.517045 INFO::**Scraped Titles Below:**
+2025-01-06 15:49:59.707405 INFO::The huge stakes in a Supreme Court case about vaping
+2025-01-06 15:49:59.87638 INFO::Elon Musk and the age of shameless oligarchy
+2025-01-06 15:50:00.056387 INFO::Trump says he wants to get rid of “woke” generals. He can.
+2025-01-06 15:50:00.231813 INFO::Giving thanks may make your brain more altruistic
+2025-01-06 15:50:00.41409 INFO::Health care costs could spike for millions of families
+2025-01-06 15:50:00.566992 INFO::Why Elon Musk can never balance the budget, in one chart
+2025-01-06 15:50:00.72506 INFO::The case for earning lots of money — and giving lots of it away
+2025-01-06 15:50:00.891662 INFO::Celebrity look-alike contests are part of a glorious tradition
+2025-01-06 15:50:01.055884 INFO::The unexpected place that could become an immigration flashpoint under Trump
+2025-01-06 15:50:01.20632 INFO::Biden wants to free you from all those subscriptions you meant to cancel but didn’t
+2025-01-06 15:50:01.366145 INFO::The not-so-subtle message of Trump’s disturbing Cabinet picks
+2025-01-06 15:50:01.530437 INFO::You deserve a better browser than Google Chrome
+2025-01-06 15:50:01.710033 INFO::International arrest warrants are out for Netanyahu and Gallant. What happens next?
+2025-01-06 15:50:01.876275 INFO::The myth that could cost Democrats the next election
+2025-01-06 15:50:02.045062 INFO::Why is it still so hard to breathe in India and Pakistan?
+2025-01-06 15:50:02.47968 INFO::Page Url: https://www.vox.com/archives/2024/11/4
+2025-01-06 15:50:02.480799 INFO::Number of Articles on this Page: 14
+2025-01-06 15:50:02.481452 INFO::**Scraped Titles Below:**
+2025-01-06 15:50:02.682521 INFO::The three foreign policy factions fighting for Trump’s ear
+2025-01-06 15:50:02.844117 INFO::Say Nothing’s Gerry Adams disclaimer, explained
+2025-01-06 15:50:03.089486 INFO::Trump wants to stack the DOJ’s leadership with his personal lawyers
+2025-01-06 15:50:03.245497 INFO::Matt Gaetz, Trump’s uniquely unqualified pick for attorney general, withdraws
+2025-01-06 15:50:03.419052 INFO::Americans are eating less meat. And more meat. How?
+2025-01-06 15:50:03.602407 INFO::Vox Releases 2024 Future Perfect 50 List Celebrating Inspiring Changemakers
+2025-01-06 15:50:03.77154 INFO::America’s literacy crisis isn’t what you think
+2025-01-06 15:50:03.941984 INFO::John Green’s crusade to make the world “suck less”
+2025-01-06 15:50:04.102378 INFO::There’s never been a better time to buy a used phone
+2025-01-06 15:50:04.30056 INFO::Chef José Andrés knows how to feed people in a crisis
+2025-01-06 15:50:04.510413 INFO::What would a world with abundant energy look like? Materials scientist Deb Chachra has an idea.
+2025-01-06 15:50:04.689072 INFO::Only 1 percent of neuroscience faculty is Black. Kaela Singleton hopes to change that.
+2025-01-06 15:50:04.869248 INFO::Neuroscientist Rafael Yuste could play your brain like an instrument. He wants to protect it instead.
+2025-01-06 15:50:05.051263 INFO::Shannon Vallor says AI does present an existential risk — but not the one you think
+2025-01-06 15:50:05.410739 INFO::Page Url: https://www.vox.com/archives/2024/11/5
+2025-01-06 15:50:05.411991 INFO::Number of Articles on this Page: 15
+2025-01-06 15:50:05.412667 INFO::**Scraped Titles Below:**
+2025-01-06 15:50:05.664122 INFO::Denmark is tiny. Its ambition to make its food system more climate-friendly is huge.
+2025-01-06 15:50:06.447797 INFO::The climate crisis is a big problem. Marine biologist Ayana Elizabeth Johnson is dreaming of even bigger solutions.
+2025-01-06 15:50:06.830059 INFO::How Christopher Nolan made the threat of nuclear extinction feel real
+2025-01-06 15:50:07.28236 INFO::Gen Z superstar Billie Eilish doesn’t separate climate activism from animal welfare
+2025-01-06 15:50:07.800046 INFO::Trump wants to use the military for mass deportations. Can he actually do that?
+2025-01-06 15:50:08.396328 INFO::The House will have its first openly trans member next year. The GOP is already attacking her.
+2025-01-06 15:50:08.787751 INFO::Could Trump actually get rid of the Department of Education?
+2025-01-06 15:50:09.150646 INFO::Trump wants a big expansion in fossil fuel production. Can he do that?
+2025-01-06 15:50:09.569154 INFO::Trump’s coalition is a mess of contradictions — and they’re about to be exposed
+2025-01-06 15:50:09.758488 INFO::Trump loves tariffs. Will the rest of America?
+2025-01-06 15:50:09.920686 INFO::Holiday travel can break the bank. Here’s how to manage expectations.
+2025-01-06 15:50:10.140339 INFO::Why do hotel lobbies smell like that?
+2025-01-06 15:50:10.30836 INFO::Are we actually in the middle of a generosity crisis?
+2025-01-06 15:50:10.459337 INFO::It’s probably time you learned about the Costco Guys
+2025-01-06 15:50:10.646565 INFO::Biden is letting Ukraine use a powerful new weapon. What happens next?
+2025-01-06 15:50:11.036754 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 15:50:11.037964 INFO::Number of Articles on this Page: 14
+2025-01-06 15:50:11.038643 INFO::**Scraped Titles Below:**
+2025-01-06 15:50:11.193162 INFO::Project 2025 is infiltrating the Trump administration already
+2025-01-06 15:50:11.355908 INFO::America’s reactionary moment is here
+2025-01-06 15:50:11.524739 INFO::The law is clear on birthright citizenship. Can Trump end it anyway?
+2025-01-06 15:50:11.707316 INFO::The surprisingly selfish reason people give terrible gifts
+2025-01-06 15:50:11.868238 INFO::The least thoughtful holiday present you should definitely give
+2025-01-06 15:50:12.081122 INFO::Want to donate to charity? Here are 10 guidelines for giving effectively.
+2025-01-06 15:50:12.255785 INFO::Trump says he wants to influence interest rates. Can he?
+2025-01-06 15:50:12.430291 INFO::Biden screwed up on inflation — badly
+2025-01-06 15:50:12.596837 INFO::Why so many families are “drowning in toys”
+2025-01-06 15:50:12.793021 INFO::Trump didn’t gut foreign aid last time. This time could be different.
+2025-01-06 15:50:12.989799 INFO::I give 10 percent of my income to charity. You should, too.
+2025-01-06 15:50:13.143045 INFO::Are you a bad gift-giver? Here’s how to tell, according to a pro.
+2025-01-06 15:50:13.327086 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:50:13.504019 INFO::How to host holiday gatherings without losing your mind
+2025-01-06 15:50:13.985715 INFO::Page Url: https://www.vox.com/archives/2024/11/7
+2025-01-06 15:50:13.986896 INFO::Number of Articles on this Page: 15
+2025-01-06 15:50:13.987575 INFO::**Scraped Titles Below:**
+2025-01-06 15:50:14.161572 INFO::I don’t have much money. Is it okay if I don’t give to charity?
+2025-01-06 15:50:14.321835 INFO::Could Dune: Prophecy really be the next Game of Thrones? 
+2025-01-06 15:50:14.478157 INFO::The future of same-sex marriage under a second Trump administration, explained
+2025-01-06 15:50:14.703313 INFO::I saw the Hurricane Helene response up close. This is how disaster relief actually works.
+2025-01-06 15:50:15.16615 INFO::Deep-blue California’s rightward slide, explained
+2025-01-06 15:50:15.333519 INFO::Democrats got wiped out in 2004. This is what they did next.
+2025-01-06 15:50:15.497121 INFO::Screw it, it’s Christmas now
+2025-01-06 15:50:15.705505 INFO::Trump may start his second term with a stunning power grab
+2025-01-06 15:50:15.874518 INFO::Want to understand why Trump won the election? Look at pop culture.
+2025-01-06 15:50:16.042318 INFO::The trans school sports rule the Democrats didn’t talk about
+2025-01-06 15:50:16.22293 INFO::What RFK Jr. can — and can’t — actually do as Trump’s health secretary
+2025-01-06 15:50:16.38203 INFO::The Trump Cabinet picks who seriously threaten democracy — and the ones who don’t
+2025-01-06 15:50:16.543444 INFO::America’s fractured trust in science, explained in 3 charts
+2025-01-06 15:50:16.718648 INFO::A GOP Supreme Court will now decide the fate of transgender Americans
+2025-01-06 15:50:16.893223 INFO::The left’s comforting myth about why Harris lost
+2025-01-06 15:50:17.259915 INFO::Page Url: https://www.vox.com/archives/2024/11/8
+2025-01-06 15:50:17.260974 INFO::Number of Articles on this Page: 14
+2025-01-06 15:50:17.26154 INFO::**Scraped Titles Below:**
+2025-01-06 15:50:17.416956 INFO::Why everyone you know is running a marathon
+2025-01-06 15:50:17.675204 INFO::How Democrats can win back the Latinos they lost to Trump
+2025-01-06 15:50:27.244216 INFO::Bluesky brings the fun, weird vibes of old Twitter back to life
+2025-01-06 15:51:16.83682 INFO::Trump is staffing up his White House with loyalists
+2025-01-06 15:51:17.035446 INFO::Can Trump ban trans athletes from school sports?
+2025-01-06 15:51:17.235181 INFO::We were supposed to hit peak emissions. Why won’t they stop rising?
+2025-01-06 15:51:17.434555 INFO::The real reason Mike Tyson is fighting Jake Paul
+2025-01-06 15:51:17.668966 INFO::Most “humane” farms are lying to you — and the government isn’t stopping them
+2025-01-06 15:51:17.891033 INFO::These apps promise to help you make new friends. Could it work for me?
+2025-01-06 15:51:18.128763 INFO::What to buy before Trump makes everything more expensive
+2025-01-06 15:51:18.351108 INFO::Did Trump win in 2024 because of racism? It’s complicated.
+2025-01-06 15:51:18.588254 INFO::Scientists just discovered a sea creature as large as two basketball courts. Here’s what it looks like.
+2025-01-06 15:51:18.816104 INFO::The most dangerous roads in America have one thing in common
+2025-01-06 15:51:19.066405 INFO::The confusing recent history of People’s Sexiest Man Alive
+2025-01-06 15:51:19.517847 INFO::Page Url: https://www.vox.com/archives/2024/11/9
+2025-01-06 15:51:19.518812 INFO::Number of Articles on this Page: 15
+2025-01-06 15:51:19.519449 INFO::**Scraped Titles Below:**
+2025-01-06 15:51:19.748441 INFO::Trump tapped Musk to co-lead the “Department of Government Efficiency.” What the heck is that?
+2025-01-06 15:51:19.96531 INFO::“Your body, my choice”: The misogynist MAGA attack, explained
+2025-01-06 15:51:20.223404 INFO::Could carbon capture fix climate change?
+2025-01-06 15:51:20.5244 INFO::The system failed us. We’ll still miss it when it’s gone.
+2025-01-06 15:51:20.793782 INFO::In times of defeat, turn toward each other
+2025-01-06 15:51:21.082149 INFO::Why the attempt to deplatform Trump failed so utterly
+2025-01-06 15:51:21.323917 INFO::Why libraries need librarians
+2025-01-06 15:51:21.545777 INFO::How Big Toilet Paper dupes us all
+2025-01-06 15:51:21.789682 INFO::Safe sex doesn’t just mean condoms anymore
+2025-01-06 15:51:22.698382 INFO::It’s not normal for the East Coast to be on fire
+2025-01-06 15:51:23.955589 INFO::The election was a loss for Palestinians — and not just because Trump won
+2025-01-06 15:51:25.904399 INFO::Trump is demanding an important change to the Senate confirmation process
+2025-01-06 15:52:29.887798 INFO::month number: 11
+2025-01-06 15:52:29.890995 INFO::number of pages: 15
+2025-01-06 15:52:30.301392 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2025-01-06 15:52:30.302846 INFO::Number of Articles on this Page: 14
+2025-01-06 15:52:30.303743 INFO::**Scraped Titles Below:**
+2025-01-06 15:52:30.96267 INFO::How did Elphaba become wicked? There’s a hidden message people keep missing.
+2025-01-06 15:52:31.361121 INFO::Should we put pig organs in humans? We asked an ethicist.
+2025-01-06 15:52:31.761835 INFO::Holiday movies are hornier than ever
+2025-01-06 15:52:32.187555 INFO::Black Friday is a trap
+2025-01-06 15:52:32.610879 INFO::The author of the seminal book about loneliness explains what we’re getting wrong
+2025-01-06 15:52:33.021893 INFO::No, FBI checks aren’t required for Trump’s nominees. Yes, it’s concerning.
+2025-01-06 15:52:33.410604 INFO::Why Wicked’s politics feel so bizarrely timely
+2025-01-06 15:52:39.80389 INFO::Family estrangement doesn’t have to be forever
+2025-01-06 15:54:26.768321 INFO::month number: 11
+2025-01-06 15:54:26.77129 INFO::number of pages: 15
+2025-01-06 15:54:27.203832 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2025-01-06 15:54:27.205429 INFO::Number of Articles on this Page: 14
+2025-01-06 15:54:27.206533 INFO::**Scraped Titles Below:**
+2025-01-06 15:54:27.68375 INFO::How did Elphaba become wicked? There’s a hidden message people keep missing.
+2025-01-06 15:54:28.164146 INFO::Should we put pig organs in humans? We asked an ethicist.
+2025-01-06 15:54:28.649914 INFO::Holiday movies are hornier than ever
+2025-01-06 15:54:29.067622 INFO::Black Friday is a trap
+2025-01-06 15:54:29.588004 INFO::The author of the seminal book about loneliness explains what we’re getting wrong
+2025-01-06 15:54:30.655488 INFO::No, FBI checks aren’t required for Trump’s nominees. Yes, it’s concerning.
+2025-01-06 15:54:31.663454 INFO::Why Wicked’s politics feel so bizarrely timely
+2025-01-06 15:54:32.649284 INFO::Family estrangement doesn’t have to be forever
+2025-01-06 15:54:33.372678 INFO::8 million turkeys will be thrown in the trash this Thanksgiving
+2025-01-06 15:54:33.789194 INFO::Is it possible to have both pride and humility?
+2025-01-06 15:54:34.347427 INFO::How not to poison your loved ones during your big holiday feast
+2025-01-06 15:54:34.750227 INFO::Trump’s win is part of a mysterious — and ominous — worldwide trend
+2025-01-06 15:54:35.132714 INFO::Will Trump’s pick for labor secretary be able to act on her pro-union ideas?
+2025-01-06 15:54:35.535146 INFO::Polarization is bad for our health. Could RFK help?
+2025-01-06 15:54:35.91965 INFO::Page Url: https://www.vox.com/archives/2024/11/2
+2025-01-06 15:54:35.920828 INFO::Number of Articles on this Page: 15
+2025-01-06 15:54:35.921514 INFO::**Scraped Titles Below:**
+2025-01-06 15:54:36.376749 INFO::Israel and Hezbollah seem headed for a ceasefire. Here’s what we know.
+2025-01-06 15:54:36.785208 INFO::What do Rome guys think of Gladiator II? We asked one.
+2025-01-06 15:54:37.172933 INFO::Wondering what’s what in Wicked? We can help.
+2025-01-06 15:54:37.586929 INFO::The stunning success of vaccines in America, in one chart
+2025-01-06 15:54:38.050194 INFO::Trump’s tariff plan is an inflation plan
+2025-01-06 15:54:38.491955 INFO::If Democrats could compromise with Republicans on abortion, should they?
+2025-01-06 15:54:38.969349 INFO::The Democrat who won in Trump country
+2025-01-06 15:54:39.418777 INFO::Could tweaks to the tax code lead to more marriages — and more kids?
+2025-01-06 15:54:39.89461 INFO::How America broke the turkey
+2025-01-06 15:54:40.600987 INFO::Tribal lands were stolen. What happens when those ancestral territories are returned?
+2025-01-06 15:54:41.092673 INFO::How to raise kids who give back to the world
+2025-01-06 15:54:41.671987 INFO::The perils of using payment apps as your bank account
+2025-01-06 15:54:42.22579 INFO::As the US yields on climate leadership, China rises to fill the void
+2025-01-06 15:54:42.711351 INFO::Should I pay someone to invest for me?
+2025-01-06 15:54:43.251574 INFO::Fans are “holding space”  for Wicked’s press tour
+2025-01-06 15:54:43.816618 INFO::Page Url: https://www.vox.com/archives/2024/11/3
+2025-01-06 15:54:43.817865 INFO::Number of Articles on this Page: 15
+2025-01-06 15:54:43.818498 INFO::**Scraped Titles Below:**
+2025-01-06 15:54:44.313456 INFO::The huge stakes in a Supreme Court case about vaping
+2025-01-06 15:54:44.786026 INFO::Elon Musk and the age of shameless oligarchy
+2025-01-06 15:54:45.742054 INFO::Trump says he wants to get rid of “woke” generals. He can.
+2025-01-06 15:54:46.799821 INFO::Giving thanks may make your brain more altruistic
+2025-01-06 15:54:48.087831 INFO::Health care costs could spike for millions of families
+2025-01-06 15:54:48.83459 INFO::Why Elon Musk can never balance the budget, in one chart
+2025-01-06 15:54:49.334967 INFO::The case for earning lots of money — and giving lots of it away
+2025-01-06 15:54:50.024913 INFO::Celebrity look-alike contests are part of a glorious tradition
+2025-01-06 15:54:50.519327 INFO::The unexpected place that could become an immigration flashpoint under Trump
+2025-01-06 15:54:51.007819 INFO::Biden wants to free you from all those subscriptions you meant to cancel but didn’t
+2025-01-06 15:54:51.512952 INFO::The not-so-subtle message of Trump’s disturbing Cabinet picks
+2025-01-06 15:54:51.999722 INFO::You deserve a better browser than Google Chrome
+2025-01-06 15:54:52.43936 INFO::International arrest warrants are out for Netanyahu and Gallant. What happens next?
+2025-01-06 15:54:52.922487 INFO::The myth that could cost Democrats the next election
+2025-01-06 15:54:53.436636 INFO::Why is it still so hard to breathe in India and Pakistan?
+2025-01-06 15:54:53.917672 INFO::Page Url: https://www.vox.com/archives/2024/11/4
+2025-01-06 15:54:53.918886 INFO::Number of Articles on this Page: 14
+2025-01-06 15:54:53.919573 INFO::**Scraped Titles Below:**
+2025-01-06 15:54:54.422168 INFO::The three foreign policy factions fighting for Trump’s ear
+2025-01-06 15:54:54.926495 INFO::Say Nothing’s Gerry Adams disclaimer, explained
+2025-01-06 15:54:55.441179 INFO::Trump wants to stack the DOJ’s leadership with his personal lawyers
+2025-01-06 15:54:55.899085 INFO::Matt Gaetz, Trump’s uniquely unqualified pick for attorney general, withdraws
+2025-01-06 15:54:56.356412 INFO::Americans are eating less meat. And more meat. How?
+2025-01-06 15:54:56.833127 INFO::Vox Releases 2024 Future Perfect 50 List Celebrating Inspiring Changemakers
+2025-01-06 15:54:57.265135 INFO::America’s literacy crisis isn’t what you think
+2025-01-06 15:54:58.143702 INFO::John Green’s crusade to make the world “suck less”
+2025-01-06 15:54:58.626554 INFO::There’s never been a better time to buy a used phone
+2025-01-06 15:54:59.089554 INFO::Chef José Andrés knows how to feed people in a crisis
+2025-01-06 15:54:59.547525 INFO::What would a world with abundant energy look like? Materials scientist Deb Chachra has an idea.
+2025-01-06 15:54:59.98988 INFO::Only 1 percent of neuroscience faculty is Black. Kaela Singleton hopes to change that.
+2025-01-06 15:55:00.805566 INFO::Neuroscientist Rafael Yuste could play your brain like an instrument. He wants to protect it instead.
+2025-01-06 15:55:01.696384 INFO::Shannon Vallor says AI does present an existential risk — but not the one you think
+2025-01-06 15:55:02.483919 INFO::Page Url: https://www.vox.com/archives/2024/11/5
+2025-01-06 15:55:02.485098 INFO::Number of Articles on this Page: 15
+2025-01-06 15:55:02.485675 INFO::**Scraped Titles Below:**
+2025-01-06 15:55:03.38848 INFO::Denmark is tiny. Its ambition to make its food system more climate-friendly is huge.
+2025-01-06 15:55:04.057064 INFO::The climate crisis is a big problem. Marine biologist Ayana Elizabeth Johnson is dreaming of even bigger solutions.
+2025-01-06 15:55:04.505915 INFO::How Christopher Nolan made the threat of nuclear extinction feel real
+2025-01-06 15:55:04.939986 INFO::Gen Z superstar Billie Eilish doesn’t separate climate activism from animal welfare
+2025-01-06 15:55:05.383256 INFO::Trump wants to use the military for mass deportations. Can he actually do that?
+2025-01-06 15:55:05.862816 INFO::The House will have its first openly trans member next year. The GOP is already attacking her.
+2025-01-06 15:55:06.315623 INFO::Could Trump actually get rid of the Department of Education?
+2025-01-06 15:55:06.801873 INFO::Trump wants a big expansion in fossil fuel production. Can he do that?
+2025-01-06 15:55:07.285786 INFO::Trump’s coalition is a mess of contradictions — and they’re about to be exposed
+2025-01-06 15:55:07.828304 INFO::Trump loves tariffs. Will the rest of America?
+2025-01-06 15:55:08.566456 INFO::Holiday travel can break the bank. Here’s how to manage expectations.
+2025-01-06 15:55:09.032361 INFO::Why do hotel lobbies smell like that?
+2025-01-06 15:55:09.583276 INFO::Are we actually in the middle of a generosity crisis?
+2025-01-06 15:55:10.059146 INFO::It’s probably time you learned about the Costco Guys
+2025-01-06 15:55:10.510517 INFO::Biden is letting Ukraine use a powerful new weapon. What happens next?
+2025-01-06 15:55:11.006785 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 15:55:11.007919 INFO::Number of Articles on this Page: 14
+2025-01-06 15:55:11.008497 INFO::**Scraped Titles Below:**
+2025-01-06 15:55:11.92904 INFO::Project 2025 is infiltrating the Trump administration already
+2025-01-06 15:55:12.395368 INFO::America’s reactionary moment is here
+2025-01-06 15:55:12.836113 INFO::The law is clear on birthright citizenship. Can Trump end it anyway?
+2025-01-06 15:55:13.315377 INFO::The surprisingly selfish reason people give terrible gifts
+2025-01-06 15:55:13.962415 INFO::The least thoughtful holiday present you should definitely give
+2025-01-06 15:55:14.59834 INFO::Want to donate to charity? Here are 10 guidelines for giving effectively.
+2025-01-06 15:55:15.0945 INFO::Trump says he wants to influence interest rates. Can he?
+2025-01-06 15:55:15.675618 INFO::Biden screwed up on inflation — badly
+2025-01-06 15:55:16.721123 INFO::Why so many families are “drowning in toys”
+2025-01-06 15:55:17.71775 INFO::Trump didn’t gut foreign aid last time. This time could be different.
+2025-01-06 15:55:18.697017 INFO::I give 10 percent of my income to charity. You should, too.
+2025-01-06 15:55:19.390072 INFO::Are you a bad gift-giver? Here’s how to tell, according to a pro.
+2025-01-06 15:55:19.827359 INFO::Why we obsess over giving “the perfect gift” — and how to stop
+2025-01-06 15:55:20.245729 INFO::How to host holiday gatherings without losing your mind
+2025-01-06 15:55:20.637805 INFO::Page Url: https://www.vox.com/archives/2024/11/7
+2025-01-06 15:55:20.638984 INFO::Number of Articles on this Page: 15
+2025-01-06 15:55:20.639661 INFO::**Scraped Titles Below:**
+2025-01-06 15:55:21.030945 INFO::I don’t have much money. Is it okay if I don’t give to charity?
+2025-01-06 15:55:21.411407 INFO::Could Dune: Prophecy really be the next Game of Thrones? 
+2025-01-06 15:55:21.807421 INFO::The future of same-sex marriage under a second Trump administration, explained
+2025-01-06 15:55:22.22679 INFO::I saw the Hurricane Helene response up close. This is how disaster relief actually works.
+2025-01-06 15:55:22.636782 INFO::Deep-blue California’s rightward slide, explained
+2025-01-06 15:55:23.086142 INFO::Democrats got wiped out in 2004. This is what they did next.
+2025-01-06 15:55:23.539823 INFO::Screw it, it’s Christmas now
+2025-01-06 15:55:23.963274 INFO::Trump may start his second term with a stunning power grab
+2025-01-06 15:55:24.372744 INFO::Want to understand why Trump won the election? Look at pop culture.
+2025-01-06 15:55:24.827316 INFO::The trans school sports rule the Democrats didn’t talk about
+2025-01-06 15:55:25.265756 INFO::What RFK Jr. can — and can’t — actually do as Trump’s health secretary
+2025-01-06 15:55:26.065795 INFO::The Trump Cabinet picks who seriously threaten democracy — and the ones who don’t
+2025-01-06 15:55:26.502824 INFO::America’s fractured trust in science, explained in 3 charts
+2025-01-06 15:55:26.959151 INFO::A GOP Supreme Court will now decide the fate of transgender Americans
+2025-01-06 15:55:27.452626 INFO::The left’s comforting myth about why Harris lost
+2025-01-06 15:55:27.930369 INFO::Page Url: https://www.vox.com/archives/2024/11/8
+2025-01-06 15:55:27.931547 INFO::Number of Articles on this Page: 14
+2025-01-06 15:55:27.932131 INFO::**Scraped Titles Below:**
+2025-01-06 15:55:28.404354 INFO::Why everyone you know is running a marathon
+2025-01-06 15:55:28.881269 INFO::How Democrats can win back the Latinos they lost to Trump
+2025-01-06 15:55:29.33853 INFO::Bluesky brings the fun, weird vibes of old Twitter back to life
+2025-01-06 15:55:30.021193 INFO::Trump is staffing up his White House with loyalists
+2025-01-06 15:55:30.513386 INFO::Can Trump ban trans athletes from school sports?
+2025-01-06 15:55:30.987838 INFO::We were supposed to hit peak emissions. Why won’t they stop rising?
+2025-01-06 15:55:32.393333 INFO::The real reason Mike Tyson is fighting Jake Paul
+2025-01-06 15:55:33.830509 INFO::Most “humane” farms are lying to you — and the government isn’t stopping them
+2025-01-06 15:55:34.740899 INFO::These apps promise to help you make new friends. Could it work for me?
+2025-01-06 15:55:35.329625 INFO::What to buy before Trump makes everything more expensive
+2025-01-06 15:55:35.844211 INFO::Did Trump win in 2024 because of racism? It’s complicated.
+2025-01-06 15:55:36.375822 INFO::Scientists just discovered a sea creature as large as two basketball courts. Here’s what it looks like.
+2025-01-06 15:55:36.873244 INFO::The most dangerous roads in America have one thing in common
+2025-01-06 15:55:37.337268 INFO::The confusing recent history of People’s Sexiest Man Alive
+2025-01-06 15:55:37.85012 INFO::Page Url: https://www.vox.com/archives/2024/11/9
+2025-01-06 15:55:37.851237 INFO::Number of Articles on this Page: 15
+2025-01-06 15:55:37.851808 INFO::**Scraped Titles Below:**
+2025-01-06 15:55:38.312562 INFO::Trump tapped Musk to co-lead the “Department of Government Efficiency.” What the heck is that?
+2025-01-06 15:55:38.803186 INFO::“Your body, my choice”: The misogynist MAGA attack, explained
+2025-01-06 15:55:39.258681 INFO::Could carbon capture fix climate change?
+2025-01-06 15:55:39.725194 INFO::The system failed us. We’ll still miss it when it’s gone.
+2025-01-06 15:55:40.513659 INFO::In times of defeat, turn toward each other
+2025-01-06 15:55:41.000276 INFO::Why the attempt to deplatform Trump failed so utterly
+2025-01-06 15:55:41.647911 INFO::Why libraries need librarians
+2025-01-06 15:55:42.146589 INFO::How Big Toilet Paper dupes us all
+2025-01-06 15:55:42.712992 INFO::Safe sex doesn’t just mean condoms anymore
+2025-01-06 15:55:43.231653 INFO::It’s not normal for the East Coast to be on fire
+2025-01-06 15:55:43.856561 INFO::The election was a loss for Palestinians — and not just because Trump won
+2025-01-06 15:55:44.471108 INFO::Trump is demanding an important change to the Senate confirmation process
+2025-01-06 15:55:45.051073 INFO::The Delphi murders were a local tragedy. Then they became “true crime.”
+2025-01-06 15:55:45.825448 INFO::The debate over why Harris lost is in full swing. Here’s a guide.
+2025-01-06 15:55:46.345993 INFO::43 lab monkeys escaped in South Carolina. They have a legal claim to freedom.
+2025-01-06 15:55:47.27408 INFO::Page Url: https://www.vox.com/archives/2024/11/10
+2025-01-06 15:55:47.275742 INFO::Number of Articles on this Page: 15
+2025-01-06 15:55:47.276324 INFO::**Scraped Titles Below:**
+2025-01-06 15:55:48.064179 INFO::Can Trump run again in 2028? Here’s what you need to know.
+2025-01-06 15:55:49.220316 INFO::Why Ukraine thinks it can still win over Donald Trump
+2025-01-06 15:55:49.98987 INFO::Do I actually need electrolytes to stay hydrated?
+2025-01-06 15:55:50.668424 INFO::How to bring a dead nuclear power plant back to life
+2025-01-06 15:55:51.152175 INFO::Trump’s techno-libertarian dream team goes to Washington
+2025-01-06 15:55:51.66837 INFO::How to get through this
+2025-01-06 15:55:52.149568 INFO::The antipoverty agenda under Trump isn’t all lost
+2025-01-06 15:55:52.657506 INFO::Trump’s tariffs could tank the economy. Will the Supreme Court stop them?
+2025-01-06 15:55:53.131036 INFO::A top Bernie Sanders strategist on why Kamala Harris lost
+2025-01-06 15:55:53.877942 INFO::Why Conclave and Juror #2 are the movies we need right now
+2025-01-06 15:55:54.371519 INFO::Does being woke do any good?
+2025-01-06 15:55:54.853537 INFO::Conspiracy theories are spreading about Trump’s win. They’re false.
+2025-01-06 15:55:55.301841 INFO::You may never need to remember another password
+2025-01-06 15:55:55.793361 INFO::A Trump second term could bring another family separation crisis
+2025-01-06 15:55:56.271131 INFO::Did Democrats lose the 2024 election because of “bad” policies?
+2025-01-06 15:55:56.716779 INFO::Page Url: https://www.vox.com/archives/2024/11/11
+2025-01-06 15:55:56.717801 INFO::Number of Articles on this Page: 15
+2025-01-06 15:55:56.71829 INFO::**Scraped Titles Below:**
+2025-01-06 15:55:57.2576 INFO::Germany’s political upheaval, explained
+2025-01-06 15:55:57.792985 INFO::Conservatives tried to repeal one of the country’s strongest climate policies. They failed big time.
+2025-01-06 15:55:58.25943 INFO::From Bibi to Putin, here’s how world leaders reacted to Trump’s win
+2025-01-06 15:55:58.935415 INFO::AI is powerful, dangerous, and controversial. What will Donald Trump do with it?
+2025-01-06 15:55:59.414009 INFO::The debate over what Democrats do now hinges on one question
+2025-01-06 15:55:59.913059 INFO::How to make sense of the 2024 election
+2025-01-06 15:56:00.377865 INFO::Following Trump’s victory, some women consider swearing off men
+2025-01-06 15:56:01.113095 INFO::How to live under rising authoritarianism, according to a philosopher who did it bravely
+2025-01-06 15:56:01.619059 INFO::One big, unexpected loser this election
+2025-01-06 15:56:02.286724 INFO::Arizona’s unprecedented crackdown on homeless encampments
+2025-01-06 15:56:03.36172 INFO::We’re all living inside Elon Musk’s misinformation machine now
+2025-01-06 15:56:04.354809 INFO::Why Democrats couldn’t sell a strong economy, in 3 charts
+2025-01-06 15:56:05.262629 INFO::Guiding kids — and ourselves — through the election aftermath
+2025-01-06 15:56:05.97562 INFO::Is the Gen Z bro media diet to blame?
+2025-01-06 15:56:06.452422 INFO::Russia’s campaign against the West is getting more aggressive
+2025-01-06 15:56:06.92278 INFO::Page Url: https://www.vox.com/archives/2024/11/12
+2025-01-06 15:56:06.92384 INFO::Number of Articles on this Page: 15
+2025-01-06 15:56:06.924406 INFO::**Scraped Titles Below:**
+2025-01-06 15:56:07.394124 INFO::This one chart foreshadows Trump’s immigration crackdown
+2025-01-06 15:56:07.929103 INFO::One striking pattern hidden in the election results
+2025-01-06 15:56:08.398789 INFO::Donald Trump ran a campaign for men. It worked.
+2025-01-06 15:56:08.851086 INFO::The global trend that pushed Donald Trump to victory
+2025-01-06 15:56:09.353584 INFO::Trump proposed big Medicaid and food stamp cuts. Can he pass them?
+2025-01-06 15:56:09.787023 INFO::The criminal cases against Donald Trump are now basically dead
+2025-01-06 15:56:10.235932 INFO::Can ranking candidates fix elections?
+2025-01-06 15:56:10.708635 INFO::How much should kids know about politics?
+2025-01-06 15:56:11.247641 INFO::Tough-on-crime laws are winning at the ballot box
+2025-01-06 15:56:11.897173 INFO::What happens if another pandemic strikes while Trump is president?
+2025-01-06 15:56:12.374956 INFO::The serious implications of a Republican Senate
+2025-01-06 15:56:12.87487 INFO::Trump won, but so did seven ballot measures protecting abortion rights
+2025-01-06 15:56:13.360116 INFO::How Trump’s second term will be different
+2025-01-06 15:56:13.832563 INFO::How the second Trump presidency could reshape the world
+2025-01-06 15:56:14.35085 INFO::The global risks of a Trump presidency will be much higher this time
+2025-01-06 15:56:14.823457 INFO::Page Url: https://www.vox.com/archives/2024/11/13
+2025-01-06 15:56:14.824662 INFO::Number of Articles on this Page: 13
+2025-01-06 15:56:14.825353 INFO::**Scraped Titles Below:**
+2025-01-06 15:56:15.247948 INFO::Why Kamala Harris lost
+2025-01-06 15:56:15.726229 INFO::Trump won. So what does that mean for abortion?
+2025-01-06 15:56:16.21881 INFO::Donald Trump has won — and American democracy is now in grave danger
+2025-01-06 15:56:16.73678 INFO::Why is Trump winning? 3 things we know so far.
+2025-01-06 15:56:17.216492 INFO::How do I fix my ballot if it is tossed out?
+2025-01-06 15:56:18.329618 INFO::How news organizations call the election — and why you should trust them
+2025-01-06 15:56:19.676222 INFO::The new Jeffrey Epstein tapes and his friendship with Trump, explained
+2025-01-06 15:56:20.568317 INFO::When we’ll know the next president — and your other biggest election questions, answered
+2025-01-06 15:56:21.375486 INFO::Why are foods banned in other places still on US grocery shelves?
+2025-01-06 15:56:21.864892 INFO::5 reasons to expect a Harris win — and 4 to expect a Trump victory
+2025-01-06 15:56:22.376058 INFO::Should it really be this hard to beat Donald Trump?
+2025-01-06 15:56:22.821381 INFO::How Peanut the Squirrel became an unlikely right-wing celebrity
+2025-01-06 15:56:23.285099 INFO::Elon Musk says he’s giving away $1 million a day to voters. Is that legal?
+2025-01-06 15:56:23.725224 INFO::Page Url: https://www.vox.com/archives/2024/11/14
+2025-01-06 15:56:23.726505 INFO::Number of Articles on this Page: 14
+2025-01-06 15:56:23.727186 INFO::**Scraped Titles Below:**
+2025-01-06 15:56:24.188485 INFO::The voters who could decide the 2024 election in Michigan
+2025-01-06 15:56:24.650019 INFO::What the final polls show about the 2024 presidential election
+2025-01-06 15:56:25.127281 INFO::So what if Martha Stewart is a perfectionist control freak?
+2025-01-06 15:56:25.69043 INFO::What actually matters this week, according to our politics team
+2025-01-06 15:56:26.216161 INFO::The strange case that the Supreme Court keeps refusing to decide
+2025-01-06 15:56:26.797191 INFO::“I’m looking for a fever dream of a book.”
+2025-01-06 15:56:27.267904 INFO::Mixael Laufer on DIY health care
+2025-01-06 15:56:27.715406 INFO::The big stakes in the Supreme Court’s new, absurdly messy gerrymandering case
+2025-01-06 15:56:28.23625 INFO::What counts as a landslide? Your biggest election questions, answered.
+2025-01-06 15:56:28.696775 INFO::I don’t want children. I do want children. What should I do?
+2025-01-06 15:56:29.15752 INFO::Is America collapsing like ancient Rome?
+2025-01-06 15:56:29.645147 INFO::Are Black voters drifting from Democrats? It’s complicated.
+2025-01-06 15:56:30.153459 INFO::Why the Pentagon just can’t quit Elon Musk
+2025-01-06 15:56:30.621968 INFO::A groundbreaking new plan to get Big Pharma to pay for wildlife conservation
+2025-01-06 15:56:31.367719 INFO::Page Url: https://www.vox.com/archives/2024/11/15
+2025-01-06 15:56:31.368764 INFO::Number of Articles on this Page: 13
+2025-01-06 15:56:31.369406 INFO::**Scraped Titles Below:**
+2025-01-06 15:56:31.840472 INFO::Were Bad Bunny and Ricky Martin really shadow banned by Instagram and X? 
+2025-01-06 15:56:32.297965 INFO::Starbucks won’t charge extra for plant-based milk. Other companies should follow.
+2025-01-06 15:56:32.824126 INFO::How Americans came to hate each other
+2025-01-06 15:56:33.904032 INFO::It’s not alarmist: A second Trump term really is an extinction-level threat to democracy
+2025-01-06 15:56:34.945881 INFO::The Supreme Court decides not to toss out thousands of Pennsylvania ballots
+2025-01-06 15:56:35.973813 INFO::Inside Trump’s ominous plan to turn civil rights law against vulnerable Americans
+2025-01-06 15:56:36.66382 INFO::What polls can actually tell us
+2025-01-06 15:56:37.121201 INFO::Elon Musk assures voters that Trump’s victory would deliver “temporary hardship”
+2025-01-06 15:56:37.565673 INFO::2024 election violence is already happening
+2025-01-06 15:56:38.050689 INFO::Should you feel guilty about using AI?
+2025-01-06 15:56:38.578866 INFO::How to get through election season without despair
+2025-01-06 15:56:39.031961 INFO::5 mysteries that might determine the 2024 election
+2025-01-06 15:56:39.623806 INFO::Punish Democrats or Stop Trump? Arab Americans are agonizing over their votes.
+2025-01-06 15:57:36.392589 INFO::month number: 1
+2025-01-06 15:57:36.395689 INFO::number of pages: 10
+2025-01-06 15:57:37.050023 INFO::Page Url: https://www.vox.com/archives/2024/1/1
+2025-01-06 15:57:37.051173 INFO::Number of Articles on this Page: 15
+2025-01-06 15:58:14.035006 INFO::month number: 1
+2025-01-06 15:58:14.036933 INFO::number of pages: 10
+2025-01-06 15:58:14.514741 INFO::Page Url: https://www.vox.com/archives/2024/1/1
+2025-01-06 15:58:14.51604 INFO::Number of Articles on this Page: 15
+2025-01-06 15:58:26.872212 INFO::Page Url: https://www.vox.com/archives/2024/1/2
+2025-01-06 15:58:26.873527 INFO::Number of Articles on this Page: 15
+2025-01-06 15:58:43.37169 INFO::Page Url: https://www.vox.com/archives/2024/1/3
+2025-01-06 15:58:43.372682 INFO::Number of Articles on this Page: 14
+2025-01-06 15:58:58.783233 INFO::Page Url: https://www.vox.com/archives/2024/1/4
+2025-01-06 15:58:58.78584 INFO::Number of Articles on this Page: 14
+2025-01-06 15:59:14.680538 INFO::Page Url: https://www.vox.com/archives/2024/1/5
+2025-01-06 15:59:14.682892 INFO::Number of Articles on this Page: 15
+2025-01-06 15:59:30.489048 INFO::Page Url: https://www.vox.com/archives/2024/1/6
+2025-01-06 15:59:30.491294 INFO::Number of Articles on this Page: 13
+2025-01-06 15:59:44.863966 INFO::Page Url: https://www.vox.com/archives/2024/1/7
+2025-01-06 15:59:44.866147 INFO::Number of Articles on this Page: 15
+2025-01-06 16:00:00.581918 INFO::Page Url: https://www.vox.com/archives/2024/1/8
+2025-01-06 16:00:00.584113 INFO::Number of Articles on this Page: 15
+2025-01-06 16:00:17.746136 INFO::Page Url: https://www.vox.com/archives/2024/1/9
+2025-01-06 16:00:17.74858 INFO::Number of Articles on this Page: 15
+2025-01-06 16:00:30.670117 INFO::Page Url: https://www.vox.com/archives/2024/1/10
+2025-01-06 16:00:30.672022 INFO::Number of Articles on this Page: 15
+2025-01-06 16:13:48.123412 INFO::month number: 2
+2025-01-06 16:13:48.12906 INFO::number of pages: 12
+2025-01-06 16:13:48.62271 INFO::Page Url: https://www.vox.com/archives/2024/2/1
+2025-01-06 16:13:48.624124 INFO::Number of Articles on this Page: 13
+2025-01-06 16:14:00.960827 INFO::Page Url: https://www.vox.com/archives/2024/2/2
+2025-01-06 16:14:00.962252 INFO::Number of Articles on this Page: 15
+2025-01-06 16:14:15.002798 INFO::Page Url: https://www.vox.com/archives/2024/2/3
+2025-01-06 16:14:15.004114 INFO::Number of Articles on this Page: 15
+2025-01-06 16:14:27.055978 INFO::Page Url: https://www.vox.com/archives/2024/2/4
+2025-01-06 16:14:27.057317 INFO::Number of Articles on this Page: 15
+2025-01-06 16:14:36.472613 INFO::Page Url: https://www.vox.com/archives/2024/2/5
+2025-01-06 16:14:36.474056 INFO::Number of Articles on this Page: 15
+2025-01-06 16:14:47.426637 INFO::Page Url: https://www.vox.com/archives/2024/2/6
+2025-01-06 16:14:47.428758 INFO::Number of Articles on this Page: 15
+2025-01-06 16:14:59.000776 INFO::Page Url: https://www.vox.com/archives/2024/2/7
+2025-01-06 16:14:59.002135 INFO::Number of Articles on this Page: 15
+2025-01-06 16:15:09.655947 INFO::Page Url: https://www.vox.com/archives/2024/2/8
+2025-01-06 16:15:09.65762 INFO::Number of Articles on this Page: 15
+2025-01-06 16:15:21.397523 INFO::Page Url: https://www.vox.com/archives/2024/2/9
+2025-01-06 16:15:21.398766 INFO::Number of Articles on this Page: 15
+2025-01-06 16:15:33.81452 INFO::Page Url: https://www.vox.com/archives/2024/2/10
+2025-01-06 16:15:33.816631 INFO::Number of Articles on this Page: 15
+2025-01-06 16:15:46.311995 INFO::Page Url: https://www.vox.com/archives/2024/2/11
+2025-01-06 16:15:46.314322 INFO::Number of Articles on this Page: 15
+2025-01-06 16:15:56.927556 INFO::Page Url: https://www.vox.com/archives/2024/2/12
+2025-01-06 16:15:56.929142 INFO::Number of Articles on this Page: 1
+2025-01-06 16:15:59.974864 INFO::month number: 3
+2025-01-06 16:15:59.97611 INFO::number of pages: 13
+2025-01-06 16:16:00.428369 INFO::Page Url: https://www.vox.com/archives/2024/3/1
+2025-01-06 16:16:00.429504 INFO::Number of Articles on this Page: 15
+2025-01-06 16:16:11.306977 INFO::Page Url: https://www.vox.com/archives/2024/3/2
+2025-01-06 16:16:11.308824 INFO::Number of Articles on this Page: 14
+2025-01-06 16:16:23.599834 INFO::Page Url: https://www.vox.com/archives/2024/3/3
+2025-01-06 16:16:23.601149 INFO::Number of Articles on this Page: 14
+2025-01-06 16:16:34.71055 INFO::Page Url: https://www.vox.com/archives/2024/3/4
+2025-01-06 16:16:34.712723 INFO::Number of Articles on this Page: 15
+2025-01-06 16:16:44.399235 INFO::Page Url: https://www.vox.com/archives/2024/3/5
+2025-01-06 16:16:44.400523 INFO::Number of Articles on this Page: 15
+2025-01-06 16:16:53.202212 INFO::Page Url: https://www.vox.com/archives/2024/3/6
+2025-01-06 16:16:53.204431 INFO::Number of Articles on this Page: 14
+2025-01-06 16:17:04.139321 INFO::Page Url: https://www.vox.com/archives/2024/3/7
+2025-01-06 16:17:04.140475 INFO::Number of Articles on this Page: 15
+2025-01-06 16:17:15.756909 INFO::Page Url: https://www.vox.com/archives/2024/3/8
+2025-01-06 16:17:15.758183 INFO::Number of Articles on this Page: 15
+2025-01-06 16:17:25.230688 INFO::Page Url: https://www.vox.com/archives/2024/3/9
+2025-01-06 16:17:25.231919 INFO::Number of Articles on this Page: 15
+2025-01-06 16:17:37.329829 INFO::Page Url: https://www.vox.com/archives/2024/3/10
+2025-01-06 16:17:37.331157 INFO::Number of Articles on this Page: 15
+2025-01-06 16:17:52.900822 INFO::Page Url: https://www.vox.com/archives/2024/3/11
+2025-01-06 16:17:52.902804 INFO::Number of Articles on this Page: 15
+2025-01-06 16:18:06.185775 INFO::Page Url: https://www.vox.com/archives/2024/3/12
+2025-01-06 16:18:06.187133 INFO::Number of Articles on this Page: 15
+2025-01-06 16:18:17.852321 INFO::Page Url: https://www.vox.com/archives/2024/3/13
+2025-01-06 16:18:17.854325 INFO::Number of Articles on this Page: 10
+2025-01-06 16:18:24.795047 INFO::month number: 4
+2025-01-06 16:18:24.79626 INFO::number of pages: 12
+2025-01-06 16:18:25.233389 INFO::Page Url: https://www.vox.com/archives/2024/4/1
+2025-01-06 16:18:25.234997 INFO::Number of Articles on this Page: 15
+2025-01-06 16:18:35.886865 INFO::Page Url: https://www.vox.com/archives/2024/4/2
+2025-01-06 16:18:35.888107 INFO::Number of Articles on this Page: 14
+2025-01-06 16:18:44.416697 INFO::Page Url: https://www.vox.com/archives/2024/4/3
+2025-01-06 16:18:44.418854 INFO::Number of Articles on this Page: 15
+2025-01-06 16:18:57.426637 INFO::Page Url: https://www.vox.com/archives/2024/4/4
+2025-01-06 16:18:57.427984 INFO::Number of Articles on this Page: 15
+2025-01-06 16:19:10.097075 INFO::Page Url: https://www.vox.com/archives/2024/4/5
+2025-01-06 16:19:10.099283 INFO::Number of Articles on this Page: 15
+2025-01-06 16:19:21.366735 INFO::Page Url: https://www.vox.com/archives/2024/4/6
+2025-01-06 16:19:21.367983 INFO::Number of Articles on this Page: 15
+2025-01-06 16:19:29.75097 INFO::Page Url: https://www.vox.com/archives/2024/4/7
+2025-01-06 16:19:29.752309 INFO::Number of Articles on this Page: 14
+2025-01-06 16:19:40.397529 INFO::Page Url: https://www.vox.com/archives/2024/4/8
+2025-01-06 16:19:40.399762 INFO::Number of Articles on this Page: 15
+2025-01-06 16:19:52.214107 INFO::Page Url: https://www.vox.com/archives/2024/4/9
+2025-01-06 16:19:52.215568 INFO::Number of Articles on this Page: 14
+2025-01-06 16:20:01.726142 INFO::Page Url: https://www.vox.com/archives/2024/4/10
+2025-01-06 16:20:01.727288 INFO::Number of Articles on this Page: 14
+2025-01-06 16:20:15.008926 INFO::Page Url: https://www.vox.com/archives/2024/4/11
+2025-01-06 16:20:15.010138 INFO::Number of Articles on this Page: 15
+2025-01-06 16:20:26.988584 INFO::Page Url: https://www.vox.com/archives/2024/4/12
+2025-01-06 16:20:26.990018 INFO::Number of Articles on this Page: 4
+2025-01-06 16:20:30.487793 INFO::month number: 5
+2025-01-06 16:20:30.489079 INFO::number of pages: 12
+2025-01-06 16:20:30.873988 INFO::Page Url: https://www.vox.com/archives/2024/5/1
+2025-01-06 16:20:30.87511 INFO::Number of Articles on this Page: 15
+2025-01-06 16:20:45.121527 INFO::Page Url: https://www.vox.com/archives/2024/5/2
+2025-01-06 16:20:45.122838 INFO::Number of Articles on this Page: 15
+2025-01-06 16:20:55.354245 INFO::Page Url: https://www.vox.com/archives/2024/5/3
+2025-01-06 16:20:55.355522 INFO::Number of Articles on this Page: 15
+2025-01-06 16:21:03.31954 INFO::Page Url: https://www.vox.com/archives/2024/5/4
+2025-01-06 16:21:03.320633 INFO::Number of Articles on this Page: 15
+2025-01-06 16:21:16.121226 INFO::Page Url: https://www.vox.com/archives/2024/5/5
+2025-01-06 16:21:16.122508 INFO::Number of Articles on this Page: 15
+2025-01-06 16:21:26.284618 INFO::Page Url: https://www.vox.com/archives/2024/5/6
+2025-01-06 16:21:26.285972 INFO::Number of Articles on this Page: 15
+2025-01-06 16:21:37.539075 INFO::Page Url: https://www.vox.com/archives/2024/5/7
+2025-01-06 16:21:37.542429 INFO::Number of Articles on this Page: 15
+2025-01-06 16:21:48.63387 INFO::Page Url: https://www.vox.com/archives/2024/5/8
+2025-01-06 16:21:48.635291 INFO::Number of Articles on this Page: 12
+2025-01-06 16:21:58.48785 INFO::Page Url: https://www.vox.com/archives/2024/5/9
+2025-01-06 16:21:58.48913 INFO::Number of Articles on this Page: 15
+2025-01-06 16:22:08.435925 INFO::Page Url: https://www.vox.com/archives/2024/5/10
+2025-01-06 16:22:08.437686 INFO::Number of Articles on this Page: 14
+2025-01-06 16:22:20.242577 INFO::Page Url: https://www.vox.com/archives/2024/5/11
+2025-01-06 16:22:20.2447 INFO::Number of Articles on this Page: 15
+2025-01-06 16:22:31.904034 INFO::Page Url: https://www.vox.com/archives/2024/5/12
+2025-01-06 16:22:31.904622 INFO::Number of Articles on this Page: 13
+2025-01-06 16:22:42.665687 INFO::month number: 6
+2025-01-06 16:22:42.667726 INFO::number of pages: 14
+2025-01-06 16:22:43.026597 INFO::Page Url: https://www.vox.com/archives/2024/6/1
+2025-01-06 16:22:43.027812 INFO::Number of Articles on this Page: 15
+2025-01-06 16:22:55.024549 INFO::Page Url: https://www.vox.com/archives/2024/6/2
+2025-01-06 16:22:55.026079 INFO::Number of Articles on this Page: 13
+2025-01-06 16:23:05.94226 INFO::Page Url: https://www.vox.com/archives/2024/6/3
+2025-01-06 16:23:05.943518 INFO::Number of Articles on this Page: 15
+2025-01-06 16:23:17.308538 INFO::Page Url: https://www.vox.com/archives/2024/6/4
+2025-01-06 16:23:17.310742 INFO::Number of Articles on this Page: 15
+2025-01-06 16:23:27.279209 INFO::Page Url: https://www.vox.com/archives/2024/6/5
+2025-01-06 16:23:27.280492 INFO::Number of Articles on this Page: 15
+2025-01-06 16:23:36.352635 INFO::Page Url: https://www.vox.com/archives/2024/6/6
+2025-01-06 16:23:36.353943 INFO::Number of Articles on this Page: 15
+2025-01-06 16:23:46.169192 INFO::Page Url: https://www.vox.com/archives/2024/6/7
+2025-01-06 16:23:46.171446 INFO::Number of Articles on this Page: 15
+2025-01-06 16:23:55.103422 INFO::Page Url: https://www.vox.com/archives/2024/6/8
+2025-01-06 16:23:55.105604 INFO::Number of Articles on this Page: 15
+2025-01-06 16:24:05.845118 INFO::Page Url: https://www.vox.com/archives/2024/6/9
+2025-01-06 16:24:05.846416 INFO::Number of Articles on this Page: 15
+2025-01-06 16:24:18.753166 INFO::Page Url: https://www.vox.com/archives/2024/6/10
+2025-01-06 16:24:18.754223 INFO::Number of Articles on this Page: 15
+2025-01-06 16:24:30.492282 INFO::Page Url: https://www.vox.com/archives/2024/6/11
+2025-01-06 16:24:30.493724 INFO::Number of Articles on this Page: 15
+2025-01-06 16:24:39.562917 INFO::Page Url: https://www.vox.com/archives/2024/6/12
+2025-01-06 16:24:39.565159 INFO::Number of Articles on this Page: 15
+2025-01-06 16:24:50.411862 INFO::Page Url: https://www.vox.com/archives/2024/6/13
+2025-01-06 16:24:50.414095 INFO::Number of Articles on this Page: 13
+2025-01-06 16:24:58.826297 INFO::Page Url: https://www.vox.com/archives/2024/6/14
+2025-01-06 16:24:58.827678 INFO::Number of Articles on this Page: 6
+2025-01-06 16:25:04.193698 INFO::month number: 7
+2025-01-06 16:25:04.194276 INFO::number of pages: 15
+2025-01-06 16:25:04.550024 INFO::Page Url: https://www.vox.com/archives/2024/7/1
+2025-01-06 16:25:04.551201 INFO::Number of Articles on this Page: 15
+2025-01-06 16:25:16.165428 INFO::Page Url: https://www.vox.com/archives/2024/7/2
+2025-01-06 16:25:16.167638 INFO::Number of Articles on this Page: 15
+2025-01-06 16:25:25.142037 INFO::Page Url: https://www.vox.com/archives/2024/7/3
+2025-01-06 16:25:25.143389 INFO::Number of Articles on this Page: 15
+2025-01-06 16:25:36.107751 INFO::Page Url: https://www.vox.com/archives/2024/7/4
+2025-01-06 16:25:36.108999 INFO::Number of Articles on this Page: 15
+2025-01-06 16:25:49.339512 INFO::Page Url: https://www.vox.com/archives/2024/7/5
+2025-01-06 16:25:49.341567 INFO::Number of Articles on this Page: 14
+2025-01-06 16:26:00.552986 INFO::Page Url: https://www.vox.com/archives/2024/7/6
+2025-01-06 16:26:00.554078 INFO::Number of Articles on this Page: 15
+2025-01-06 16:26:12.539158 INFO::Page Url: https://www.vox.com/archives/2024/7/7
+2025-01-06 16:26:12.540484 INFO::Number of Articles on this Page: 15
+2025-01-06 16:26:25.215359 INFO::Page Url: https://www.vox.com/archives/2024/7/8
+2025-01-06 16:26:25.217896 INFO::Number of Articles on this Page: 14
+2025-01-06 16:26:37.101237 INFO::Page Url: https://www.vox.com/archives/2024/7/9
+2025-01-06 16:26:37.102534 INFO::Number of Articles on this Page: 14
+2025-01-06 16:26:51.340898 INFO::Page Url: https://www.vox.com/archives/2024/7/10
+2025-01-06 16:26:51.342091 INFO::Number of Articles on this Page: 15
+2025-01-06 16:27:02.129525 INFO::Page Url: https://www.vox.com/archives/2024/7/11
+2025-01-06 16:27:02.131638 INFO::Number of Articles on this Page: 15
+2025-01-06 16:27:14.618997 INFO::Page Url: https://www.vox.com/archives/2024/7/12
+2025-01-06 16:27:14.620281 INFO::Number of Articles on this Page: 15
+2025-01-06 16:27:26.053683 INFO::Page Url: https://www.vox.com/archives/2024/7/13
+2025-01-06 16:27:26.054948 INFO::Number of Articles on this Page: 15
+2025-01-06 16:27:38.144837 INFO::Page Url: https://www.vox.com/archives/2024/7/14
+2025-01-06 16:27:38.146117 INFO::Number of Articles on this Page: 15
+2025-01-06 16:27:51.473044 INFO::Page Url: https://www.vox.com/archives/2024/7/15
+2025-01-06 16:27:51.474403 INFO::Number of Articles on this Page: 1
+2025-01-06 16:27:54.303242 INFO::month number: 8
+2025-01-06 16:27:54.304926 INFO::number of pages: 14
+2025-01-06 16:27:54.703008 INFO::Page Url: https://www.vox.com/archives/2024/8/1
+2025-01-06 16:27:54.704043 INFO::Number of Articles on this Page: 15
+2025-01-06 16:28:07.397432 INFO::Page Url: https://www.vox.com/archives/2024/8/2
+2025-01-06 16:28:07.398698 INFO::Number of Articles on this Page: 15
+2025-01-06 16:28:17.306401 INFO::Page Url: https://www.vox.com/archives/2024/8/3
+2025-01-06 16:28:17.308566 INFO::Number of Articles on this Page: 15
+2025-01-06 16:28:30.977955 INFO::Page Url: https://www.vox.com/archives/2024/8/4
+2025-01-06 16:28:30.979257 INFO::Number of Articles on this Page: 13
+2025-01-06 16:28:42.245306 INFO::Page Url: https://www.vox.com/archives/2024/8/5
+2025-01-06 16:28:42.247463 INFO::Number of Articles on this Page: 14
+2025-01-06 16:28:52.253806 INFO::Page Url: https://www.vox.com/archives/2024/8/6
+2025-01-06 16:28:52.25513 INFO::Number of Articles on this Page: 15
+2025-01-06 16:29:01.889109 INFO::Page Url: https://www.vox.com/archives/2024/8/7
+2025-01-06 16:29:01.891387 INFO::Number of Articles on this Page: 15
+2025-01-06 16:29:13.781008 INFO::Page Url: https://www.vox.com/archives/2024/8/8
+2025-01-06 16:29:13.782505 INFO::Number of Articles on this Page: 14
+2025-01-06 16:29:23.936123 INFO::Page Url: https://www.vox.com/archives/2024/8/9
+2025-01-06 16:29:23.937411 INFO::Number of Articles on this Page: 15
+2025-01-06 16:29:38.923513 INFO::Page Url: https://www.vox.com/archives/2024/8/10
+2025-01-06 16:29:38.92487 INFO::Number of Articles on this Page: 15
+2025-01-06 16:29:48.424316 INFO::Page Url: https://www.vox.com/archives/2024/8/11
+2025-01-06 16:29:48.426487 INFO::Number of Articles on this Page: 14
+2025-01-06 16:29:59.655191 INFO::Page Url: https://www.vox.com/archives/2024/8/12
+2025-01-06 16:29:59.656463 INFO::Number of Articles on this Page: 15
+2025-01-06 16:30:10.301937 INFO::Page Url: https://www.vox.com/archives/2024/8/13
+2025-01-06 16:30:10.303269 INFO::Number of Articles on this Page: 15
+2025-01-06 16:30:52.73849 INFO::Page Url: https://www.vox.com/archives/2024/8/14
+2025-01-06 16:30:52.740615 INFO::Number of Articles on this Page: 2
+2025-01-06 16:30:58.153267 INFO::month number: 9
+2025-01-06 16:30:58.154395 INFO::number of pages: 13
+2025-01-06 16:30:58.641804 INFO::Page Url: https://www.vox.com/archives/2024/9/1
+2025-01-06 16:30:58.642848 INFO::Number of Articles on this Page: 15
+2025-01-06 16:31:11.533821 INFO::Page Url: https://www.vox.com/archives/2024/9/2
+2025-01-06 16:31:11.535152 INFO::Number of Articles on this Page: 15
+2025-01-06 16:31:21.780839 INFO::Page Url: https://www.vox.com/archives/2024/9/3
+2025-01-06 16:31:21.782181 INFO::Number of Articles on this Page: 14
+2025-01-06 16:31:33.980531 INFO::Page Url: https://www.vox.com/archives/2024/9/4
+2025-01-06 16:31:33.982677 INFO::Number of Articles on this Page: 15
+2025-01-06 16:32:06.645587 INFO::Page Url: https://www.vox.com/archives/2024/9/5
+2025-01-06 16:32:06.646972 INFO::Number of Articles on this Page: 15
+2025-01-06 16:32:34.439629 INFO::Page Url: https://www.vox.com/archives/2024/9/6
+2025-01-06 16:32:34.442126 INFO::Number of Articles on this Page: 15
+2025-01-06 16:32:45.350462 INFO::Page Url: https://www.vox.com/archives/2024/9/7
+2025-01-06 16:32:45.351953 INFO::Number of Articles on this Page: 15
+2025-01-06 16:32:54.77228 INFO::Page Url: https://www.vox.com/archives/2024/9/8
+2025-01-06 16:32:54.773576 INFO::Number of Articles on this Page: 15
+2025-01-06 16:33:05.826575 INFO::Page Url: https://www.vox.com/archives/2024/9/9
+2025-01-06 16:33:05.827848 INFO::Number of Articles on this Page: 15
+2025-01-06 16:33:33.909072 INFO::Page Url: https://www.vox.com/archives/2024/9/10
+2025-01-06 16:33:33.910364 INFO::Number of Articles on this Page: 15
+2025-01-06 16:33:42.633485 INFO::Page Url: https://www.vox.com/archives/2024/9/11
+2025-01-06 16:33:42.634668 INFO::Number of Articles on this Page: 15
+2025-01-06 16:33:52.114945 INFO::Page Url: https://www.vox.com/archives/2024/9/12
+2025-01-06 16:33:52.117063 INFO::Number of Articles on this Page: 15
+2025-01-06 16:34:02.783197 INFO::Page Url: https://www.vox.com/archives/2024/9/13
+2025-01-06 16:34:02.784493 INFO::Number of Articles on this Page: 5
+2025-01-06 16:34:07.373389 INFO::month number: 10
+2025-01-06 16:34:07.374727 INFO::number of pages: 15
+2025-01-06 16:34:07.742397 INFO::Page Url: https://www.vox.com/archives/2024/10/1
+2025-01-06 16:34:07.743551 INFO::Number of Articles on this Page: 15
+2025-01-06 16:34:17.289879 INFO::Page Url: https://www.vox.com/archives/2024/10/2
+2025-01-06 16:34:17.292157 INFO::Number of Articles on this Page: 15
+2025-01-06 16:34:30.075901 INFO::Page Url: https://www.vox.com/archives/2024/10/3
+2025-01-06 16:34:30.077222 INFO::Number of Articles on this Page: 15
+2025-01-06 16:34:55.810167 INFO::Page Url: https://www.vox.com/archives/2024/10/4
+2025-01-06 16:34:55.811358 INFO::Number of Articles on this Page: 15
+2025-01-06 16:35:06.870104 INFO::Page Url: https://www.vox.com/archives/2024/10/5
+2025-01-06 16:35:06.871333 INFO::Number of Articles on this Page: 13
+2025-01-06 16:35:14.783605 INFO::Page Url: https://www.vox.com/archives/2024/10/6
+2025-01-06 16:35:14.785229 INFO::Number of Articles on this Page: 15
+2025-01-06 16:35:25.935518 INFO::Page Url: https://www.vox.com/archives/2024/10/7
+2025-01-06 16:35:25.936703 INFO::Number of Articles on this Page: 15
+2025-01-06 16:35:48.174927 INFO::Page Url: https://www.vox.com/archives/2024/10/8
+2025-01-06 16:35:48.176215 INFO::Number of Articles on this Page: 14
+2025-01-06 16:35:56.412062 INFO::Page Url: https://www.vox.com/archives/2024/10/9
+2025-01-06 16:35:56.414303 INFO::Number of Articles on this Page: 15
+2025-01-06 16:36:07.362647 INFO::Page Url: https://www.vox.com/archives/2024/10/10
+2025-01-06 16:36:07.363889 INFO::Number of Articles on this Page: 13
+2025-01-06 16:36:16.476147 INFO::Page Url: https://www.vox.com/archives/2024/10/11
+2025-01-06 16:36:16.477422 INFO::Number of Articles on this Page: 15
+2025-01-06 16:36:25.493786 INFO::Page Url: https://www.vox.com/archives/2024/10/12
+2025-01-06 16:36:25.494983 INFO::Number of Articles on this Page: 15
+2025-01-06 16:36:35.884024 INFO::Page Url: https://www.vox.com/archives/2024/10/13
+2025-01-06 16:36:35.885223 INFO::Number of Articles on this Page: 15
+2025-01-06 16:36:44.956359 INFO::Page Url: https://www.vox.com/archives/2024/10/14
+2025-01-06 16:36:44.958551 INFO::Number of Articles on this Page: 14
+2025-01-06 16:36:54.359944 INFO::Page Url: https://www.vox.com/archives/2024/10/15
+2025-01-06 16:36:54.361261 INFO::Number of Articles on this Page: 1
+2025-01-06 16:36:55.28804 INFO::month number: 11
+2025-01-06 16:36:55.289478 INFO::number of pages: 15
+2025-01-06 16:36:55.68013 INFO::Page Url: https://www.vox.com/archives/2024/11/1
+2025-01-06 16:36:55.68122 INFO::Number of Articles on this Page: 14
+2025-01-06 16:37:01.375923 INFO::Page Url: https://www.vox.com/archives/2024/11/2
+2025-01-06 16:37:01.377715 INFO::Number of Articles on this Page: 15
+2025-01-06 16:37:07.666037 INFO::Page Url: https://www.vox.com/archives/2024/11/3
+2025-01-06 16:37:07.667273 INFO::Number of Articles on this Page: 15
+2025-01-06 16:37:13.7736 INFO::Page Url: https://www.vox.com/archives/2024/11/4
+2025-01-06 16:37:13.775233 INFO::Number of Articles on this Page: 14
+2025-01-06 16:37:19.84906 INFO::Page Url: https://www.vox.com/archives/2024/11/5
+2025-01-06 16:37:19.850269 INFO::Number of Articles on this Page: 15
+2025-01-06 16:37:25.979326 INFO::Page Url: https://www.vox.com/archives/2024/11/6
+2025-01-06 16:37:25.980557 INFO::Number of Articles on this Page: 14
+2025-01-06 16:37:31.828891 INFO::Page Url: https://www.vox.com/archives/2024/11/7
+2025-01-06 16:37:31.830545 INFO::Number of Articles on this Page: 15
+2025-01-06 16:37:38.036456 INFO::Page Url: https://www.vox.com/archives/2024/11/8
+2025-01-06 16:37:38.037629 INFO::Number of Articles on this Page: 14
+2025-01-06 16:37:43.821881 INFO::Page Url: https://www.vox.com/archives/2024/11/9
+2025-01-06 16:37:43.822501 INFO::Number of Articles on this Page: 15
+2025-01-06 16:37:50.148047 INFO::Page Url: https://www.vox.com/archives/2024/11/10
+2025-01-06 16:37:50.148671 INFO::Number of Articles on this Page: 15
+2025-01-06 16:37:56.162992 INFO::Page Url: https://www.vox.com/archives/2024/11/11
+2025-01-06 16:37:56.164301 INFO::Number of Articles on this Page: 15
+2025-01-06 16:38:02.160855 INFO::Page Url: https://www.vox.com/archives/2024/11/12
+2025-01-06 16:38:02.161509 INFO::Number of Articles on this Page: 15
+2025-01-06 16:38:08.13193 INFO::Page Url: https://www.vox.com/archives/2024/11/13
+2025-01-06 16:38:08.132487 INFO::Number of Articles on this Page: 13
+2025-01-06 16:38:13.325759 INFO::Page Url: https://www.vox.com/archives/2024/11/14
+2025-01-06 16:38:13.326369 INFO::Number of Articles on this Page: 14
+2025-01-06 16:38:18.961828 INFO::Page Url: https://www.vox.com/archives/2024/11/15
+2025-01-06 16:38:18.962389 INFO::Number of Articles on this Page: 13
+2025-01-06 16:38:26.71967 INFO::month number: 12
+2025-01-06 16:38:26.721072 INFO::number of pages: 11
+2025-01-06 16:38:27.090623 INFO::Page Url: https://www.vox.com/archives/2024/12/1
+2025-01-06 16:38:27.0912 INFO::Number of Articles on this Page: 15
+2025-01-06 16:38:35.129669 INFO::Page Url: https://www.vox.com/archives/2024/12/2
+2025-01-06 16:38:35.130322 INFO::Number of Articles on this Page: 14
+2025-01-06 16:38:41.871577 INFO::Page Url: https://www.vox.com/archives/2024/12/3
+2025-01-06 16:38:41.872143 INFO::Number of Articles on this Page: 14
+2025-01-06 16:38:48.853242 INFO::Page Url: https://www.vox.com/archives/2024/12/4
+2025-01-06 16:38:48.854414 INFO::Number of Articles on this Page: 15
+2025-01-06 16:38:56.635584 INFO::Page Url: https://www.vox.com/archives/2024/12/5
+2025-01-06 16:38:56.637681 INFO::Number of Articles on this Page: 15
+2025-01-06 16:39:04.385144 INFO::Page Url: https://www.vox.com/archives/2024/12/6
+2025-01-06 16:39:04.387247 INFO::Number of Articles on this Page: 15
+2025-01-06 16:39:11.785773 INFO::Page Url: https://www.vox.com/archives/2024/12/7
+2025-01-06 16:39:11.787022 INFO::Number of Articles on this Page: 15
+2025-01-06 16:39:19.205892 INFO::Page Url: https://www.vox.com/archives/2024/12/8
+2025-01-06 16:39:19.207987 INFO::Number of Articles on this Page: 14
+2025-01-06 16:39:27.570414 INFO::Page Url: https://www.vox.com/archives/2024/12/9
+2025-01-06 16:39:27.571633 INFO::Number of Articles on this Page: 15
+2025-01-06 16:39:35.543059 INFO::Page Url: https://www.vox.com/archives/2024/12/10
+2025-01-06 16:39:35.544245 INFO::Number of Articles on this Page: 15
+2025-01-06 16:39:43.540663 INFO::Page Url: https://www.vox.com/archives/2024/12/11
+2025-01-06 16:39:43.542958 INFO::Number of Articles on this Page: 8
