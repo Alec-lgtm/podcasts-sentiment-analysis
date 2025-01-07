@@ -61,4 +61,6 @@ df['neg_score'] = [[s['score'] for s in r if s['label'] == 'NEGATIVE'][0] for r 
 df['sentiment'] = ['POSITIVE' if pos > neg else 'NEGATIVE' for pos, neg in zip(df['pos_score'], df['neg_score'])]
 
 # Save to CSV
-df.to_csv('vox_articles_with_sentiment.csv', index=False)
+df.to_csv('../../data/bert_labels/vox_articles_raw_probs.csv', index=False)
+
+
