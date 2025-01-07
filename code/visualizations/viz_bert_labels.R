@@ -4,7 +4,7 @@ library(tidyverse)
 
 articles_bert_labels <- read.csv("../../data/bert_labels/vox_articles_with_sentiment.csv")
 
-articles_bert_labels_prob <- read.csv("../transformers/vox_articles_with_sentiment.csv")
+articles_bert_labels_prob <- read.csv("../../data/bert_labels/vox_articles_raw_probs.csv")
 
 articles_bert_labels$datetime <- as.POSIXct(articles_bert_labels$datetime, format = "%Y-%m-%d %H:%M:%S")
 
@@ -44,9 +44,3 @@ p5 <- ggplot(articles_bert_labels_prob) +
   geom_histogram(aes(x = pos_score)) +
   theme_classic()
 
-p6 <- ggplot(articles_bert_labels_prob, aes(x = date, y = pos_score)) +
-  geom_point() +
-  labs(title = "Sentiment Confidence Score", x = "Date", y = "Confidence Score") +
-  geom_smooth() +
-  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1),
-        axis.title.x = element_text(margin = margin(t = 10)))
