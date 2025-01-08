@@ -12,7 +12,11 @@ library(stringr)
 library(logging)
 
 # Sets up logging for debugging
-basicConfig()
+basicConfig(
+    filename="scraping_log.txt",
+    filemode='w',
+    level=logging.DEBUG
+)
 addHandler(writeToFile, file = "scraping_log.txt")
 
 # Manually removed article urls
@@ -49,7 +53,7 @@ scrape_vox_article <- function(article_url, url_only = FALSE, debug_article = FA
   article_title <- article_titles[[1]]
 
   if(debug_article) {loginfo(article_title)}
-  
+
   # Gets article author
   article_author <- article_html %>%
     html_elements("._15r56j10 p") %>%
@@ -60,13 +64,13 @@ scrape_vox_article <- function(article_url, url_only = FALSE, debug_article = FA
     article_date <- article_html %>%
       html_elements("time") %>%
       html_text()
-    
+
     # Parses article date into a lubridate object
     final_article_date <- article_date[[1]]
     cleaned_date_string <- str_replace(final_article_date, " UTC", "")
     article_date <- parse_date_time(cleaned_date_string, orders = "b d, Y, I:M p")
   }
-  
+
 
   if(url_only) {
     return(tibble(url = article_url))
@@ -101,7 +105,7 @@ scrape_vox_page <- function(page_url, url_only = FALSE, filter_urls = NA, debug_
 
   # Creates full vox article url
   full_urls <- str_c(base_url, article_paths)
-  
+
   # Removes non-articles urls + duplicates
   if(missing(filter_urls)) {} else {full_urls <- setdiff(full_urls, filter_urls)}
   full_urls <- unique(full_urls)
@@ -131,12 +135,12 @@ scrape_vox_month <-function(month_number, url_only = FALSE, filter_urls = NA, de
   # Get page html
   page_url <- paste0(base_url, "archives/2024/", month_number, "/")
   page_html <- read_html(page_url)
-  
+
   # Gets pagination text (ex: Previous 1 of 7 Next)
   pagination_text <- page_html %>%
     html_element(".so8yiu0") %>%
     html_text()
-  
+
   # Extracts the number of pages in the vox archive for the given month
   page_last_number <- str_extract(pagination_text, "\\d+(?=Next)")
 
@@ -155,33 +159,33 @@ scrape_vox_month <-function(month_number, url_only = FALSE, filter_urls = NA, de
 # Testing:
 # test_df <- scrape_vox_month(month_number = 11, debug_month = T, debug_page = T, debug_article = T)
 
-# More general version of scrape_vox_month, works for all vox archives 
+# More general version of scrape_vox_month, works for all vox archives
 # Note: the url path does not include the page ie "authors/vox-staff/archives/" not "authors/vox-staff/archives/6"
 scrape_vox_archive <-function(last_page = NA, url_path = NA, url_only = FALSE, filter_urls = NA, debug_page = FALSE, debug_article = FALSE) {
   Sys.sleep(0.3)
-  
+
   # Get page html
   page_url <- paste0(base_url, url_path)
   page_html <- read_html(page_url)
-  
+
   # Gets pagination text (ex: Previous 1 of 7 Next)
   pagination_text <- page_html %>%
     html_element(".so8yiu0") %>%
     html_text()
-  
+
   if(missing(last_page)) {
     # Extracts the number of pages in the vox archive for the given month
     last_page <- str_extract(pagination_text, "\\d+(?=Next)")
   }
-  
+
   if(debug_page) {
     loginfo(paste0("number of pages: ", last_page))
   }
-  
+
   # Scrape each page in the given month's vox archive
   scraped_pages <- map(1:last_page, ~ scrape_vox_page(paste0(page_url, .x), url_only, filter_urls, debug_page, debug_article)) %>%
     list_rbind()  # Combine all results into a single data frame
-  
+
   return(scraped_pages)
 }
 
